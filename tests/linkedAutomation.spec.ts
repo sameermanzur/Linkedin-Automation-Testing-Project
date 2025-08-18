@@ -2,28 +2,42 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import * as XLSX from 'xlsx'; 
 import * as path from 'path';
+import dotenv from 'dotenv'; 
+dotenv.config(); // Load environment variables at the start
 
 // Path defined 
-const recruitersNameFilePath = path.resolve(__dirname, '..','tests', 'testsData', 'recruitersName.xlsx'); 
+const recruitersNameFilePath = path.resolve(__dirname,'..','test-data','recruitersNameList.xlsx');
 
 test ('LinkedIn Recruiter Automated Messaging', async ({ page }) => {
 
-  // Read the Excel file 
-  const workBook = XLSX.readFile(recruitersNameFilePath);
-  const sheetName = workBook.SheetNames[1] || workBook.SheetNames[0];
-  const worksheet = workBook.Sheets[sheetName];
+  // Test the File Exist 
 
-  // Go to LinkedIn login page
+  if (!fs.existsSync(recruitersNameFilePath)) {
+    throw new Error(`Excel file not found at path: ${recruitersNameFilePath}`);
+  }
+
+ // Go to LinkedIn login page
   await page.goto('https://www.linkedin.com/login');
 
+  // Ensure environment variables are set
+  if (!process.env.USERNAME || !process.env.PASSWORD) {
+    throw new Error('USERNAME or PASSWORD environment variable is not set.');
+  }
+
   // Log in
-  await page.fill('input#username', 'sameerstudyprep@gmail.com');
-  await page.fill('input#password', '@studyLinkedin');
+  await page.fill('input#username', process.env.USERNAME);
+  await page.pause(); 
+  await page.fill('input#password', process.env.PASSWORD);
   await page.pause();
   await page.click('button[type="submit"]');
 
   // Wait for login to complete 
   await page.waitForURL('**/feed/**', {timeout: 10000}); 
+
+   // Read the Excel file 
+  const workBook = XLSX.readFile(recruitersNameFilePath);
+  const sheetName = workBook.SheetNames[1] || workBook.SheetNames[0];
+  const worksheet = workBook.Sheets[sheetName];
 
   // Parse recruiters data from the worksheet
   const recruitersData: any[] = XLSX.utils.sheet_to_json(worksheet);
