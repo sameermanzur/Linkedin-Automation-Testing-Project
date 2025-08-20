@@ -1,14 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
 import { PlaywrightTestConfig } from '@playwright/test';
-import *as dotenv from 'dotenv'; 
 import path from 'path';
+import * as dotenv from 'dotenv';
+dotenv.config(); 
 
 const config: PlaywrightTestConfig = {
   reporter: [
     ['playwright-zephyr/lib/src/cloud', {
       projectKey: 'DUM',
       authorizationToken: process.env.ZEPHYR_AUTH_TOKEN, // Set this in your environment
-      autoCreateTestCases: true, // Automatically create test cases if they don't exist
+      autoCreateTestCases: true,
     }],
   ],
   // Add your Playwright test settings below
@@ -16,9 +17,6 @@ const config: PlaywrightTestConfig = {
 
 // Environment Variables from .env file
 dotenv.config({path: path.resolve(__dirname, 'env')}); 
-
-
-
 
 
 /**
