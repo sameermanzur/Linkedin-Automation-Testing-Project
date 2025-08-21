@@ -12,6 +12,7 @@ const config: PlaywrightTestConfig = {
       autoCreateTestCases: true,
     }],
   ],
+  
   // Add your Playwright test settings below
 };
 

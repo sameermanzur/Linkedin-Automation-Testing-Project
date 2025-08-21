@@ -1,36 +1,36 @@
-import{ Page, Locator} from '@playwright/test'; 
+import { Page, Locator } from '@playwright/test'; 
 
-export const MAX_TIMEOUT =30_000;
+export const maxTimeout = 30_000;
 
-export default class BasePage  {
- 
-   protected readonly page : Page;
-   
+export default class BasePage {
+    protected readonly page: Page;
 
-    constructor (page : Page){
+    constructor(page: Page) {
         this.page = page;
     }
 
-    async b_naviagteTo(url:string){
-        await this.page.goto(url);
+    async b_navigateTo(url: string, timeout: number = maxTimeout) {
+        await this.page.goto(url, { timeout: timeout, waitUntil: 'networkidle' });
     }
 
-    async b_waitForElementVisible(locator:Locator, timeout: number= MAX_TIMEOUT){
-        await locator.waitFor({state:'visible', timeout}); 
+    async b_waitForElementVisible(locator: Locator, timeout: number = maxTimeout) {
+        await locator.waitFor({ state: 'visible', timeout: timeout });
     }
 
-    async b_fillField(element:Locator, text: string, isForceFill?:boolean){
+    async b_fillField(element: Locator, text: string, isForceFill?: boolean) {
         await this.b_waitForElementVisible(element);
-        await element.fill(text, {force: isForceFill?? false});    
+        await element.fill(text, { force: isForceFill ?? false });
     }
 
-  async click(locator: Locator) {
-    await this.b_waitForElementVisible(locator);
-    await locator.click({ timeout: MAX_TIMEOUT });
-  }
+    async b_clickElement(element: Locator) {
+        await this.b_waitForElementVisible(element, maxTimeout);
+        await element.click({ force: true });
+    }
 
-  async clearField(locator: Locator) {
-    await this.b_waitForElementVisible(locator);
-    await locator.fill('');
-  }
+    async b_clearField(locator: Locator) {
+        await this.b_waitForElementVisible(locator);
+        await locator.fill('');
+    }
 }
+
+
