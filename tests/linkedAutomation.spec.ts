@@ -19,10 +19,10 @@ test ('LinkedIn Recruiter Automated Messaging', async ({ page }) => {
  // Go to LinkedIn login page
   await page.goto('https://www.linkedin.com/login');
 
-  // Ensure environment variables are set
-  if (!process.env.USERNAME || !process.env.PASSWORD) {
-    throw new Error('USERNAME or PASSWORD environment variable is not set.');
-  }
+  // // Ensure environment variables are set
+  // if (!process.env.USERNAME || !process.env.PASSWORD) {
+  //   throw new Error('USERNAME or PASSWORD environment variable is not set.');
+  // }
 
   // Log in
   await page.fill('input#username', process.env.USERNAME);
