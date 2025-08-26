@@ -1,17 +1,21 @@
-import { Expect,test } from "playwright/test";
-import { LoginPage } from "../pages/loginPage";
+import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/loginPage';
+import 'dotenv/config';
 
+test('[DUM-T6] Verify Login', async ({ page }) => {
 
-test ('[DUM-2] verify login functionality', async ({page}) => {
-    const baseURL= process.env.Base_URL;
-    const userName = process.env.USERNAME;
-    const passWord = process.env.PASSWORD; 
+  if (!process.env.BASE_URL || !process.env.APP_USERNAME || !process.env.APP_PASSWORD) {
+    throw new Error('Missing BASE_URL, APP_USERNAME, or APP_PASSWORD in .env file');
+  }
 
-    const loginPage = new LoginPage(page);
-    await page.goto(baseURL!); 
-    await page.pause(); 
-    await loginPage.enterUserName(userName!); 
-    await loginPage.enterPassword(passWord!);    
-}); 
+  const loginPage = new LoginPage(page);
+
+  await loginPage.b_navigateTo(process.env.BASE_URL);
+
+  await loginPage.login(process.env.APP_USERNAME, process.env.APP_PASSWORD);
+
+  await loginPage.toHaveText(loginPage.homeFeedTitle, 'Home');
+});
+
 
 
