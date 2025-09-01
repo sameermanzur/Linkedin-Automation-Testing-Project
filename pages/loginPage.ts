@@ -5,14 +5,14 @@ export class LoginPage extends BasePage {
   private readonly usernameInput: Locator;
   private readonly passwordInput: Locator;
   private readonly loginBtn: Locator;
-  readonly homeFeedTitle: Locator;
+  readonly linkedinLogo: Locator;
 
   constructor(page: Page) {
     super(page);
     this.usernameInput = page.locator("//*[@aria-label='Email or phone']");
     this.passwordInput = page.locator('#password');
     this.loginBtn = page.locator('[type="submit"]');
-    this.homeFeedTitle = page.locator("//span[@title='Home']");
+    this.linkedinLogo = page.locator("//a[@href='https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true']");
   }
 
   async enterUserName(username: string) {
@@ -27,15 +27,18 @@ export class LoginPage extends BasePage {
     await this.b_clickElement(this.loginBtn);
   }
 
+  async LinkedinLogo(logo: string) {
+    await this.b_waitForElementVisible(this.linkedinLogo);
+  }
+
   // Combined login method
   async login(username: string, password: string) {
     await this.enterUserName(username);
     await this.enterPassword(password);
     await this.clickLoginButton();
+    await this.LinkedinLogo('');
   }
 
-  // Assertion for text visibility
-  async toHaveText(locator: Locator, expected: string): Promise<void> {
-    await expect(locator).toHaveText(expected, { timeout: 30_000 });
+  // Assertion for text visibilit
   }
-}
+
