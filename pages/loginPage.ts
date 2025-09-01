@@ -1,33 +1,41 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 import BasePage from './basePage';
 
 export class LoginPage extends BasePage {
-    
-    // locator variable declaration
-    private readonly usernameTextBox: Locator
-    private readonly passwordTextBox: Locator
-    private readonly loginButton: Locator
+  private readonly usernameInput: Locator;
+  private readonly passwordInput: Locator;
+  private readonly loginBtn: Locator;
+  readonly homeFeedTitle: Locator;
 
-    // to initialize locators
-    constructor(page:Page){
-        super(page);
+  constructor(page: Page) {
+    super(page);
+    this.usernameInput = page.locator("//*[@aria-label='Email or phone']");
+    this.passwordInput = page.locator('#password');
+    this.loginBtn = page.locator('[type="submit"]');
+    this.homeFeedTitle = page.locator("//span[@title='Home']");
+  }
 
-    this.usernameTextBox = page.locator('[id="username"]'); 
-    this.passwordTextBox = page.locator('id="password"'); 
-    this.loginButton = page.locator('[type="submit"]'); 
-    }
+  async enterUserName(username: string) {
+    await this.b_fillField(this.usernameInput, username);
+  }
 
-    //methods to perform actions on the locators
-    async enterUserName(userNameText:string){
-        await this.b_fillField(this.usernameTextBox,userNameText); 
-    }
+  async enterPassword(password: string) {
+    await this.b_fillField(this.passwordInput, password);
+  }
 
-    async enterPassword(passwordText:string){
-        await this.b_fillField(this.passwordTextBox, passwordText); 
-    }
+  async clickLoginButton() {
+    await this.b_clickElement(this.loginBtn);
+  }
 
-    async clickLogin(loginButton: Locator){
-        await this.b_waitForElementVisible(this.loginButton) 
-    }
+  // Combined login method
+  async login(username: string, password: string) {
+    await this.enterUserName(username);
+    await this.enterPassword(password);
+    await this.clickLoginButton();
+  }
+
+  // Assertion for text visibility
+  async toHaveText(locator: Locator, expected: string): Promise<void> {
+    await expect(locator).toHaveText(expected, { timeout: 30_000 });
+  }
 }
-
