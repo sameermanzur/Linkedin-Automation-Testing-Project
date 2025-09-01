@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
 import { SearchPage } from '../pages/search'; 
-import { buildMessagesFromXlsx } from '../pages/readAndGenerate';
+import { buildMessagesFromXlsx, readRecruiters } from '../pages/readAndGenerate';
 
 
 import 'dotenv/config';
@@ -21,9 +21,14 @@ test('[T6] Verify user flow', async ({ page }) => {
 
   await loginPage.LinkedinLogo('');
 
-  await search.clickSearch(); 
+await search.clickSearch();
 
-  await buildMessagesFromXlsx('e2e/data/recruiterList.xlsx');
+  const messages = await buildMessagesFromXlsx('data/recruiterList.xlsx');
+  const recruiters = await readRecruiters('data/recruiterList.xlsx');
+  expect(messages.length).toBeGreaterThan(0);
 
+  const first = recruiters[0];
+  const name = first.Name || `${first.FirstName ?? ''} ${first.LastName ?? ''}`.trim();
+  await search.searchFor(name);
 });
 

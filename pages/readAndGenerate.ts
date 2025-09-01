@@ -25,12 +25,15 @@ export function sydneyWeekday(offsetDays = 0, locale = 'en-AU'): string {
   }).format(ts);
 }
 
-// Read the sheet to recruiter objects 
-export function readRecruiters(xlsxPath: string): Recruiter[] {
+// Read the sheet to recruiter objects
+export async function readRecruiters(xlsxPath: string): Promise<Recruiter[]> {
   const abs = resolvePath(xlsxPath);
-  if (!fs.existsSync(abs)) throw new Error(`Recruiter list not found at: ${abs}`);
-
-  const buf = fs.readFileSync(abs);                // ← using fs explicitly
+  try {
+    await fs.promises.access(abs);
+  } catch {
+    throw new Error(`Recruiter list not found at: ${abs}`);
+  }
+  const buf = await fs.promises.readFile(abs);
   const workbook = XLSX.read(buf, { type: 'buffer' });
   const sheetName = workbook.SheetNames[0];
   const ws = workbook.Sheets[sheetName];
@@ -74,10 +77,10 @@ export function buildMessage(r: Recruiter, dayOffset = 0): string {
   ].join('\n');
 }
 
-export function buildMessagesFromXlsx(xlsxPath: string, dayOffset = 0): string[] {
-  const recs = readRecruiters(xlsxPath);
+export async function buildMessagesFromXlsx(xlsxPath: string, dayOffset = 0): Promise<string[]> {
+  const recs = await readRecruiters(xlsxPath);
   const out: string[] = [];
   for (const r of recs) out.push(buildMessage(r, dayOffset));
   return out;
-}
+}; 
 
