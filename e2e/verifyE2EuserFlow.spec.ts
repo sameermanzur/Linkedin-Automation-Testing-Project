@@ -1,34 +1,30 @@
+// e2e/verifyE2EuserFlow.spec.ts
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
-import { SearchPage } from '../pages/search'; 
-import { buildMessagesFromXlsx, readRecruiters } from '../pages/readAndGenerate';
-
-
+import { SearchPage } from '../pages/searchPage';
+import { loadRecruiterData } from '../pages/recruiterReadPage';
 import 'dotenv/config';
 
-test('[T6] Verify user flow', async ({ page }) => {
+test.use({ timezoneId: 'Australia/Sydney' });
 
+test('[T6] Verify user flow', async ({ page }) => {
   if (!process.env.BASE_URL || !process.env.APP_USERNAME || !process.env.APP_PASSWORD) {
-    throw new Error('Missing BASE_URL, APP_USERNAME, or APP_PASSWORD in .env file');
+    throw new Error('Missing BASE_URL, APP_USERNAME, or APP_PASSWORD in .env');
   }
 
-  const loginPage = new LoginPage(page);
-  const search = new SearchPage(page); 
+  const login  = new LoginPage(page);
+  const search = new SearchPage(page);
 
-  await loginPage.b_navigateTo(process.env.BASE_URL);
+  await login.b_navigateTo(process.env.BASE_URL!);
+  await login.login(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
+  await login.LinkedinLogo('');
+  await search.clickSearch();
 
-  await loginPage.login(process.env.APP_USERNAME, process.env.APP_PASSWORD);
+  // single callback – no paths in spec
+  const { messages, firstRecruiterName } = await loadRecruiterData();
 
-  await loginPage.LinkedinLogo('');
+  expect.soft(messages.length).toBeGreaterThan(0);
+  expect.soft(firstRecruiterName).not.toBe('');
 
-await search.clickSearch();
-
-  const messages = await buildMessagesFromXlsx('data/recruiterList.xlsx');
-  const recruiters = await readRecruiters('data/recruiterList.xlsx');
-  expect(messages.length).toBeGreaterThan(0);
-
-  const first = recruiters[0];
-  const name = first.Name || `${first.FirstName ?? ''} ${first.LastName ?? ''}`.trim();
-  await search.searchFor(name);
+  await search.searchFor(firstRecruiterName);
 });
-

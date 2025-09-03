@@ -38,7 +38,5 @@ export class LoginPage extends BasePage {
     await this.clickLoginButton();
     await this.LinkedinLogo('');
   }
-
-  // Assertion for text visibilit
   }
 
