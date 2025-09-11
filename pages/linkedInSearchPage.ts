@@ -30,15 +30,6 @@ async searchForRecruiterNames(recruiterName: string) {
     await this.searchBox.press('Enter'); 
     await this.page.waitForURL(/linkedin\.com\/search\/results/i, { timeout: 30000 });
     await this.page.waitForLoadState('domcontentloaded');
-    await this.page.waitForLoadState('networkidle');
-    await expect(this.firstResultLink).toBeVisible({ timeout: 60000 });
-  }
-
-  async openFirstResult() {
-    await expect(this.firstResultLink).toBeVisible({ timeout: 60000 });
-    await this.firstResultLink.click();
-    await this.page.waitForLoadState('domcontentloaded');
-    await this.page.waitForLoadState('networkidle');
   }
 
 }; 

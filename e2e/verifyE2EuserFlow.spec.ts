@@ -7,8 +7,6 @@ import ComposeMessagePage from '../pages/composeMessage';
   
 import 'dotenv/config';
 
-
-
 test('[T6] Verify user flow', async ({ page }) => {
   if (!process.env.BASE_URL || !process.env.APP_USERNAME || !process.env.APP_PASSWORD) {
     throw new Error('Missing BASE_URL, APP_USERNAME, or APP_PASSWORD in .env');
@@ -29,8 +27,9 @@ test('[T6] Verify user flow', async ({ page }) => {
 
   for (const name of names) {
     await searchRecruiter.searchForRecruiterNames(name);
-    await searchRecruiter.openFirstResult();
-
+    const messageBtn = page.getByRole('button', { name: /^Message\b/i });
+await messageBtn.click();
+ 
     await composeMessage.openMessage();
     await composeMessage.fillMessageFromRow({ Name: name });
     await composeMessage.sendMessage();

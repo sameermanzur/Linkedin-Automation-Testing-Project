@@ -53,7 +53,7 @@ export class ComposeMessagePage extends BasePage {
     super(page);
     this.messageButton = page.getByRole('button', { name: /message/i });
     this.messageBox = page.getByRole('textbox');
-    this.sendButton = page.getByRole('button', { name: /send/i });
+    this.sendButton = page.locator("button[type='submit']")
   }
 
   async openMessage(): Promise<void> {
