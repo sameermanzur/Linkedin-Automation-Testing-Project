@@ -1,0 +1,51 @@
+import { Page, Locator, expect } from '@playwright/test';
+import BasePage from './basePage';
+import { getRecruiterNames } from './readRecruiterNames';
+import { LinkedInSearchPage } from './linkedInSearchPage';
+
+
+export class ComposeMessage extends BasePage{
+    private readonly clickMessageButton : Locator;
+    private readonly fillMessageBox :Locator;
+    private readonly clickSendButton : Locator; 
+
+    constructor(page:Page){
+            super(page); 
+            this.clickMessageButton = page.locator("button[id='ember537']"); 
+            this.fillMessageBox = page.locator("//div[@aria-label='Write a message…'])[2]");
+            this.clickSendButton = page.locator("(//button[@type='submit'])[2]"); 
+    }
+
+async clickMessage(){
+    await this.b_clickElement(this.clickMessageButton)
+}
+
+async fillMessage(compose:string){
+    await this.b_fillField(this.fillMessageBox, compose)
+}
+
+
+
+async clickSend(){
+    await this.b_clickElement(this.clickSendButton)
+}
+
+}
+
+}
+
+function buildMessage(r: LinkedInSearchPage, dayOffset = 0): string {
+  const smile = '😊';
+  return [
+    `Hi ${getRecruiterNames},`,
+    `Today is Monday.`,
+    '',
+    'A new beginning awaits me.',
+    'I want to thank you for your support during my unemployment.',
+    `You\'ve been awesome ${smile}. Let\'s keep in touch.`,
+    'Have a great week.',
+    'Best regards,',
+    'Sameer'
+  ].join('\n');
+}
+
