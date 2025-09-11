@@ -4,14 +4,14 @@ import BasePage from './basePage';
 export class LoginPage extends BasePage {
   private readonly usernameInput: Locator;
   private readonly passwordInput: Locator;
-  private readonly loginBtn: Locator;
+  private readonly loginButton: Locator;
   readonly linkedinLogo: Locator;
 
   constructor(page: Page) {
     super(page);
     this.usernameInput = page.locator("//*[@aria-label='Email or phone']");
     this.passwordInput = page.locator('#password');
-    this.loginBtn = page.locator('[type="submit"]');
+    this.loginButton = page.locator('[type="submit"]');
     this.linkedinLogo = page.locator("//a[@href='https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true']");
   }
 
@@ -24,7 +24,7 @@ export class LoginPage extends BasePage {
   }
 
   async clickLoginButton() {
-    await this.b_clickElement(this.loginBtn);
+    await this.b_clickElement(this.loginButton);
   }
 
   async LinkedinLogo(logo: string) {
@@ -38,5 +38,5 @@ export class LoginPage extends BasePage {
     await this.clickLoginButton();
     await this.LinkedinLogo('');
   }
-  }
+  }; 
 

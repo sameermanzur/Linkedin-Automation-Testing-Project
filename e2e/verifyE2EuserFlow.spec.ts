@@ -1,11 +1,13 @@
 // e2e/verifyE2EuserFlow.spec.ts
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
-import { SearchPage } from '../pages/searchPage';
-import { loadRecruiterData } from '../pages/recruiterReadPage';
+import { LinkedInSearchPage } from '../pages/linkedInSearchPage';
+import { getRecruiterNames } from '../pages/readRecruiterNames';
+import ComposeMessagePage from '../pages/composeMessage';
+  
 import 'dotenv/config';
 
-test.use({ timezoneId: 'Australia/Sydney' });
+
 
 test('[T6] Verify user flow', async ({ page }) => {
   if (!process.env.BASE_URL || !process.env.APP_USERNAME || !process.env.APP_PASSWORD) {
@@ -13,18 +15,28 @@ test('[T6] Verify user flow', async ({ page }) => {
   }
 
   const login  = new LoginPage(page);
-  const search = new SearchPage(page);
+  const searchRecruiter = new LinkedInSearchPage(page); 
+  const composeMessage = new ComposeMessagePage(page); 
 
   await login.b_navigateTo(process.env.BASE_URL!);
   await login.login(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
   await login.LinkedinLogo('');
-  await search.clickSearch();
 
-  // single callback – no paths in spec
-  const { messages, firstRecruiterName } = await loadRecruiterData();
+  // Read recruiter names from Excel and search each
+  const names = await getRecruiterNames('data/recruiterList.xlsx');
 
-  expect.soft(messages.length).toBeGreaterThan(0);
-  expect.soft(firstRecruiterName).not.toBe('');
+  await searchRecruiter.gotoFeed();
 
-  await search.searchFor(firstRecruiterName);
+  for (const name of names) {
+    await searchRecruiter.searchForRecruiterNames(name);
+    await searchRecruiter.openFirstResult();
+
+    await composeMessage.openMessage();
+    await composeMessage.fillMessageFromRow({ Name: name });
+    await composeMessage.sendMessage();
+
+    // Return to feed for next iteration
+    await searchRecruiter.gotoFeed();
+  }
+  
 });
