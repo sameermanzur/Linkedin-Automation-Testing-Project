@@ -4,7 +4,9 @@ import { LoginPage } from '../pages/loginPage';
 import { LinkedInSearchPage } from '../pages/linkedInSearchPage';
 import { getRecruiterNames } from '../pages/readRecruiterNames';
 import ComposeMessagePage from '../pages/composeMessage';
-  
+import { LogoutPage } from '../pages/logoutPage';
+
+
 import 'dotenv/config';
 
 test('[T6] Verify user flow', async ({ page }) => {
@@ -15,6 +17,7 @@ test('[T6] Verify user flow', async ({ page }) => {
   const login  = new LoginPage(page);
   const searchRecruiter = new LinkedInSearchPage(page); 
   const composeMessage = new ComposeMessagePage(page); 
+  const logOut = new LogoutPage(page); 
 
   await login.b_navigateTo(process.env.BASE_URL!);
   await login.login(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
@@ -38,4 +41,6 @@ await messageBtn.click();
     await searchRecruiter.gotoFeed();
   }
   
+  await logOut.navigateButton();
+  await logOut.clickSignOut(); 
 });
