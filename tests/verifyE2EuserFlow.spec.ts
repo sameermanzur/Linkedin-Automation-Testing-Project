@@ -1,4 +1,4 @@
-import { test, expect} from './hooks';
+import { test} from './hooks';
 import { LoginPage } from './pages/loginPage';
 import { LinkedInSearchPage } from './pages/linkedInSearchPage';
 import { getRecruiterNames } from './pages/readRecruiterNames';
@@ -20,11 +20,10 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
   // Read recruiter names from Excel and search each
   const names = await getRecruiterNames('data/recruiterList.xlsx');
 
-  // await searchRecruiter.gotoFeed();
-
+ 
   for (const name of names) {
     await searchRecruiter.searchForRecruiterNames(name);
-    const messageBtn = page.getByRole('button', { name: /^Message\b/i });
+    const messageBtn = page.getByRole('button', { name: /^Message\b/i }); // Accessibility tree 
     await messageBtn.click();
 
     await composeMessage.openMessage();
@@ -38,6 +37,5 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
 
   await logOut.navigateButton();
   await logOut.clickSignOut();
-  const context = await browser.newContext({ recordVideo: { dir: 'videos' } });
   await page.close();
 });
