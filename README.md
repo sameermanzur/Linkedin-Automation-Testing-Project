@@ -1,12 +1,12 @@
 # LinkedIn Automation Testing Project
-📌 Overview
+## 📌 Overview
 
 This project automates LinkedIn recruiter outreach using Playwright with TypeScript.
 It reads recruiter names from an Excel file, searches for them on LinkedIn, navigates to their profiles, opens the message dialog, and sends a personalized message.
 
 The framework also integrates with Zephyr for Jira for test case management, and is designed to run locally as well as in CI/CD pipelines (GitHub Actions, Jenkins, Docker).
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Playwright (E2E browser automation)
 
@@ -27,32 +27,28 @@ Docker & Jenkins (CI/CD pipeline support)
 ## Acknowledgements
 https://www.linkedin.com/in/swaroop-landge-9a5b9111/ for their continuous support, direction, and encouragement in shaping my journey into QA Automation.
 
-LinkedIn-Automation-Project/
-│── tests/                     # Test specs
-│   ├── verifyE2EuserFlow.spec.ts
-│   ├
-│── pages/                     # Page Object Models (POM)
-│   ├── basePage.ts
-│   ├── loginPage.ts
-│   ├── linkedInSearchPage.ts
-│   ├── composeMessage.ts
-│   ├── logoutPage.ts
-│   ├── readRecruiterNames.ts  # Excel data utility
-│
-│── hooks/                     # Playwright hooks (before/after each test)
-│   ├── hooks.ts
-│
-│── data/
-│   ├── recruiterNames.xlsx    # Input test data
-│
-│── reports/                   # Allure & Zephyr reports
-│
-│── playwright.config.ts       # Playwright config
-│── package.json
-│── tsconfig.json
-│── .env                       # Environment variables
-│── Dockerfile
-│── Jenkinsfile
+## 🧩 Page Object Model (POM)
+
+This project uses the Page Object Model (POM) design pattern for clean, reusable, and maintainable test automation. Each page has its own class with dedicated methods.
+
+basePage.ts → Core utilities (navigation, waits, common actions)
+
+loginPage.ts → Handles login (username, password, submit)
+
+linkedInSearchPage.ts → Manages recruiter search
+
+composeMessage.ts → Automates recruiter message composition
+
+logoutPage.ts → Handles logout flow
+
+readRecruiterNames.ts → Reads recruiter data from Excel (data-driven tests)
+
+## flowchart TD
+    A[Login Page] --> B[LinkedIn Search Page]
+    B --> C[Compose Message Page]
+    C --> D[Logout Page]
+    E[Excel Data] --> B
+
 
 ⚙️ Setup & Installation
 1. Clone Repository
