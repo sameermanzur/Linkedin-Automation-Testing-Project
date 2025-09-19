@@ -1,4 +1,4 @@
-import { test} from './hooks';
+import { test} from '../hooks/hooks';
 import { LoginPage } from './pages/loginPage';
 import { LinkedInSearchPage } from './pages/linkedInSearchPage';
 import { getRecruiterNames } from './pages/readRecruiterNames';
