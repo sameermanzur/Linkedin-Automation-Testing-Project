@@ -1,9 +1,9 @@
-// Utilities to read recruiter names from an Excel file
+//Utilities to read recruiter names from an Excel file
 import path from 'path';
 import * as xlsx from 'xlsx';
 
 export type Row = Record<string, any>;
-
+// Fileutils to read excel file
 export class FileUtils {
   static async readExcelFile(filePath: string): Promise<Row[]> {
     const abs = path.isAbsolute(filePath)
@@ -19,6 +19,7 @@ export class FileUtils {
     return rows;
   }
 }
+// Passing a function to extract names 
 
 function deriveName(row: Row): string {
   const keys = Object.keys(row);

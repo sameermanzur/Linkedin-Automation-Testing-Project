@@ -28,8 +28,6 @@ async searchForRecruiterNames(recruiterName: string) {
     await this.searchBox.click();
     await this.searchBox.fill(recruiterName);
     await this.searchBox.press('Enter'); 
-    await this.page.waitForURL(/linkedin\.com\/search\/results/i, { timeout: 30000 });
-    await this.page.waitForLoadState('domcontentloaded');
   }
 
 }; 

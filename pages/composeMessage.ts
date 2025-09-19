@@ -48,12 +48,11 @@ export class ComposeMessagePage extends BasePage {
   private readonly messageButton: Locator;
   private readonly messageBox: Locator;
   private readonly sendButton: Locator;
-
   constructor(page: Page) {
     super(page);
     this.messageButton = page.getByRole('button', { name: /message/i });
     this.messageBox = page.getByRole('textbox');
-    this.sendButton = page.locator("button[type='submit']")
+    this.sendButton = page.locator("button[type='submit']"); 
   }
 
   async openMessage(): Promise<void> {
@@ -75,7 +74,7 @@ export class ComposeMessagePage extends BasePage {
     return text;
   }
 
-  async sendMessage(): Promise<void> {
+  async sendMessage() {
     await this.b_clickElement(this.sendButton);
   }
 }
