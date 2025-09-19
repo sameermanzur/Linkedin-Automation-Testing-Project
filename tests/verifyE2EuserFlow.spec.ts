@@ -1,26 +1,20 @@
-import { expect, test } from '@playwright/test';
-import './test-hooks';
-import { LoginPage } from '../pages/loginPage';
-import { LinkedInSearchPage } from '../pages/linkedInSearchPage';
-import { getRecruiterNames } from '../pages/readRecruiterNames';
-import ComposeMessagePage from '../pages/composeMessage';
-import { LogoutPage } from '../pages/logoutPage';
+import { test, expect} from './hooks';
+import { LoginPage } from './pages/loginPage';
+import { LinkedInSearchPage } from './pages/linkedInSearchPage';
+import { getRecruiterNames } from './pages/readRecruiterNames';
+import ComposeMessagePage from './pages/composeMessage';
+import { LogoutPage } from './pages/logoutPage';
 import 'dotenv/config';
 
-
-
 test('[T6] Verify user flow', async ({ page, browser }) => {
-  if (!process.env.BASE_URL || !process.env.APP_USERNAME || !process.env.APP_PASSWORD) {
-    throw new Error('Missing BASE_URL, APP_USERNAME, or APP_PASSWORD in .env');
-  }
-
+ 
   const login = new LoginPage(page);
   const searchRecruiter = new LinkedInSearchPage(page);
   const composeMessage = new ComposeMessagePage(page);
   const logOut = new LogoutPage(page);
 
   await login.b_navigateTo(process.env.BASE_URL!);
-  await login.login(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
+  await login.login(process.env.LINKEDIN_USERNAME!, process.env.LINKEDIN_PASSWORD!);
   await login.LinkedinLogo('');
 
   // Read recruiter names from Excel and search each
@@ -34,8 +28,10 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
     await messageBtn.click();
 
     await composeMessage.openMessage();
+    await page.pause();
     await composeMessage.fillMessageFromRow({ Name: name });
     await composeMessage.sendMessage();
+    await composeMessage.closeMessage();
     // Return to feed for next iteration
     await searchRecruiter.gotoFeed();
   }
@@ -43,6 +39,5 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
   await logOut.navigateButton();
   await logOut.clickSignOut();
   const context = await browser.newContext({ recordVideo: { dir: 'videos' } });
-  await page.close(); 
-
+  await page.close();
 });

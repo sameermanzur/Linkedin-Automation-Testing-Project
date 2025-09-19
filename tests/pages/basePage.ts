@@ -8,7 +8,8 @@ export default class BasePage {
   constructor(page: Page) {
     this.page = page;
   }
-
+ 
+  
   async b_navigateTo(url: string, timeout: number = maxTimeout) {
     await this.page.goto(url, { timeout, waitUntil: 'networkidle' });
   }
@@ -19,8 +20,7 @@ export default class BasePage {
 
   async b_fillField(element: Locator, text: string, isForceFill: boolean = false, timeout: number = maxTimeout) {
     await this.b_waitForElementVisible(element, timeout);
-    await element.fill(''); 
-    await element.fill(text, { force: isForceFill, timeout });
+    await element.pressSequentially(text, { timeout });
   }
 
   async b_clickElement(element: Locator, timeout: number = maxTimeout) {

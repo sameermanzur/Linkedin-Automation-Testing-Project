@@ -1,6 +1,6 @@
 import { Page, Locator } from '@playwright/test';
-import BasePage from './basePage';
-import type { Row } from './readRecruiterNames';
+import BasePage from './basePage.js'
+import type { Row } from './readRecruiterNames.ts';
 
 function sydneyWeekday(dayOffset = 0): string {
   const now = new Date();
@@ -48,11 +48,13 @@ export class ComposeMessagePage extends BasePage {
   private readonly messageButton: Locator;
   private readonly messageBox: Locator;
   private readonly sendButton: Locator;
+  private readonly closeMessageBox: Locator;
   constructor(page: Page) {
     super(page);
     this.messageButton = page.getByRole('button', { name: /message/i });
     this.messageBox = page.getByRole('textbox');
     this.sendButton = page.locator("button[type='submit']"); 
+    this.closeMessageBox = page.getByRole('button', { name: /^Close your conversation with/i})
   }
 
   async openMessage(): Promise<void> {
@@ -77,6 +79,10 @@ export class ComposeMessagePage extends BasePage {
   async sendMessage() {
     await this.b_clickElement(this.sendButton);
   }
+
+async closeMessage(){
+  await this.b_clickElement(this.closeMessageBox)
+}
 }
 
 export default ComposeMessagePage;
