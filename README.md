@@ -25,7 +25,7 @@ Allure Reports (visual test execution reports)
 Docker & Jenkins (CI/CD pipeline support)
 
 ## Acknowledgements
-Swaroop Landge https://www.linkedin.com/in/swaroop-landge-9a5b9111/ for their continuous support, direction, and encouragement in shaping my journey into QA Automation.
+Swaroop Landge https://www.linkedin.com/in/swaroop-landge-9a5b9111/ for continuous support, direction, and encouragement in shaping my journey into QA Automation.
 
 ## 🧩 Page Object Model (POM)
 
