@@ -52,7 +52,7 @@ readRecruiterNames.ts → Reads recruiter data from Excel (data-driven tests)
 
 ⚙️ Setup & Installation
 1. Clone Repository
-git clone https://github.com/sameermanzur/LinkedIn-Automation-Project.git
+git clone https://github.com/sameermanzur/Linkedin-Automation-Testing-Project/tree/End-to-End-Flow
 cd LinkedIn-Automation-Project
 
 2. Install Dependencies
