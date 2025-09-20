@@ -1,8 +1,9 @@
 # LinkedIn Automation Testing Project
 ## 📌 Overview
 
-This project automates LinkedIn recruiter outreach using Playwright with TypeScript.
-It reads recruiter names from an Excel file, searches for them on LinkedIn, navigates to their profiles, opens the message dialog, and sends a personalized message.
+## E2E Test Automation Framework
+Simulates a real user journey on LinkedIn — from login, navigating to search, selecting recruiters, composing messages, and logging out.
+It doesn’t just test isolated units; instead, it validates the entire workflow across multiple pages and components.
 
 The framework also integrates with Zephyr for Jira for test case management, and is designed to run locally as well as in CI/CD pipelines (GitHub Actions, Jenkins, Docker).
 
