@@ -49,13 +49,13 @@ flowchart TD
     E --> F[Logout & Session Cleanup]
 ```
 
-## 🗂️ Automation Epics
-| Epic | Goal | Key Outcomes |
+## 🗂️ Automation 
+|  | Goal | Key Outcomes |
 | --- | --- | --- |
-| **EP-01 Recruiter Outreach Backbone** | Deliver a reliable happy-path flow that mirrors a recruiter outreach journey. | Validates login, recruiter discovery, tailored messaging, and clean logout. |
-| **EP-02 Data-Driven Personalisation** | Empower business teams to curate outreach lists without code changes. | Excel ingestion, row-by-row iteration, templated messaging, duplicate handling. |
-| **EP-03 Quality Intelligence & Reporting** | Make every run observable and auditable. | Zephyr Scale sync, Allure dashboards, run metadata capture (build, environment, dataset). |
-| **EP-04 Resilience & Recovery** | Protect the outreach flow against platform quirks. | Clean session hooks, retry-ready architecture, roadmap for API fallbacks and hybrid navigation. |
+| **Story-1 Recruiter Outreach Backbone** | Deliver a reliable happy-path flow that mirrors a recruiter outreach journey. | Validates login, recruiter discovery, tailored messaging, and clean logout. |
+| **Story-2 Data-Driven Personalisation** | Empower business teams to curate outreach lists without code changes. | Excel ingestion, row-by-row iteration, templated messaging, duplicate handling. |
+| **Story-3 Quality Intelligence & Reporting** | Make every run observable and auditable. | Zephyr Scale sync, Allure dashboards, run metadata capture (build, environment, dataset). |
+| **Story-4 Resilience & Recovery** | Protect the outreach flow against platform quirks. | Clean session hooks, retry-ready architecture, roadmap for API fallbacks and hybrid navigation. |
 
 ## ✅ Functionality Coverage
 | Module | Positive Paths | Negative / Edge Scenarios | Automation Notes |
