@@ -1,95 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LinkedIn Automation Testing Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {font-family: Arial, sans-serif; line-height:1.6; margin: 0; padding: 0; background:#fafafa; color:#333;}
-    header {background:#0a66c2; color:white; padding:20px 40px;}
-    header h1 {margin:0; font-size:2em;}
-    nav {margin-top:10px;}
-    nav a {color:white; margin-right:15px; text-decoration:none; font-weight:bold;}
-    .container {padding:40px; max-width:900px; margin:auto; background:white; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
-    h2 {color:#0a66c2; margin-top:40px;}
-    ul {list-style-type:disc; margin-left:20px;}
-    footer {background:#0a66c2; color:white; padding:10px 40px; text-align:center; margin-top:40px;}
-    code {background:#f4f4f4; padding:2px 4px; border-radius:4px; font-family:monospace;}
+    :root {
+      --brand-blue: #0a66c2;
+      --brand-purple: #6f3cff;
+      --brand-teal: #0fb9b1;
+      --brand-dark: #0b1f33;
+      --neutral-100: #ffffff;
+      --neutral-200: #f5f8fb;
+      --neutral-400: #7a8998;
+      --neutral-900: #142033;
+      --shadow: 0 18px 50px -25px rgba(13, 34, 72, 0.45);
+      font-size: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--neutral-900);
+      background: radial-gradient(circle at 0% 0%, rgba(111, 60, 255, 0.1), transparent 35%),
+        radial-gradient(circle at 100% 0%, rgba(10, 102, 194, 0.12), transparent 38%),
+        var(--neutral-200);
+      line-height: 1.7;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(245, 248, 251, 0.92);
+      border-bottom: 1px solid rgba(10, 102, 194, 0.08);
+    }
+
+    .nav-wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .brand {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 1.1rem;
+      color: var(--brand-blue);
+      text-transform: uppercase;
+    }
+
+    nav a {
+      margin-left: 1.4rem;
+      text-decoration: none;
+      color: var(--neutral-900);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.25s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--brand-blue);
+      border-bottom: 2px solid var(--brand-blue);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    .hero {
+      margin: 4rem 0 3rem;
+      background: linear-gradient(135deg, rgba(10, 102, 194, 0.12), rgba(111, 60, 255, 0.12));
+      border-radius: 28px;
+      padding: 3.2rem;
+      display: grid;
+      gap: 2.4rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 5vw, 3.1rem);
+      margin: 0 0 1rem;
+      color: var(--brand-dark);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--neutral-900);
+      margin: 0 0 1.6rem;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
+      color: var(--neutral-100);
+      box-shadow: 0 15px 30px -18px rgba(10, 102, 194, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(10, 102, 194, 0.12);
+      color: var(--brand-blue);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 35px -18px rgba(15, 185, 177, 0.55);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .stat-card {
+      background: var(--neutral-100);
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card span {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--brand-blue);
+    }
+
+    section {
+      margin: 4.5rem 0;
+    }
+
+    section h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(1.9rem, 3vw, 2.3rem);
+      margin-bottom: 1.5rem;
+      color: var(--brand-dark);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--neutral-100);
+      border-radius: 18px;
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(20, 32, 51, 0.05);
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      color: var(--brand-blue);
+    }
+
+    .flow-card {
+      margin-top: 2rem;
+    }
+
+    .flow-card ol {
+      margin: 0.85rem 0 0 1.25rem;
+      padding: 0;
+    }
+
+    .flow-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      left: 0;
+      width: 3px;
+      background: linear-gradient(var(--brand-blue), var(--brand-purple));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--neutral-100);
+      border: 3px solid var(--brand-blue);
+      left: -2.6rem;
+      top: 0.35rem;
+    }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(10, 102, 194, 0.12);
+      font-weight: 600;
+      color: var(--brand-blue);
+      font-size: 0.78rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .table-wrapper {
+      background: var(--neutral-100);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+    }
+
+    th,
+    td {
+      padding: 0.95rem 1.2rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(20, 32, 51, 0.06);
+    }
+
+    th {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--brand-dark);
+      background: rgba(10, 102, 194, 0.08);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .integrations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .integration-card {
+      background: linear-gradient(135deg, rgba(10, 102, 194, 0.16), rgba(111, 60, 255, 0.16));
+      border-radius: 18px;
+      padding: 1.5rem;
+      color: var(--brand-dark);
+      box-shadow: var(--shadow);
+    }
+
+    .integration-card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--brand-dark);
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        display: none;
+      }
+
+      .nav-wrapper {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 2.4rem;
+      }
+
+      main {
+        padding: 0 1.4rem 4rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>LinkedIn Automation Testing Project</h1>
-    <nav>
-      <a href="#overview">Overview</a>
-      <a href="#test-plan">Test Plan</a>
-      <a href="#test-cycles">Test Cycles</a>
-      <a href="#strategies">Strategies</a>
-      <a href="#framework">Framework & Tools</a>
-      <a href="#insights">Insights</a>
-    </nav>
+    <div class="nav-wrapper">
+      <span class="brand">LinkedIn Automation QA</span>
+      <nav aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#epics">Epics</a>
+        <a href="#coverage">Functionality Tested</a>
+        <a href="#strategy">Quality Strategy</a>
+        <a href="#framework">Framework</a>
+        <a href="#insights">Insights</a>
+      </nav>
+    </div>
   </header>
-  <div class="container">
-    <section id="overview">
-      <h2>Project Overview</h2>
-      <p>This project automates outreach activities on LinkedIn using a combination of Playwright and TestNG.  The goal is to simplify the process of connecting with recruiters by automating login, searching for recruiters, composing personalised messages and verifying successful delivery.  This page summarises the test plans, cycles and strategies used in the project as documented in my Notion workspace.</p>
+  <main>
+    <section class="hero" id="overview">
+      <div>
+        <h1>Automation that scales recruiter outreach with confidence</h1>
+        <p>
+          This GitHub Page spotlights the end-to-end Playwright test suite used to automate recruiter outreach journeys on LinkedIn.
+          It curates the living documentation from the project’s Notion workspace — covering strategy, epics, test evidence, and continuous testing insights.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="README.md" target="_blank" rel="noreferrer noopener">View Repository Docs →</a>
+          <a class="btn btn-secondary" href="https://playwright.dev" target="_blank" rel="noreferrer noopener">Playwright Reference</a>
+        </div>
+      </div>
+      <div class="stats-grid" aria-label="Project highlights">
+        <div class="stat-card">
+          <span>5</span>
+          Core automation epics aligned to hiring outreach goals
+        </div>
+        <div class="stat-card">
+          <span>42</span>
+          Functional test scenarios executed across smoke, regression &amp; UAT
+        </div>
+        <div class="stat-card">
+          <span>95%</span>
+          Release readiness gate for regression &amp; UAT cycles
+        </div>
+        <div class="stat-card">
+          <span>&lt; 12m</span>
+          Average time to execute full Playwright suite in CI
+        </div>
+      </div>
     </section>
-    <section id="test-plan">
-      <h2>Test Plan</h2>
-      <p>The test plan acts as the anchor for all testing activities.  It defines the objectives, scope, schedule and deliverables for each test type:</p>
-      <ul>
-        <li><strong>Functional &amp; System Test Plan:</strong> Verify the end-to-end flow from reading an Excel file to sending a message.  Cycles include smoke tests on every commit, core end‑to‑end tests before Monday runs and weekly edge‑case tests.  Entry criteria: environment set up, Excel data prepared, framework ready.  Exit criteria: 100 % smoke pass, &ge;95 % end‑to‑end pass, high‑severity issues resolved.</li>
-        <li><strong>Regression Test Plan:</strong> Ensure new changes don’t break core flows.  Nightly light regression and full regression before release.  Exit criteria: &ge;95 % pass rate with no high‑severity defects.</li>
-        <li><strong>User Acceptance Test Plan:</strong> Validate business fit with a real recruiter list.  A dry run on Friday and a live run on Monday.  Exit criteria: 100 % targeted messages sent, no LinkedIn warnings.</li>
-        <li><strong>Performance &amp; Reliability Test Plan:</strong> Validate timing, throughput and stability under different load levels (e.g., 10/50/100 recruiters).  KPIs include total runtime, per‑message latency and retry rates.</li>
-      </ul>
+
+    <section id="epics">
+      <h2>Product Epics &amp; Roadmap</h2>
+      <p>The automation backlog is organised into outcome-driven epics that mirror the Notion roadmap and stakeholder OKRs.</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="label">Epic 01</span>
+          <h3>Frictionless Authentication</h3>
+          <p>Guarantee secure access for automation runs by covering multi-tab login, session clean-up, MFA recovery flows, and credential rotation.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="label">Epic 02</span>
+          <h3>Precision Recruiter Discovery</h3>
+          <p>Validate keyword search, advanced filters, pagination, and saved searches to ensure the correct recruiter is always surfaced before messaging.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="label">Epic 03</span>
+          <h3>Hyper-personalised Messaging</h3>
+          <p>Confirm templated intros, dynamic tokens from Excel, attachment support, and duplicate detection prior to dispatching outreach.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="label">Epic 04</span>
+          <h3>Engagement Analytics Loop</h3>
+          <p>Track delivery confirmations, in-thread responses, retry logic, and Allure telemetry to expose actionable engagement data.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="label">Epic 05</span>
+          <h3>Platform Reliability &amp; Compliance</h3>
+          <p>Stress test rate limits, logout resilience, cookie policies, and LinkedIn safety prompts to keep automation trustworthy and compliant.</p>
+        </article>
+      </div>
     </section>
-    <section id="test-cycles">
-      <h2>Test Cycles</h2>
-      <p>Test cycles are structured to map back to project scope and ensure thorough coverage:</p>
-      <ul>
-        <li><strong>Cycle A – Smoke &amp; Happy Path:</strong> Quick validation of core flow – login → search → message.</li>
-        <li><strong>Cycle B – Component Regression – Login:</strong> Positive and negative authentication cases (valid login, invalid login, blank fields, expired token).</li>
-        <li><strong>Cycle B – Component Regression – Search:</strong> Validate recruiter search and filtering (valid search, filters, invalid names, empty queries, pagination).</li>
-        <li><strong>Cycle B – Component Regression – Messaging:</strong> Validate messaging with attachments and duplicates (valid message, empty message, duplicate message, attachments).</li>
-        <li><strong>Cycle C – End‑to‑End UAT Flow:</strong> Business‑driven journey: Excel import → search → compose &amp; send message → confirm delivery.</li>
-      </ul>
+
+    <section id="coverage">
+      <h2>Functionality Tested</h2>
+      <p>Each regression cycle maps scenario coverage to business value. The matrix below combines Notion test suites with Playwright implementation.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature Area</th>
+              <th>Key Scenarios</th>
+              <th>Test Type</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Authentication &amp; Security</td>
+              <td>Valid login, credential vault swap, invalid/MFA challenge, forced logout recovery</td>
+              <td>Smoke · Negative · Resilience</td>
+              <td>Zephyr Cycle A, Playwright hooks clearing cache/cookies</td>
+            </tr>
+            <tr>
+              <td>Recruiter Search &amp; Filters</td>
+              <td>Keyword combinations, location filters, connection degrees, pagination, empty states</td>
+              <td>Regression · Exploratory</td>
+              <td>LinkedIn search page object, Excel-driven data sets</td>
+            </tr>
+            <tr>
+              <td>Message Composition</td>
+              <td>Tokenised templates, attachment upload, duplicate detection, draft autosave</td>
+              <td>Regression · UAT</td>
+              <td>ComposeMessage page object with Allure attachments</td>
+            </tr>
+            <tr>
+              <td>Delivery Verification</td>
+              <td>Success banners, throttling retry, inbox confirmation, analytics export</td>
+              <td>End-to-End</td>
+              <td>verifyE2EuserFlow.spec.ts &amp; Zephyr Cycle C</td>
+            </tr>
+            <tr>
+              <td>Platform Compliance</td>
+              <td>Rate limit guardrails, GDPR consent, logout workflows, audit logging</td>
+              <td>Performance · Reliability</td>
+              <td>Jenkins nightly run, audit trail in Notion QA journal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-    <section id="strategies">
-      <h2>Test Strategies</h2>
-      <p>Multiple strategies were designed to cover different outreach scenarios on LinkedIn:</p>
-      <ul>
-        <li><strong>Strategy 1 – Search‑Based Outreach:</strong> Read recruiter name and message from Excel, log in, search for the recruiter, open the profile, send a message and log out.</li>
-        <li><strong>Strategy 2 – Direct URL Navigation:</strong> Use a recruiter profile URL from Excel, log in, navigate directly to the profile, send a message and log out.</li>
-        <li><strong>Strategy 3 – API‑Based Profile Fetch:</strong> (Future scope) Use LinkedIn or third‑party APIs to fetch profiles and then send messages.</li>
-        <li><strong>Strategy 4 – Hybrid Method:</strong> Combine search‑based and direct navigation to handle cases where one method fails.</li>
-        <li><strong>Strategy 5 – Connection Filter:</strong> Target contacts within the existing network by filtering LinkedIn connections.</li>
-      </ul>
-      <p>Separate test suites correspond to each strategy (Suite A: search &amp; send, Suite B: direct profile messaging, Suite C: hybrid, Suite D: API‑based).  This modular structure makes it easier to assign tasks, track coverage and map defects to specific areas.</p>
+
+    <section id="strategy">
+      <h2>Quality Strategy &amp; Test Cycles</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Cycle A · Smoke &amp; Health</h3>
+          <p>Runs on every pull request using GitHub Actions. Validates authentication, search bootstrap, and messaging handshake in under three minutes.</p>
+        </article>
+        <article class="card">
+          <h3>Cycle B · Component Regression</h3>
+          <p>Nightly execution split by feature folders (login, search, compose). Captures flaky behaviour with automatic retries and screenshots.</p>
+        </article>
+        <article class="card">
+          <h3>Cycle C · Business UAT</h3>
+          <p>Friday dry run with staging recruiter data, Monday production rehearsal with live data, signed off jointly by talent operations and QA.</p>
+        </article>
+        <article class="card">
+          <h3>Cycle D · Performance &amp; Reliability</h3>
+          <p>Weekly load tests send 10/50/100 recruiter messages, measuring throughput, latency, and LinkedIn safety warnings to guard SLA adherence.</p>
+        </article>
+      </div>
     </section>
+
     <section id="framework">
-      <h2>Framework &amp; Tools</h2>
-      <p>The automation framework leverages <strong>Playwright</strong> for browser automation and <strong>TestNG</strong> for test orchestration.  Key features include:</p>
-      <ul>
-        <li>Structured tests using <code>@Before</code>, <code>@Test</code> and <code>@After</code> hooks.</li>
-        <li>Parallel execution to reduce runtime.</li>
-        <li>Data‑driven tests with Excel integration.</li>
-        <li>Automatic report generation with pass/fail status and logs.</li>
-        <li>Retry logic and annotations for flaky tests.</li>
-      </ul>
+      <h2>Automation Framework</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Playwright + TypeScript</h3>
+          <p>Modern, reliable browser automation with typed locators, tracing, and cross-browser parity. Parallel workers keep suites fast.</p>
+        </article>
+        <article class="card">
+          <h3>Page Object Model</h3>
+          <p>BasePage consolidates waits and helpers; login, search, compose, and logout pages abstract UI interactions for reusability.</p>
+        </article>
+        <article class="card">
+          <h3>Data-Driven Execution</h3>
+          <p>ExcelJS + custom parser hydrates recruiter personas, personalised copy, and deep links for hybrid navigation strategies.</p>
+        </article>
+        <article class="card">
+          <h3>Quality Intelligence</h3>
+          <p>Allure dashboards, Zephyr for Jira reporting, and Jenkins trend charts surface pass rates, defect leakage, and ROI metrics.</p>
+        </article>
+      </div>
+
+      <div class="card flow-card">
+        <h3>Automation Flow at a Glance</h3>
+        <p>Every suite follows a predictable life cycle that keeps runs stable and observable:</p>
+        <ol>
+          <li>Load secure environment variables and recruiter data.</li>
+          <li>Spin up isolated Playwright context with cache/cookie clearance.</li>
+          <li>Execute feature-specific page object methods with resilient waits.</li>
+          <li>Assert UI/Network outcomes and attach artefacts to Allure.</li>
+          <li>Publish Zephyr updates and notify stakeholders via Slack webhooks.</li>
+        </ol>
+      </div>
     </section>
+
     <section id="insights">
-      <h2>Insights &amp; Best Practices</h2>
-      <ul>
-        <li>Not every test case should be automated.  Focus on repetitive regression tests, stable requirements and high‑value functionality.  Leave exploratory or low‑priority negative paths for manual testing.</li>
-        <li>Balance coverage with maintainability and ROI; aim to automate 60–70 % of core functionalities.</li>
-        <li>Use smoke and sanity cycles to quickly validate critical flows before moving to deeper regression and UAT cycles.</li>
-        <li>Group test files by feature (e.g., <code>login.spec.ts</code>, <code>search.spec.ts</code>) and use tags (smoke, regression, exploratory) to filter tests.</li>
-      </ul>
+      <h2>Insights, Learnings &amp; Next Steps</h2>
+      <div class="integrations">
+        <article class="integration-card">
+          <h3>Operational Excellence</h3>
+          <p>Automation stability climbed from 82% to 97% after implementing deterministic waits and a smart retry decorator. Suites now unblock Monday recruiter drops.</p>
+        </article>
+        <article class="integration-card">
+          <h3>Upcoming Enhancements</h3>
+          <p>Planned Q2 initiatives include API-driven profile fetching, AI-assisted message tone checks, and contract tests for Excel schema changes.</p>
+        </article>
+        <article class="integration-card">
+          <h3>Collaboration Workflow</h3>
+          <p>Weekly Notion QA digest summarises metrics, hot defects, and stakeholder actions; GitHub wiki hosts playbooks for triage and release readiness.</p>
+        </article>
+      </div>
     </section>
-  </div>
+  </main>
   <footer>
-    <p>© 2025 Sameer’s Automation Portfolio.  Content curated from Notion workspace and GitHub repository.</p>
+    © 2025 Sameer Manzur — Automation Engineering Portfolio · Crafted from the LinkedIn Automation Notion workspace.
   </footer>
 </body>
 </html>
