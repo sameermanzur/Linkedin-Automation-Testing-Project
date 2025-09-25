@@ -1,9 +1,6 @@
 import { Page, Locator, expect } from '@playwright/test';
 import BasePage from './basePage';
 
-// Calling Recruiter name list from the recruiter data file 
-
-
 export class LinkedInSearchPage extends BasePage {
   private readonly searchBox: Locator;
   private readonly resultsListItems: Locator;
@@ -16,20 +13,16 @@ export class LinkedInSearchPage extends BasePage {
     this.firstResultLink = this.resultsListItems.first().locator('a[href*="/in/"]');
   }
 
-// Naviagte to LinkedIn feed where global search is visible 
-
-async gotoFeed() {
-  await this.page.goto('https://www.linkedin.com/feed/', {waitUntil: 'domcontentloaded'});
-  await expect(this.searchBox).toBeVisible({timeout:15000}); 
-}
-
-// Search for recruiter names  
-async searchForRecruiterNames(recruiterName: string) { 
-    await this.searchBox.click();
-    await this.searchBox.fill(recruiterName);
-    await this.searchBox.press('Enter'); 
+  async gotoFeed(): Promise<void> {
+    await this.page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
+    await expect(this.searchBox).toBeVisible({ timeout: 15_000 });
   }
 
-}; 
-
-// 
+  async searchForRecruiterNames(recruiterName: string): Promise<void> {
+    await this.searchBox.click();
+    await this.searchBox.fill(recruiterName);
+    await this.searchBox.press('Enter');
+    await expect(this.resultsListItems.first()).toBeVisible({ timeout: 15_000 });
+    await expect(this.firstResultLink).toBeVisible({ timeout: 15_000 });
+  }
+}

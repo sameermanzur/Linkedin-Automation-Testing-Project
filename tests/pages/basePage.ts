@@ -9,41 +9,44 @@ export default class BasePage {
     this.page = page;
   }
  
-  
-  async b_navigateTo(url: string, timeout: number = maxTimeout) {
+  async b_navigateTo(url: string, timeout: number = maxTimeout): Promise<void> {
     await this.page.goto(url, { timeout, waitUntil: 'networkidle' });
   }
 
-  async b_waitForElementVisible(locator: Locator, timeout: number = maxTimeout) {
+  async b_waitForElementVisible(locator: Locator, timeout: number = maxTimeout): Promise<void> {
     await locator.waitFor({ state: 'visible', timeout });
   }
 
-  async b_fillField(element: Locator, text: string, isForceFill: boolean = false, timeout: number = maxTimeout) {
+  async b_fillField(element: Locator, text: string, timeout: number = maxTimeout): Promise<void> {
     await this.b_waitForElementVisible(element, timeout);
-    await element.pressSequentially(text, { timeout });
+    try {
+      await element.fill(text, { timeout });
+    } catch {
+      await element.pressSequentially(text, { timeout });
+    }
   }
 
-  async b_clickElement(element: Locator, timeout: number = maxTimeout) {
+  async b_clickElement(element: Locator, timeout: number = maxTimeout): Promise<void> {
     await this.b_waitForElementVisible(element, timeout);
     await element.click({ timeout });
   }
 
-  async b_clearField(locator: Locator) {
+  async b_clearField(locator: Locator): Promise<void> {
     await this.b_waitForElementVisible(locator);
     await locator.fill('');
   }
 
-  async b_textvisible(locator: Locator, expected: string) {
+  async b_textvisible(locator: Locator, expected: string): Promise<void> {
     await expect(locator).toHaveText(expected, { timeout: maxTimeout });
   }
 
-    async b_getElementCount(element: Locator, maxTimeout?: number): Promise<number> {
-    await this.b_waitForElementVisible(element, maxTimeout);
+  async b_getElementCount(element: Locator, timeout: number = maxTimeout): Promise<number> {
+    await this.b_waitForElementVisible(element, timeout);
     return await element.count();
   }
 
   async b_waitForPageToLoad(): Promise<void> {
-    await this.page.waitForLoadState("networkidle");
+    await this.page.waitForLoadState('networkidle');
     await this.page.waitForTimeout(1000);
   }
 
