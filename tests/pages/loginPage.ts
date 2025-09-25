@@ -1,4 +1,4 @@
-import { Page, Locator, expect } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 import BasePage from './basePage';
 
 export class LoginPage extends BasePage {
@@ -27,16 +27,16 @@ export class LoginPage extends BasePage {
     await this.b_clickElement(this.loginButton);
   }
 
-  async LinkedinLogo(logo: string) {
+  async LinkedinLogo(): Promise<void> {
     await this.b_waitForElementVisible(this.linkedinLogo);
   }
 
   // Combined login method
-  async login(username: string, password: string) {
+  async login(username: string, password: string): Promise<void> {
     await this.enterUserName(username);
     await this.enterPassword(password);
     await this.clickLoginButton();
-    await this.LinkedinLogo('');
+    await this.LinkedinLogo();
   }
-  }; 
+}
 

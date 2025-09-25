@@ -1,6 +1,6 @@
 import { Page, Locator } from '@playwright/test';
-import BasePage from './basePage.js'
-import type { Row } from './readRecruiterNames.ts';
+import BasePage from './basePage';
+import type { Row } from './readRecruiterNames';
 
 function sydneyWeekday(dayOffset = 0): string {
   const now = new Date();
@@ -37,7 +37,7 @@ export function buildMessage(r: Row, dayOffset = 0): string {
     '',
     'A new beginning awaits me.',
     'I want to thank you for your support during my unemployment.',
-    `You\'ve been awesome ${smile}. Let\'s keep in touch.`,
+    `You've been awesome ${smile}. Let's keep in touch.`,
     'Have a great week.',
     'Best regards,',
     'Sameer'
@@ -53,8 +53,8 @@ export class ComposeMessagePage extends BasePage {
     super(page);
     this.messageButton = page.getByRole('button', { name: /message/i });
     this.messageBox = page.getByRole('textbox');
-    this.sendButton = page.locator("button[type='submit']"); 
-    this.closeMessageBox = page.getByRole('button', { name: /^Close your conversation with/i})
+    this.sendButton = page.locator("button[type='submit']");
+    this.closeMessageBox = page.getByRole('button', { name: /^Close your conversation with/i });
   }
 
   async openMessage(): Promise<void> {
@@ -76,13 +76,13 @@ export class ComposeMessagePage extends BasePage {
     return text;
   }
 
-  async sendMessage() {
+  async sendMessage(): Promise<void> {
     await this.b_clickElement(this.sendButton);
   }
 
-async closeMessage(){
-  await this.b_clickElement(this.closeMessageBox)
-}
+  async closeMessage(): Promise<void> {
+    await this.b_clickElement(this.closeMessageBox);
+  }
 }
 
 export default ComposeMessagePage;

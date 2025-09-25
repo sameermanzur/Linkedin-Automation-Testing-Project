@@ -1,4 +1,4 @@
-import { test} from '../hooks/hooks';
+import { test } from '../hooks/hooks';
 import { LoginPage } from './pages/loginPage';
 import { LinkedInSearchPage } from './pages/linkedInSearchPage';
 import { getRecruiterNames } from './pages/readRecruiterNames';
@@ -15,7 +15,7 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
 
   await login.b_navigateTo(process.env.BASE_URL!);
   await login.login(process.env.LINKEDIN_USERNAME!, process.env.LINKEDIN_PASSWORD!);
-  await login.LinkedinLogo('');
+  await login.LinkedinLogo();
 
   // Read recruiter names from Excel and search each
   const names = await getRecruiterNames('data/recruiterList.xlsx');
@@ -27,7 +27,6 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
     await messageBtn.click();
 
     await composeMessage.openMessage();
-    await page.pause();
     await composeMessage.fillMessageFromRow({ Name: name });
     await composeMessage.sendMessage();
     await composeMessage.closeMessage();
