@@ -12,7 +12,7 @@
 ## 📌 Project Overview
 The **LinkedIn Automation Testing Project** is an end-to-end Playwright framework that simulates the way a real user engages with LinkedIn recruiters. From launching the application, authenticating, searching for recruiter profiles, composing personalised messages, and logging out—every interaction is validated to guarantee a dependable outreach experience.
 
-This repository mirrors the artefacts curated in my Notion workspace, including the testing epics, strategies, and execution insights that guided the build of the automation suite. It is designed for fast local feedback, enterprise reporting (Zephyr Scale & Allure), and seamless integration with CI/CD pipelines.
+This repository mirrors the artefacts from testing epics, strategies, and execution insights that guided the build of the automation suite. It is designed for fast local feedback, enterprise reporting (Zephyr Scale & Allure), and seamless integration with CI/CD pipelines.
 
 ## 🚀 Why this framework stands out
 - **Enterprise-ready architecture** with Page Object Model, reusable helpers, and clean hooks.
@@ -67,16 +67,15 @@ flowchart TD
 | **Session Hygiene** | Post-run logout, cookie/cache purge. | Stale sessions, multi-account switching. | Hooks reset browser context before each test run. |
 
 ## 🧪 Test Strategy & Cycles
-- **Smoke Suite (Cycle A):** Fast validation of the golden path (login → search → message → logout) on every commit.
+- **Smoke Suite (Cycle A):** Fast validation of the Happy path (login → search → message → logout → report ) on every commit.
 - **Component Regression (Cycle B):** Focused suites for Authentication, Search, and Messaging, covering both positive and negative cases.
 - **End-to-End UAT (Cycle C):** Friday dry run with production-like data, Monday live run against curated recruiter lists.
-- **Performance Snapshots:** Timed runs with 10/50/100 recruiters to monitor throughput, latency per message, and retry counts.
+- **Performance Snapshots:** Timed runs with 10/50/100 recruiters to monitor throughput, latency per message, and retry counts. (work in progress) 
 
 ### Strategic Playbooks
 1. **Search-Based Outreach:** Default flow; search by name, open profile, send personalised message.
 2. **Direct URL Navigation:** (Roadmap) Bypass search by loading profile URLs from Excel.
 3. **Hybrid Fallback:** Combine search + direct navigation to mitigate LinkedIn throttling.
-4. **API-Seeded Outreach:** (Future) Use LinkedIn/3rd-party APIs to hydrate recruiter data before UI execution.
 
 ## 🛠️ Setup & Local Execution
 1. **Clone the repository**
@@ -94,6 +93,10 @@ flowchart TD
    LINKEDIN_USERNAME=your_email@example.com
    LINKEDIN_PASSWORD=your_password
    ZEPHYR_TOKEN=your_zephyr_api_key
+   GOOGLE_CLIENT_ID=
+   GOOGLE_REFRESH_TOKEN=
+   GOOGLE_USER_EMAIL=
+   REPORT_RECIPIENT=
    ```
 4. **Prepare data** by updating [`data/recruiterList.xlsx`](data/recruiterList.xlsx) with the recruiters you want to target.
 
@@ -133,4 +136,4 @@ npx playwright test tests/verifyE2EuserFlow.spec.ts --headed --debug
 - Dashboard widgets summarising outreach volume, success rates, and defect trends.
 
 ## 🙌 Acknowledgements
-Huge thanks to **Swaroop Landge** https://www.linkedin.com/in/swaroop-landge for relentless mentorship and guidance on my QA Automation journey. This project aggregates insights from our Notion workspace, GitHub experimentation, and real-world outreach experiments.
+Huge thanks to **Swaroop Landge** https://www.linkedin.com/in/swaroop-landge-9a5b9111/ for relentless mentorship and guidance on my QA Automation journey. This project aggregates insights from our Notion workspace, GitHub experimentation, and real-world outreach experiments.
