@@ -50,12 +50,13 @@ flowchart TD
 ```
 
 ## 🗂️ Automation 
-|  | Goal | Key Outcomes |
-| --- | --- | --- |
-| **Story-1 Recruiter Outreach Backbone** | Deliver a reliable happy-path flow that mirrors a recruiter outreach journey. | Validates login, recruiter discovery, tailored messaging, and clean logout. |
-| **Story-2 Data-Driven Personalisation** | Empower business teams to curate outreach lists without code changes. | Excel ingestion, row-by-row iteration, templated messaging, duplicate handling. |
-| **Story-3 Quality Intelligence & Reporting** | Make every run observable and auditable. | Zephyr Scale sync, Allure dashboards, run metadata capture (build, environment, dataset). |
-| **Story-4 Resilience & Recovery** | Protect the outreach flow against platform quirks. | Clean session hooks, retry-ready architecture, roadmap for API fallbacks and hybrid navigation. |
+Epic - LinkedIn Web Application Testing
+| Story | Goal | Key Outcomes |
+| ----- | ---- | ------------ |
+| **Story-1: LinkedIn Recruiter Outreach Backbone** | Build a stable **happy-path automation flow** that replicates how a user engages recruiters on LinkedIn. | - Automates **login** <br> - **Recruiter profile discovery** <br> - **Personalised message composition** <br> - **Secure logout** |
+| **Story-2: Excel-Driven Personalisation** | Enable the framework to scale with **data-driven recruiter lists** without modifying code. | - **Excel ingestion** for recruiter data <br> - **Row-by-row iteration** <br> - **Templated message injection** <br> - **Duplicate recruiter handling** |
+| **Story-3: Test Intelligence & Reporting** | Ensure test runs are fully **observable and auditable**. | - **Zephyr Scale integration** <br> - **Allure dashboards** <br> - Capture of **run metadata** (build version, environment, dataset) |
+| **Story-4: Resilience & Recovery** | Make the outreach flow **robust against LinkedIn UI quirks**. | - **Session cleanup hooks** <br> - **Retry logic** for flaky steps <br> - Roadmap for **API fallbacks + hybrid navigation** |
 
 ## ✅ Functionality Coverage
 | Module | Positive Paths | Negative / Edge Scenarios | Automation Notes |
