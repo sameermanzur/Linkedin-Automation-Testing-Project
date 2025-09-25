@@ -92,7 +92,7 @@
       padding: 3.2rem;
       display: grid;
       gap: 2.4rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       box-shadow: var(--shadow);
     }
 
@@ -108,6 +108,30 @@
       font-size: 1.05rem;
       color: var(--neutral-900);
       margin: 0 0 1.6rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-visual img,
+    .hero-visual video {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 22px;
+      box-shadow: 0 20px 55px -25px rgba(13, 34, 72, 0.5);
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border-radius: 24px;
+      border: 2px dashed rgba(111, 60, 255, 0.35);
+      pointer-events: none;
     }
 
     .cta-group {
@@ -312,6 +336,81 @@
       margin-top: 0;
     }
 
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    figure {
+      margin: 0;
+      background: var(--neutral-100);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: 1rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--neutral-900);
+    }
+
+    .notion-overview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    .notion-overview ul {
+      margin: 1rem 0 0 1.2rem;
+      padding: 0;
+      color: var(--neutral-900);
+    }
+
+    .notion-overview li {
+      margin-bottom: 0.6rem;
+    }
+
+    .video-frame {
+      position: relative;
+      padding-top: 56.25%;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #000;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .workflow-diagram {
+      margin-top: 2.5rem;
+      background: var(--neutral-100);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .workflow-diagram svg {
+      width: 100%;
+      height: auto;
+    }
+
     footer {
       text-align: center;
       padding: 3rem 2rem;
@@ -345,8 +444,10 @@
       <span class="brand">LinkedIn Automation QA</span>
       <nav aria-label="Primary">
         <a href="#overview">Overview</a>
+        <a href="#notion">Notion</a>
         <a href="#epics">Epics</a>
         <a href="#coverage">Functionality Tested</a>
+        <a href="#media">Media</a>
         <a href="#strategy">Quality Strategy</a>
         <a href="#framework">Framework</a>
         <a href="#insights">Insights</a>
@@ -358,31 +459,64 @@
       <div>
         <h1>Automation that scales recruiter outreach with confidence</h1>
         <p>
-          This GitHub Page spotlights the end-to-end Playwright test suite used to automate recruiter outreach journeys on LinkedIn.
-          It curates the living documentation from the project’s Notion workspace — covering strategy, epics, test evidence, and continuous testing insights.
+          This refreshed GitHub Page mirrors the Notion portal for the LinkedIn Automation Testing initiative.
+          Explore strategy, living documentation, visual dashboards, and new media assets that tell the story of how
+          quality engineering accelerates recruiter engagement.
         </p>
         <div class="cta-group">
           <a class="btn btn-primary" href="README.md" target="_blank" rel="noreferrer noopener">View Repository Docs →</a>
           <a class="btn btn-secondary" href="https://playwright.dev" target="_blank" rel="noreferrer noopener">Playwright Reference</a>
         </div>
+        <div class="stats-grid" aria-label="Project highlights">
+          <div class="stat-card">
+            <span>5</span>
+            Core automation epics aligned to hiring outreach goals
+          </div>
+          <div class="stat-card">
+            <span>42</span>
+            Functional test scenarios executed across smoke, regression &amp; UAT
+          </div>
+          <div class="stat-card">
+            <span>95%</span>
+            Release readiness gate for regression &amp; UAT cycles
+          </div>
+          <div class="stat-card">
+            <span>&lt; 12m</span>
+            Average time to execute full Playwright suite in CI
+          </div>
+        </div>
       </div>
-      <div class="stats-grid" aria-label="Project highlights">
-        <div class="stat-card">
-          <span>5</span>
-          Core automation epics aligned to hiring outreach goals
+      <div class="hero-visual" aria-label="Notion dashboard preview">
+        <img
+          src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=960&q=80"
+          alt="Laptop displaying analytics dashboards with charts"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="notion">
+      <h2>Inside the Notion Workspace</h2>
+      <div class="notion-overview">
+        <div>
+          <p>
+            The Notion hub curates sprint notes, QA charters, and stakeholder scorecards. Each callout links directly to
+            Playwright specs, Zephyr cycles, and dashboards embedded via synced databases.
+          </p>
+          <ul>
+            <li>Daily stand-up tracker with blockers, owners, and automated reminders.</li>
+            <li>Decision logs connecting Jira issues, retro learnings, and release health.</li>
+            <li>Embedded KPI rollups combining pass rates, coverage stats, and defect ratios.</li>
+          </ul>
         </div>
-        <div class="stat-card">
-          <span>42</span>
-          Functional test scenarios executed across smoke, regression &amp; UAT
-        </div>
-        <div class="stat-card">
-          <span>95%</span>
-          Release readiness gate for regression &amp; UAT cycles
-        </div>
-        <div class="stat-card">
-          <span>&lt; 12m</span>
-          Average time to execute full Playwright suite in CI
-        </div>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1080&q=80"
+            alt="Team reviewing project documentation and kanban board"
+            loading="lazy"
+          />
+          <figcaption>Notion dashboard cards with linked databases for QA initiatives.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -467,6 +601,48 @@
       </div>
     </section>
 
+    <section id="media">
+      <h2>Media Gallery &amp; Evidence</h2>
+      <p>
+        Visualise the automation journey with curated captures from the Notion wiki, Playwright runs, and stakeholder demos.
+        The clips and graphics below are refreshed weekly as part of the QA operating rhythm.
+      </p>
+      <div class="media-grid">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=80"
+            alt="Kanban board with sticky notes and laptop"
+            loading="lazy"
+          />
+          <figcaption>Quarterly release map highlighting epic sequencing and risk burndown.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+            alt="Graphs displayed on a large monitor in an office"
+            loading="lazy"
+          />
+          <figcaption>Engagement telemetry pulled into Notion via synced charts.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+            alt="Automation engineer working on a laptop"
+            loading="lazy"
+          />
+          <figcaption>Playwright execution evidence captured in Allure for auditability.</figcaption>
+        </figure>
+      </div>
+      <div class="video-frame" aria-label="Playwright demo video">
+        <iframe
+          src="https://www.youtube.com/embed/4cPx3f1n8JM"
+          title="Playwright end-to-end demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
     <section id="strategy">
       <h2>Quality Strategy &amp; Test Cycles</h2>
       <div class="card-grid">
@@ -520,6 +696,56 @@
           <li>Assert UI/Network outcomes and attach artefacts to Allure.</li>
           <li>Publish Zephyr updates and notify stakeholders via Slack webhooks.</li>
         </ol>
+      </div>
+
+      <div class="workflow-diagram" aria-label="Automation workflow diagram">
+        <svg viewBox="0 0 940 280" role="img" aria-labelledby="workflowTitle workflowDesc">
+          <title id="workflowTitle">LinkedIn Automation Workflow</title>
+          <desc id="workflowDesc">Diagram showing data intake, Playwright execution, quality gates, and reporting.</desc>
+          <defs>
+            <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(10,102,194,0.85)" />
+              <stop offset="100%" stop-color="rgba(111,60,255,0.85)" />
+            </linearGradient>
+          </defs>
+          <rect x="20" y="90" width="200" height="100" rx="22" fill="url(#nodeGradient)" />
+          <text x="120" y="140" text-anchor="middle" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
+            Notion &amp; Excel
+          </text>
+          <text x="120" y="164" text-anchor="middle" fill="#e6ecf5" font-size="14" font-family="Source Sans 3">
+            Persona Inputs
+          </text>
+          <rect x="260" y="40" width="200" height="200" rx="22" fill="#fff" stroke="rgba(10,102,194,0.3)" stroke-width="3" />
+          <text x="360" y="110" text-anchor="middle" fill="#0b1f33" font-size="18" font-family="Montserrat" font-weight="600">
+            Playwright
+          </text>
+          <text x="360" y="138" text-anchor="middle" fill="#0a66c2" font-size="14" font-family="Source Sans 3">
+            Page Objects · Hooks
+          </text>
+          <text x="360" y="168" text-anchor="middle" fill="#0b1f33" font-size="14" font-family="Source Sans 3">
+            Parallel Workers
+          </text>
+          <rect x="500" y="90" width="180" height="100" rx="22" fill="#fff" stroke="#0fb9b1" stroke-width="3" />
+          <text x="590" y="136" text-anchor="middle" fill="#0b1f33" font-size="18" font-family="Montserrat" font-weight="600">
+            Quality Gates
+          </text>
+          <text x="590" y="162" text-anchor="middle" fill="#0fb9b1" font-size="14" font-family="Source Sans 3">
+            Smoke · Regression · UAT
+          </text>
+          <rect x="720" y="90" width="200" height="100" rx="22" fill="url(#nodeGradient)" />
+          <text x="820" y="135" text-anchor="middle" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
+            Reporting
+          </text>
+          <text x="820" y="160" text-anchor="middle" fill="#e6ecf5" font-size="14" font-family="Source Sans 3">
+            Zephyr · Slack · Allure
+          </text>
+          <path d="M220 140 H260" stroke="#0a66c2" stroke-width="8" stroke-linecap="round" />
+          <path d="M460 140 H500" stroke="#0a66c2" stroke-width="8" stroke-linecap="round" />
+          <path d="M680 140 H720" stroke="#0a66c2" stroke-width="8" stroke-linecap="round" />
+          <polygon points="255,140 240,132 240,148" fill="#0a66c2" />
+          <polygon points="495,140 480,132 480,148" fill="#0a66c2" />
+          <polygon points="715,140 700,132 700,148" fill="#0a66c2" />
+        </svg>
       </div>
     </section>
 
