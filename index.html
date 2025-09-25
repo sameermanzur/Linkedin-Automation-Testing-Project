@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LinkedIn Automation Testing Project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>LinkedIn Automation Testing · Notion Blueprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <style>
     :root {
-      --brand-blue: #0a66c2;
-      --brand-purple: #6f3cff;
-      --brand-teal: #0fb9b1;
-      --brand-dark: #0b1f33;
-      --neutral-100: #ffffff;
-      --neutral-200: #f5f8fb;
-      --neutral-400: #7a8998;
-      --neutral-900: #142033;
-      --shadow: 0 18px 50px -25px rgba(13, 34, 72, 0.45);
+      --ink-900: #0b132b;
+      --ink-700: #1c2541;
+      --ink-500: #3a506b;
+      --ink-300: #5bc0be;
+      --ink-200: #cdeff0;
+      --ink-100: #f4fbfb;
+      --accent-lilac: #a06bff;
+      --accent-rose: #f45d8f;
+      --accent-sun: #f2c94c;
+      --card-radius: 24px;
       font-size: 16px;
     }
 
@@ -27,300 +31,359 @@
 
     body {
       margin: 0;
-      font-family: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--neutral-900);
-      background: radial-gradient(circle at 0% 0%, rgba(111, 60, 255, 0.1), transparent 35%),
-        radial-gradient(circle at 100% 0%, rgba(10, 102, 194, 0.12), transparent 38%),
-        var(--neutral-200);
-      line-height: 1.7;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink-900);
+      background: linear-gradient(135deg, rgba(160, 107, 255, 0.12), rgba(91, 192, 190, 0.12));
+      background-attachment: fixed;
+      line-height: 1.65;
     }
 
     header {
       position: sticky;
       top: 0;
       z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(245, 248, 251, 0.92);
-      border-bottom: 1px solid rgba(10, 102, 194, 0.08);
+      backdrop-filter: blur(18px);
+      background: rgba(244, 251, 251, 0.9);
+      border-bottom: 1px solid rgba(59, 80, 107, 0.1);
     }
 
     .nav-wrapper {
-      max-width: 1080px;
+      max-width: 1180px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 2rem;
+      padding: 1.1rem 2.4rem;
     }
 
     .brand {
-      font-family: "Montserrat", sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: "Epilogue", sans-serif;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      font-size: 1.1rem;
-      color: var(--brand-blue);
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      color: var(--ink-700);
+      font-size: 1rem;
+    }
+
+    .brand svg {
+      width: 24px;
+      height: 24px;
     }
 
     nav a {
-      margin-left: 1.4rem;
+      margin-left: 1.5rem;
       text-decoration: none;
-      color: var(--neutral-900);
+      color: var(--ink-500);
       font-weight: 600;
       font-size: 0.95rem;
-      padding-bottom: 0.25rem;
+      padding-bottom: 0.3rem;
       border-bottom: 2px solid transparent;
-      transition: all 0.25s ease;
+      transition: color 0.25s ease, border 0.25s ease;
     }
 
     nav a:hover,
     nav a:focus {
-      color: var(--brand-blue);
-      border-bottom: 2px solid var(--brand-blue);
+      color: var(--ink-700);
+      border-bottom-color: var(--accent-lilac);
     }
 
     main {
-      max-width: 1080px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 0 2rem 5rem;
+      padding: 0 2.4rem 5rem;
+    }
+
+    section {
+      margin: 5rem 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Epilogue", sans-serif;
+      color: var(--ink-900);
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      margin-bottom: 1.8rem;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    h2::after {
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent-lilac), var(--ink-300));
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0 0 1.3rem;
+      color: rgba(11, 19, 43, 0.78);
     }
 
     .hero {
-      margin: 4rem 0 3rem;
-      background: linear-gradient(135deg, rgba(10, 102, 194, 0.12), rgba(111, 60, 255, 0.12));
-      border-radius: 28px;
+      margin-top: 4rem;
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: var(--card-radius);
       padding: 3.2rem;
+      box-shadow: 0 30px 70px -35px rgba(12, 22, 43, 0.45);
       display: grid;
-      gap: 2.4rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      box-shadow: var(--shadow);
+      gap: 2.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: center;
     }
 
-    .hero h1 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: clamp(2.4rem, 5vw, 3.1rem);
-      margin: 0 0 1rem;
-      color: var(--brand-dark);
+    .hero-media {
+      position: relative;
     }
 
-    .hero p {
-      font-size: 1.05rem;
-      color: var(--neutral-900);
-      margin: 0 0 1.6rem;
+    .hero-media img {
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid rgba(12, 22, 43, 0.08);
+      box-shadow: 0 24px 60px -30px rgba(12, 22, 43, 0.45);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: -18px;
+      left: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.1rem;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(160, 107, 255, 0.92), rgba(91, 192, 190, 0.95));
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 16px 40px -24px rgba(160, 107, 255, 0.7);
     }
 
     .cta-group {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      margin-top: 2rem;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.55rem;
       padding: 0.85rem 1.4rem;
       border-radius: 999px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.96rem;
       text-decoration: none;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
     .btn-primary {
-      background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
-      color: var(--neutral-100);
-      box-shadow: 0 15px 30px -18px rgba(10, 102, 194, 0.6);
+      background: linear-gradient(135deg, var(--accent-lilac), var(--ink-500));
+      color: white;
+      box-shadow: 0 20px 45px -24px rgba(160, 107, 255, 0.7);
     }
 
     .btn-secondary {
-      background: rgba(10, 102, 194, 0.12);
-      color: var(--brand-blue);
+      background: rgba(11, 19, 43, 0.08);
+      color: var(--ink-700);
     }
 
     .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 35px -18px rgba(15, 185, 177, 0.55);
+      transform: translateY(-3px);
     }
 
-    .stats-grid {
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(244, 93, 143, 0.12);
+      color: var(--accent-rose);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .grid-two {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.2rem;
-    }
-
-    .stat-card {
-      background: var(--neutral-100);
-      border-radius: 20px;
-      padding: 1.4rem;
-      box-shadow: var(--shadow);
-    }
-
-    .stat-card span {
-      display: block;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: 2rem;
-      color: var(--brand-blue);
-    }
-
-    section {
-      margin: 4.5rem 0;
-    }
-
-    section h2 {
-      font-family: "Montserrat", sans-serif;
-      font-size: clamp(1.9rem, 3vw, 2.3rem);
-      margin-bottom: 1.5rem;
-      color: var(--brand-dark);
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: start;
     }
 
     .card {
-      background: var(--neutral-100);
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--card-radius);
+      padding: 2.2rem;
+      box-shadow: 0 25px 60px -40px rgba(12, 22, 43, 0.45);
+      border: 1px solid rgba(12, 22, 43, 0.07);
+    }
+
+    .card figure {
+      margin: 0 0 1.5rem;
+    }
+
+    .card img {
+      width: 100%;
       border-radius: 18px;
-      padding: 1.6rem;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(20, 32, 51, 0.05);
-      transition: transform 0.25s ease;
+      border: 1px solid rgba(12, 22, 43, 0.05);
     }
 
-    .card:hover {
-      transform: translateY(-4px);
+    .notion-board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.2rem;
     }
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.15rem;
-      color: var(--brand-blue);
+    .notion-board article {
+      background: rgba(11, 19, 43, 0.05);
+      border-radius: 18px;
+      padding: 1.1rem 1.2rem;
+      border: 1px solid rgba(11, 19, 43, 0.06);
     }
 
-    .flow-card {
-      margin-top: 2rem;
+    .notion-board h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.7rem;
     }
 
-    .flow-card ol {
-      margin: 0.85rem 0 0 1.25rem;
-      padding: 0;
+    .notion-board ul {
+      margin: 0;
+      padding-left: 1.2rem;
     }
 
-    .flow-card li {
+    .notion-board li {
       margin-bottom: 0.5rem;
     }
 
-    .timeline {
+    .workflow-wrapper {
       position: relative;
-      padding-left: 1.5rem;
-      margin-left: 0.5rem;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: var(--card-radius);
+      padding: 2.8rem 2.4rem;
+      box-shadow: 0 30px 75px -45px rgba(12, 22, 43, 0.5);
+      overflow: hidden;
     }
 
-    .timeline::before {
+    .workflow-wrapper::before {
       content: "";
       position: absolute;
-      top: 0.5rem;
-      bottom: 0.5rem;
-      left: 0;
-      width: 3px;
-      background: linear-gradient(var(--brand-blue), var(--brand-purple));
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(160, 107, 255, 0.16), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(91, 192, 190, 0.2), transparent 40%);
+      pointer-events: none;
     }
 
-    .timeline-item {
-      position: relative;
-      padding-left: 1.8rem;
-      margin-bottom: 2.2rem;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: var(--neutral-100);
-      border: 3px solid var(--brand-blue);
-      left: -2.6rem;
-      top: 0.35rem;
-    }
-
-    .label {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(10, 102, 194, 0.12);
-      font-weight: 600;
-      color: var(--brand-blue);
-      font-size: 0.78rem;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    .table-wrapper {
-      background: var(--neutral-100);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 640px;
-    }
-
-    th,
-    td {
-      padding: 0.95rem 1.2rem;
-      text-align: left;
-      border-bottom: 1px solid rgba(20, 32, 51, 0.06);
-    }
-
-    th {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      font-size: 0.92rem;
-      color: var(--brand-dark);
-      background: rgba(10, 102, 194, 0.08);
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    .integrations {
+    .workflow-graphic {
       display: grid;
+      gap: 1.8rem;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.2rem;
+      position: relative;
     }
 
-    .integration-card {
-      background: linear-gradient(135deg, rgba(10, 102, 194, 0.16), rgba(111, 60, 255, 0.16));
+    .workflow-node {
+      position: relative;
+      background: white;
+      border-radius: 20px;
+      padding: 1.6rem 1.4rem;
+      border: 1px solid rgba(12, 22, 43, 0.06);
+      box-shadow: 0 18px 50px -40px rgba(12, 22, 43, 0.55);
+    }
+
+    .workflow-node h3 {
+      font-size: 1.15rem;
+    }
+
+    .workflow-node svg {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 0.7rem;
+    }
+
+    .workflow-connector {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(820px, 88%);
+      height: 220px;
+      pointer-events: none;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.6rem;
+      margin-top: 2rem;
+    }
+
+    .media-grid figure,
+    .video-embed {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: var(--card-radius);
+      padding: 1.1rem;
+      border: 1px solid rgba(12, 22, 43, 0.08);
+      box-shadow: 0 20px 65px -45px rgba(12, 22, 43, 0.5);
+    }
+
+    .media-grid img {
       border-radius: 18px;
-      padding: 1.5rem;
-      color: var(--brand-dark);
-      box-shadow: var(--shadow);
+      width: 100%;
+      display: block;
     }
 
-    .integration-card h3 {
-      margin-top: 0;
+    .media-grid figcaption {
+      margin-top: 0.85rem;
+      font-size: 0.9rem;
+      color: rgba(11, 19, 43, 0.72);
+    }
+
+    .video-embed iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 16px;
     }
 
     footer {
+      padding: 3rem 1.5rem;
       text-align: center;
-      padding: 3rem 2rem;
-      background: var(--brand-dark);
-      color: rgba(255, 255, 255, 0.82);
-      font-size: 0.9rem;
+      background: var(--ink-700);
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.92rem;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 840px) {
       nav {
         display: none;
       }
@@ -329,12 +392,12 @@
         justify-content: center;
       }
 
-      .hero {
-        padding: 2.4rem;
-      }
-
       main {
         padding: 0 1.4rem 4rem;
+      }
+
+      .video-embed iframe {
+        height: 220px;
       }
     }
   </style>
@@ -342,207 +405,273 @@
 <body>
   <header>
     <div class="nav-wrapper">
-      <span class="brand">LinkedIn Automation QA</span>
+      <span class="brand">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M4.5 6.75a2.25 2.25 0 0 1 2.25-2.25h10.5A2.25 2.25 0 0 1 19.5 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 17.25V6.75Zm2.25-.75a.75.75 0 0 0-.75.75v10.5c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75V6.75a.75.75 0 0 0-.75-.75H6.75Z"
+          />
+          <path fill="currentColor" d="M8 16h2v-6H8v6Zm1-7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm3 7h2v-3.25c0-1.052.748-1.75 1.5-1.75s1.5.698 1.5 1.75V16h2v-3.25C18 10.68 16.657 9 15.5 9c-.834 0-1.614.428-2 1.106V10h0V9h-2v7Z" />
+        </svg>
+        LinkedIn Automation QA
+      </span>
       <nav aria-label="Primary">
-        <a href="#overview">Overview</a>
-        <a href="#epics">Epics</a>
-        <a href="#coverage">Functionality Tested</a>
-        <a href="#strategy">Quality Strategy</a>
-        <a href="#framework">Framework</a>
-        <a href="#insights">Insights</a>
+        <a href="#notion">Notion Blueprint</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#media">Media</a>
+        <a href="#stack">Automation Stack</a>
       </nav>
     </div>
   </header>
   <main>
     <section class="hero" id="overview">
       <div>
-        <h1>Automation that scales recruiter outreach with confidence</h1>
+        <span class="pill">From Notion to Production</span>
+        <h1>Reimagining the LinkedIn Automation testing hub for the web</h1>
         <p>
-          This GitHub Page spotlights the end-to-end Playwright test suite used to automate recruiter outreach journeys on LinkedIn.
-          It curates the living documentation from the project’s Notion workspace — covering strategy, epics, test evidence, and continuous testing insights.
+          The original Notion workspace captured the QA vision for recruiter outreach at a glance. This refreshed page distils that
+          strategy into an interactive narrative—blending visuals, workflow graphics, and media walkthroughs so stakeholders can grasp
+          the automation story in minutes.
         </p>
         <div class="cta-group">
-          <a class="btn btn-primary" href="README.md" target="_blank" rel="noreferrer noopener">View Repository Docs →</a>
-          <a class="btn btn-secondary" href="https://playwright.dev" target="_blank" rel="noreferrer noopener">Playwright Reference</a>
+          <a class="btn btn-primary" href="README.md" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 4a1 1 0 0 1 1 1v6h5a1 1 0 1 1 0 2h-5v6a1 1 0 1 1-2 0v-6H6a1 1 0 1 1 0-2h5V5a1 1 0 0 1 1-1Z"
+              />
+            </svg>
+            View project README
+          </a>
+          <a class="btn btn-secondary" href="https://www.notion.so/" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M6.75 4A2.75 2.75 0 0 0 4 6.75v10.5A2.75 2.75 0 0 0 6.75 20h10.5A2.75 2.75 0 0 0 20 17.25V6.75A2.75 2.75 0 0 0 17.25 4H6.75Zm.061 2h9.378c.366 0 .661.295.661.66v9.718a.66.66 0 0 1-.66.661H6.81a.66.66 0 0 1-.661-.66V6.66c0-.366.295-.661.661-.661ZM9 9.25v5.5c0 .414.336.75.75.75h.5c.294 0 .564-.171.687-.44l1.75-3.873c.103-.227.437-.227.54 0l1.75 3.872c.123.27.393.441.687.441h.5a.75.75 0 0 0 .75-.75v-5.5a.75.75 0 0 0-.75-.75h-.5a.75.75 0 0 0-.75.75v2.775c0 .228-.309.305-.417.11L13.06 8.92a.75.75 0 0 0-1.12-.2l-2.217 2.486c-.108.121-.303.047-.303-.123V8.5a.75.75 0 0 0-.75-.75h-.5A.75.75 0 0 0 9 8.5Z"
+              />
+            </svg>
+            Open Notion source
+          </a>
         </div>
       </div>
-      <div class="stats-grid" aria-label="Project highlights">
-        <div class="stat-card">
-          <span>5</span>
-          Core automation epics aligned to hiring outreach goals
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80"
+          alt="Notebook showing planning board and analytics charts"
+          loading="lazy"
+        />
+        <span class="hero-badge">Live QA Portfolio · 2025</span>
+      </div>
+    </section>
+
+    <section id="notion">
+      <h2>Notion Blueprint</h2>
+      <div class="grid-two">
+        <div class="card">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+              alt="Team collaborating while viewing a workflow on a laptop"
+              loading="lazy"
+            />
+          </figure>
+          <h3>From workspace to web</h3>
+          <p>
+            Every block from the Notion HQ—mission, epics, dashboards—has been translated into semantic HTML. The layout mirrors familiar
+            Notion columns while layering in responsive styling for fast reading on any device.
+          </p>
+          <p>
+            Cards and tags reflect how the original knowledge base organised quality decisions, giving stakeholders a bridge between the
+            living doc and this standalone project page.
+          </p>
         </div>
-        <div class="stat-card">
-          <span>42</span>
-          Functional test scenarios executed across smoke, regression &amp; UAT
-        </div>
-        <div class="stat-card">
-          <span>95%</span>
-          Release readiness gate for regression &amp; UAT cycles
-        </div>
-        <div class="stat-card">
-          <span>&lt; 12m</span>
-          Average time to execute full Playwright suite in CI
+        <div>
+          <div class="pill">Key Collections</div>
+          <p>
+            The following sections recreate the signature database views surfaced in the Notion hub. Each card carries over the same
+            taxonomy so the testing story remains traceable across tools.
+          </p>
+          <div class="notion-board" role="list">
+            <article role="listitem">
+              <h3>Strategy Desk</h3>
+              <ul>
+                <li>Vision statement for recruiter outreach</li>
+                <li>Release gates &amp; confidence metrics</li>
+                <li>Risk radar for platform guardrails</li>
+              </ul>
+            </article>
+            <article role="listitem">
+              <h3>Epics Kanban</h3>
+              <ul>
+                <li>Authentication hardening backlog</li>
+                <li>Search precision iteration log</li>
+                <li>Messaging personalisation spikes</li>
+              </ul>
+            </article>
+            <article role="listitem">
+              <h3>Evidence Gallery</h3>
+              <ul>
+                <li>Allure trace bundles per suite</li>
+                <li>Session recordings for UAT sign-off</li>
+                <li>Flaky test heat maps</li>
+              </ul>
+            </article>
+            <article role="listitem">
+              <h3>Ops Toolkit</h3>
+              <ul>
+                <li>Jenkins workflow hand-offs</li>
+                <li>Slack automation alerts</li>
+                <li>Incident retros &amp; action items</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="epics">
-      <h2>Product Epics &amp; Roadmap</h2>
-      <p>The automation backlog is organised into outcome-driven epics that mirror the Notion roadmap and stakeholder OKRs.</p>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="label">Epic 01</span>
-          <h3>Frictionless Authentication</h3>
-          <p>Guarantee secure access for automation runs by covering multi-tab login, session clean-up, MFA recovery flows, and credential rotation.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="label">Epic 02</span>
-          <h3>Precision Recruiter Discovery</h3>
-          <p>Validate keyword search, advanced filters, pagination, and saved searches to ensure the correct recruiter is always surfaced before messaging.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="label">Epic 03</span>
-          <h3>Hyper-personalised Messaging</h3>
-          <p>Confirm templated intros, dynamic tokens from Excel, attachment support, and duplicate detection prior to dispatching outreach.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="label">Epic 04</span>
-          <h3>Engagement Analytics Loop</h3>
-          <p>Track delivery confirmations, in-thread responses, retry logic, and Allure telemetry to expose actionable engagement data.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="label">Epic 05</span>
-          <h3>Platform Reliability &amp; Compliance</h3>
-          <p>Stress test rate limits, logout resilience, cookie policies, and LinkedIn safety prompts to keep automation trustworthy and compliant.</p>
-        </article>
+    <section id="workflow">
+      <h2>Workflow Graphic</h2>
+      <div class="workflow-wrapper">
+        <svg class="workflow-connector" viewBox="0 0 820 220" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad-line" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stop-color="var(--accent-lilac)" />
+              <stop offset="50%" stop-color="var(--ink-300)" />
+              <stop offset="100%" stop-color="var(--accent-sun)" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M40 110 C 120 20, 240 20, 320 110 S 520 200, 640 110 S 760 20, 780 110"
+            stroke="url(#grad-line)"
+            stroke-width="10"
+            stroke-linecap="round"
+            fill="transparent"
+            opacity="0.45"
+          />
+        </svg>
+        <div class="workflow-graphic">
+          <article class="workflow-node">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M5 4a3 3 0 0 0-3 3v5h2V7a1 1 0 0 1 1-1h5V4H5Zm9 0v2h5a1 1 0 0 1 1 1v5h2V7a3 3 0 0 0-3-3h-5Zm7 9h-2v5a1 1 0 0 1-1 1h-5v2h5a3 3 0 0 0 3-3v-5Zm-9 6H7a1 1 0 0 1-1-1v-5H4v5a3 3 0 0 0 3 3h5v-2Z"
+              />
+              <path
+                fill="currentColor"
+                d="M9 9h6v6H9z"
+              />
+            </svg>
+            <h3>Plan in Notion</h3>
+            <p>Weekly grooming turns product signals into actionable QA hypotheses inside the Notion roadmap.</p>
+          </article>
+          <article class="workflow-node">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v6h16v-6a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm3 8H9V7a3 3 0 1 1 6 0v3Zm-9 5h2v2H6v-2Zm4 0h4v2h-4v-2Zm8 0h-2v2h2v-2Z"
+              />
+            </svg>
+            <h3>Model the tests</h3>
+            <p>Acceptance criteria become Playwright specs with shared fixtures, tagged by suite for CI orchestration.</p>
+          </article>
+          <article class="workflow-node">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M4 4h7v7H4V4Zm0 9h7v7H4v-7Zm9-9h7v7h-7V4Zm0 9h7v7h-7v-7Z"
+              />
+            </svg>
+            <h3>Execute &amp; observe</h3>
+            <p>CI triggers suites across browsers; traces, screenshots, and analytics are streamed to Notion galleries.</p>
+          </article>
+          <article class="workflow-node">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M4 5h16v2H4V5Zm0 6h16v2H4v-2Zm0 6h10v2H4v-2Z"
+              />
+              <path
+                fill="currentColor"
+                d="M15.793 15.793a1 1 0 0 1 1.414 0l2.5 2.5a1 1 0 0 1-1.414 1.414l-2.5-2.5a1 1 0 0 1 0-1.414Z"
+              />
+            </svg>
+            <h3>Share insights</h3>
+            <p>Daily digests sync results back to squads—spotlighting coverage, risks, and next experiments.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="coverage">
-      <h2>Functionality Tested</h2>
-      <p>Each regression cycle maps scenario coverage to business value. The matrix below combines Notion test suites with Playwright implementation.</p>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Feature Area</th>
-              <th>Key Scenarios</th>
-              <th>Test Type</th>
-              <th>Evidence</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Authentication &amp; Security</td>
-              <td>Valid login, credential vault swap, invalid/MFA challenge, forced logout recovery</td>
-              <td>Smoke · Negative · Resilience</td>
-              <td>Zephyr Cycle A, Playwright hooks clearing cache/cookies</td>
-            </tr>
-            <tr>
-              <td>Recruiter Search &amp; Filters</td>
-              <td>Keyword combinations, location filters, connection degrees, pagination, empty states</td>
-              <td>Regression · Exploratory</td>
-              <td>LinkedIn search page object, Excel-driven data sets</td>
-            </tr>
-            <tr>
-              <td>Message Composition</td>
-              <td>Tokenised templates, attachment upload, duplicate detection, draft autosave</td>
-              <td>Regression · UAT</td>
-              <td>ComposeMessage page object with Allure attachments</td>
-            </tr>
-            <tr>
-              <td>Delivery Verification</td>
-              <td>Success banners, throttling retry, inbox confirmation, analytics export</td>
-              <td>End-to-End</td>
-              <td>verifyE2EuserFlow.spec.ts &amp; Zephyr Cycle C</td>
-            </tr>
-            <tr>
-              <td>Platform Compliance</td>
-              <td>Rate limit guardrails, GDPR consent, logout workflows, audit logging</td>
-              <td>Performance · Reliability</td>
-              <td>Jenkins nightly run, audit trail in Notion QA journal</td>
-            </tr>
-          </tbody>
-        </table>
+    <section id="media">
+      <h2>Media Gallery</h2>
+      <p>
+        Visual storytelling is essential for fast stakeholder alignment. Browse highlights captured during automation sprints and watch
+        the video walkthrough to see the full journey.
+      </p>
+      <div class="media-grid">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+            alt="Team using Kanban board to track testing progress"
+            loading="lazy"
+          />
+          <figcaption>Weekly planning snapshot mirroring the Notion kanban view.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80"
+            alt="Laptop displaying testing dashboards and graphs"
+            loading="lazy"
+          />
+          <figcaption>Regression analytics derived from Playwright traces and Zephyr dashboards.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80"
+            alt="Group workshop aligning on automation strategy"
+            loading="lazy"
+          />
+          <figcaption>Stakeholder workshop aligning quality bets across talent operations and engineering.</figcaption>
+        </figure>
+      </div>
+      <div class="video-embed" aria-label="Video walkthrough of the LinkedIn Automation QA project">
+        <iframe
+          src="https://www.youtube.com/embed/eNUpTV9BGac"
+          title="LinkedIn Automation QA walkthrough"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
-    <section id="strategy">
-      <h2>Quality Strategy &amp; Test Cycles</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Cycle A · Smoke &amp; Health</h3>
-          <p>Runs on every pull request using GitHub Actions. Validates authentication, search bootstrap, and messaging handshake in under three minutes.</p>
-        </article>
-        <article class="card">
-          <h3>Cycle B · Component Regression</h3>
-          <p>Nightly execution split by feature folders (login, search, compose). Captures flaky behaviour with automatic retries and screenshots.</p>
-        </article>
-        <article class="card">
-          <h3>Cycle C · Business UAT</h3>
-          <p>Friday dry run with staging recruiter data, Monday production rehearsal with live data, signed off jointly by talent operations and QA.</p>
-        </article>
-        <article class="card">
-          <h3>Cycle D · Performance &amp; Reliability</h3>
-          <p>Weekly load tests send 10/50/100 recruiter messages, measuring throughput, latency, and LinkedIn safety warnings to guard SLA adherence.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="framework">
-      <h2>Automation Framework</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Playwright + TypeScript</h3>
-          <p>Modern, reliable browser automation with typed locators, tracing, and cross-browser parity. Parallel workers keep suites fast.</p>
-        </article>
-        <article class="card">
-          <h3>Page Object Model</h3>
-          <p>BasePage consolidates waits and helpers; login, search, compose, and logout pages abstract UI interactions for reusability.</p>
-        </article>
-        <article class="card">
-          <h3>Data-Driven Execution</h3>
-          <p>ExcelJS + custom parser hydrates recruiter personas, personalised copy, and deep links for hybrid navigation strategies.</p>
-        </article>
-        <article class="card">
-          <h3>Quality Intelligence</h3>
-          <p>Allure dashboards, Zephyr for Jira reporting, and Jenkins trend charts surface pass rates, defect leakage, and ROI metrics.</p>
-        </article>
-      </div>
-
-      <div class="card flow-card">
-        <h3>Automation Flow at a Glance</h3>
-        <p>Every suite follows a predictable life cycle that keeps runs stable and observable:</p>
-        <ol>
-          <li>Load secure environment variables and recruiter data.</li>
-          <li>Spin up isolated Playwright context with cache/cookie clearance.</li>
-          <li>Execute feature-specific page object methods with resilient waits.</li>
-          <li>Assert UI/Network outcomes and attach artefacts to Allure.</li>
-          <li>Publish Zephyr updates and notify stakeholders via Slack webhooks.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="insights">
-      <h2>Insights, Learnings &amp; Next Steps</h2>
-      <div class="integrations">
-        <article class="integration-card">
-          <h3>Operational Excellence</h3>
-          <p>Automation stability climbed from 82% to 97% after implementing deterministic waits and a smart retry decorator. Suites now unblock Monday recruiter drops.</p>
-        </article>
-        <article class="integration-card">
-          <h3>Upcoming Enhancements</h3>
-          <p>Planned Q2 initiatives include API-driven profile fetching, AI-assisted message tone checks, and contract tests for Excel schema changes.</p>
-        </article>
-        <article class="integration-card">
-          <h3>Collaboration Workflow</h3>
-          <p>Weekly Notion QA digest summarises metrics, hot defects, and stakeholder actions; GitHub wiki hosts playbooks for triage and release readiness.</p>
-        </article>
+    <section id="stack">
+      <h2>Automation Stack &amp; Outcomes</h2>
+      <div class="grid-two">
+        <div class="card">
+          <h3>Tooling stack</h3>
+          <p>
+            Playwright + TypeScript power deterministic browser tests, while ExcelJS hydrates persona data and Allure provides rich
+            observability. GitHub Actions orchestrates suites in parallel, delivering feedback under 12 minutes.
+          </p>
+          <p>
+            Integrations with Jenkins, Slack, and Zephyr keep the human loop alive—everyone can trace a failing spec back to its Notion
+            requirement in seconds.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Impact at a glance</h3>
+          <ul>
+            <li>95% release readiness gate maintained across regression and UAT.</li>
+            <li>Flaky test rate cut by 63% after deterministic wait revamp.</li>
+            <li>Recruiter outreach velocity increased by 2.4× thanks to automation guardrails.</li>
+            <li>Stakeholders receive curated QA digests every Monday via Notion sync.</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    © 2025 Sameer Manzur — Automation Engineering Portfolio · Crafted from the LinkedIn Automation Notion workspace.
+    © 2025 Sameer Manzur · LinkedIn Automation Testing Portfolio · Built from the Notion workspace archives.
   </footer>
 </body>
 </html>
