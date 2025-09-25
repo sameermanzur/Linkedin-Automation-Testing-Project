@@ -133,4 +133,4 @@ npx playwright test tests/verifyE2EuserFlow.spec.ts --headed --debug
 - Dashboard widgets summarising outreach volume, success rates, and defect trends.
 
 ## 🙌 Acknowledgements
-Huge thanks to **Swaroop Landge** for relentless mentorship and guidance on my QA Automation journey. This project aggregates insights from our Notion workspace, GitHub experimentation, and real-world outreach experiments.
+Huge thanks to **Swaroop Landge** https://www.linkedin.com/in/swaroop-landge for relentless mentorship and guidance on my QA Automation journey. This project aggregates insights from our Notion workspace, GitHub experimentation, and real-world outreach experiments.
