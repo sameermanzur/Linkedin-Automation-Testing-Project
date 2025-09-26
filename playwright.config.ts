@@ -1,8 +1,26 @@
 import { defineConfig, devices } from '@playwright/test';
+
+type ReporterTuple = [string, Record<string, unknown>?];
 import dotenv from 'dotenv';
 import path from 'path';
 
 dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+
+const reporters: ReporterTuple[] = [
+  ['html'],
+  ['list'],
+  ['./reporters/emailReporter.ts', { dryRun: true }],
+];
+
+if (process.env.ZEPHYR_TOKEN) {
+  reporters.push([
+    'playwright-zephyr/lib/src/cloud',
+    {
+      projectKey: 'DUM',
+      authorizationToken: process.env.ZEPHYR_TOKEN,
+    },
+  ]);
+}
 
 export default defineConfig({
   testDir: './tests',
@@ -11,14 +29,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
 
-  reporter: [
-    ['html'],
-    ['list'],
-    ['playwright-zephyr/lib/src/cloud', {
-      projectKey: 'DUM',
-      authorizationToken: process.env.ZEPHYR_TOKEN,
-    }],
-  ],
+  reporter: reporters,
 
   use: {
     trace: 'on-first-retry',
