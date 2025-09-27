@@ -5,27 +5,32 @@ import { getRecruiterNames } from './pages/readRecruiterNames';
 import ComposeMessagePage from './pages/composeMessage';
 import { LogoutPage } from './pages/logoutPage';
 import 'dotenv/config';
+import { error } from 'console';
 
 test('[T6] Verify user flow', async ({ page, browser }) => {
- 
+
+  // Verify env Variables are getting loaded 
+   if (!process.env.BASE_URL || !process.env.LINKEDIN_USERNAME || !process.env.LINKEDIN_PASSWORD) {
+  throw new Error("❌ Missing required environment variables (BASE_URL, LINKEDIN_USERNAME, LINKEDIN_PASSWORD)");
+}
+
   const login = new LoginPage(page);
   const searchRecruiter = new LinkedInSearchPage(page);
   const composeMessage = new ComposeMessagePage(page);
   const logOut = new LogoutPage(page);
 
+  // login Flow 
   await login.b_navigateTo(process.env.BASE_URL!);
   await login.login(process.env.LINKEDIN_USERNAME!, process.env.LINKEDIN_PASSWORD!);
   await login.LinkedinLogo('');
 
   // Read recruiter names from Excel and search each
   const names = await getRecruiterNames('data/recruiterList.xlsx');
-
- 
   for (const name of names) {
     await searchRecruiter.searchForRecruiterNames(name);
     const messageBtn = page.getByRole('button', { name: /^Message\b/i }); // Accessibility tree 
     await messageBtn.click();
-
+  // Generate Message and Send 
     await composeMessage.openMessage();
     await page.pause();
     await composeMessage.fillMessageFromRow({ Name: name });
@@ -34,7 +39,7 @@ test('[T6] Verify user flow', async ({ page, browser }) => {
     // Return to feed for next iteration
     await searchRecruiter.gotoFeed();
   }
-
+  // Logout when the task is completed 
   await logOut.navigateButton();
   await logOut.clickSignOut();
   await page.close();

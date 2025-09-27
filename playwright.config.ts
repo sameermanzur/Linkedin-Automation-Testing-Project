@@ -14,15 +14,21 @@ export default defineConfig({
   reporter: [
     ['html'],
     ['list'],
+    
     ['playwright-zephyr/lib/src/cloud', {
-      projectKey: 'DUM',
-      authorizationToken: process.env.ZEPHYR_TOKEN,
+      projectKey: 'LWT',
+      authorizationToken: process.env.ZEPHYR_ACCESS_TOKEN,
+      autoCreateTestCases: true,
+      testCycle: {
+        name: 'LinkedIn Testing'
+      }
     }],
   ],
 
   use: {
     trace: 'on-first-retry',
-    video: 'on'
+    video: 'on', 
+    viewport:{width:2500, height:1250}
   },
 
   projects: [
