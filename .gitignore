@@ -5,7 +5,9 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-# Environment Variables 
+/playwright-report
+/allure-results/
+# Environment Variables
 /.utils/.env
-/.data/~$recruiterList.xlsx/
+/.data/~$*.xlsx
 /.env/
