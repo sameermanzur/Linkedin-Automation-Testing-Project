@@ -57,4 +57,8 @@ export default class BasePage {
     await optionLocator.waitFor({ state: 'visible' });
     await optionLocator.click();
   }
+
+  // async b_clickApply(locator: Locator, expected: string, button:Element){
+  //   await this.b_clickApply(); 
+  // }
 }

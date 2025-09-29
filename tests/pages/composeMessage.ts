@@ -26,6 +26,8 @@ function displayName(r: Row): string {
   return 'there';
 }
 
+// Dynamically Generate message using function 
+// 
 export function buildMessage(r: Row, dayOffset = 0): string {
   const weekday = sydneyWeekday(dayOffset);
   const smile = '🙂';
@@ -45,32 +47,29 @@ export function buildMessage(r: Row, dayOffset = 0): string {
 }
 
 export class ComposeMessagePage extends BasePage {
-  private readonly messageButton: Locator;
+  private readonly clickMessageButton: Locator;
   private readonly messageBox: Locator;
   private readonly sendButton: Locator;
   private readonly closeMessageBox: Locator;
   constructor(page: Page) {
     super(page);
-    this.messageButton = page.getByRole('button', { name: /message/i });
+    this.clickMessageButton= page.locator('button[aria-label^="Message"]'); 
     this.messageBox = page.getByRole('textbox');
     this.sendButton = page.locator("button[type='submit']"); 
-    this.closeMessageBox = page.getByRole('button', { name: /^Close your conversation with/i})
+    this.closeMessageBox = page.getByRole('button', { name: /^Close your conversation with/i}) // Used Aria label to avoid Dynamic locators 
   }
 
-  async openMessage(): Promise<void> {
-    if (await this.messageButton.isVisible().catch(() => false)) {
-      await this.b_clickElement(this.messageButton);
-    }
+  async clickMessage(){
+    await this.b_clickElement(this.clickMessageButton); 
   }
-
+  
   async fillMessageFromRow(row: Row, dayOffset = 0): Promise<string> {
     const text = buildMessage(row, dayOffset);
-    await this.messageBox.click();
     try {
       await this.messageBox.fill('');
       await this.messageBox.fill(text);
     } catch {
-      await this.messageBox.evaluate((el: HTMLElement) => (el.innerHTML = ''));
+      await this.messageBox.evaluate((el: HTMLElement) => (el.innerHTML = '')); // To Match the element to execute an argument, this fills the message in the text box
       await this.messageBox.pressSequentially(text);
     }
     return text;

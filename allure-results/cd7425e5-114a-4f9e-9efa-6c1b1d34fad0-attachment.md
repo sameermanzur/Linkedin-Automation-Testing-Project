@@ -1,0 +1,1709 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - heading "0 notifications" [level=2] [ref=e3]
+  - generic [ref=e4]:
+    - generic:
+      - generic:
+        - generic:
+          - button "Skip to main content" [ref=e5] [cursor=pointer]:
+            - generic [ref=e7] [cursor=pointer]: Skip to main content
+          - button "Close jump menu" [ref=e8] [cursor=pointer]:
+            - img [ref=e10] [cursor=pointer]
+    - generic [ref=e12]:
+      - banner [ref=e14]:
+        - generic [ref=e17]:
+          - button "LinkedIn" [ref=e18] [cursor=pointer]:
+            - img "LinkedIn" [ref=e19] [cursor=pointer]
+          - search [ref=e22]:
+            - generic [ref=e23]:
+              - img [ref=e25]
+              - textbox "Search" [ref=e27]
+          - generic [ref=e29]:
+            - navigation [ref=e31]:
+              - list [ref=e32]:
+                - listitem [ref=e33]:
+                  - button "Home, 1 new notification" [ref=e34] [cursor=pointer]:
+                    - img [ref=e36] [cursor=pointer]
+                    - generic [ref=e39] [cursor=pointer]: Home
+                - listitem [ref=e40]:
+                  - button "My Network, 1 new notification" [ref=e41] [cursor=pointer]:
+                    - generic [ref=e42] [cursor=pointer]:
+                      - img [ref=e43] [cursor=pointer]
+                      - generic [ref=e45] [cursor=pointer]: "1"
+                    - generic [ref=e47] [cursor=pointer]: My Network
+                - listitem [ref=e48]:
+                  - link "Jobs, 0 new notifications" [ref=e49] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/
+                    - img [ref=e51] [cursor=pointer]
+                    - generic [ref=e54] [cursor=pointer]: Jobs
+                - listitem [ref=e55]:
+                  - link "Messaging, 0 new notifications" [ref=e56] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/
+                    - img [ref=e58] [cursor=pointer]
+                    - generic [ref=e61] [cursor=pointer]: Messaging
+                - listitem [ref=e62]:
+                  - link "Notifications, 14 new notifications" [ref=e63] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/
+                    - generic [ref=e64] [cursor=pointer]:
+                      - img [ref=e65] [cursor=pointer]
+                      - generic [ref=e67] [cursor=pointer]: "14"
+                    - generic [ref=e69] [cursor=pointer]: Notifications
+                - listitem [ref=e70]:
+                  - button "Me" [ref=e71] [cursor=pointer]:
+                    - figure [ref=e73] [cursor=pointer]
+                    - generic [ref=e75] [cursor=pointer]:
+                      - text: Me
+                      - img [ref=e76] [cursor=pointer]
+            - navigation [ref=e80]:
+              - list [ref=e81]:
+                - listitem [ref=e82]:
+                  - button "For Business" [ref=e83] [cursor=pointer]:
+                    - img [ref=e85] [cursor=pointer]
+                    - generic [ref=e88] [cursor=pointer]:
+                      - text: For Business
+                      - img [ref=e89] [cursor=pointer]
+                - listitem [ref=e91]:
+                  - link "0 new notifications" [ref=e92] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/learning/?trk=nav_neptune_learning
+                    - img [ref=e94] [cursor=pointer]
+                    - generic [ref=e100] [cursor=pointer]: Learning
+      - main [ref=e101]:
+        - main [ref=e103]:
+          - generic [ref=e105]:
+            - generic [ref=e110]:
+              - generic [ref=e114]:
+                - link "Premium" [ref=e115] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sameermanzur/
+                  - generic [ref=e116] [cursor=pointer]:
+                    - generic [ref=e117] [cursor=pointer]:
+                      - figure [ref=e118] [cursor=pointer]:
+                        - img [ref=e119] [cursor=pointer]
+                      - paragraph [ref=e125] [cursor=pointer]: Premium
+                    - figure [ref=e128] [cursor=pointer]
+                - generic [ref=e129]:
+                  - link "Sameer Manzur Test Automation Engineer | Playwright | Typescript | ISTQB | Rosebery, New South Wales" [ref=e130] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/sameermanzur/
+                    - generic [ref=e131] [cursor=pointer]:
+                      - generic [ref=e132] [cursor=pointer]:
+                        - paragraph [ref=e133] [cursor=pointer]: Sameer Manzur
+                        - img [ref=e134] [cursor=pointer]
+                      - paragraph [ref=e136] [cursor=pointer]: Test Automation Engineer | Playwright | Typescript | ISTQB |
+                      - paragraph [ref=e137] [cursor=pointer]: Rosebery, New South Wales
+                  - link "Freelance" [ref=e138] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/sameermanzur/
+                    - generic [ref=e139] [cursor=pointer]:
+                      - figure [ref=e140] [cursor=pointer]:
+                        - img [ref=e141] [cursor=pointer]
+                      - paragraph [ref=e147] [cursor=pointer]: Freelance
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - link "Profile viewers 108" [ref=e151] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/me/profile-views/
+                    - generic "Profile viewers 108" [ref=e152] [cursor=pointer]:
+                      - paragraph [ref=e154] [cursor=pointer]: Profile viewers
+                      - paragraph [ref=e155] [cursor=pointer]: "108"
+                  - link "Post impressions 39" [ref=e156] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/analytics/creator/content/
+                    - generic "Post impressions 39" [ref=e157] [cursor=pointer]:
+                      - paragraph [ref=e159] [cursor=pointer]: Post impressions
+                      - paragraph [ref=e160] [cursor=pointer]: "39"
+                - link "Premium benefits" [ref=e163] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/premium/my-premium/
+                  - generic "Premium benefits" [ref=e164] [cursor=pointer]:
+                    - img [ref=e165] [cursor=pointer]
+                    - paragraph [ref=e169] [cursor=pointer]: Premium benefits
+              - generic [ref=e172]:
+                - link "Saved items" [ref=e173] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/my-items/saved-posts/
+                  - generic "Saved items" [ref=e174] [cursor=pointer]:
+                    - img [ref=e175] [cursor=pointer]
+                    - paragraph [ref=e178] [cursor=pointer]: Saved items
+                - link "Groups" [ref=e179] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/groups/
+                  - generic "Groups" [ref=e180] [cursor=pointer]:
+                    - img [ref=e181] [cursor=pointer]
+                    - paragraph [ref=e188] [cursor=pointer]: Groups
+                - link "Newsletters" [ref=e189] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/mynetwork/network-manager/newsletters/
+                  - generic "Newsletters" [ref=e190] [cursor=pointer]:
+                    - img [ref=e191] [cursor=pointer]
+                    - paragraph [ref=e194] [cursor=pointer]: Newsletters
+                - link "Events" [ref=e195] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/events/
+                  - generic "Events" [ref=e196] [cursor=pointer]:
+                    - img [ref=e197] [cursor=pointer]
+                    - paragraph [ref=e200] [cursor=pointer]: Events
+            - generic [ref=e202]:
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - link [ref=e207] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/sameermanzur/
+                    - figure [ref=e208] [cursor=pointer]
+                  - link "Start a post" [ref=e210] [cursor=pointer]:
+                    - /url: /preload/sharebox/
+                    - generic [ref=e213] [cursor=pointer]:
+                      - paragraph [ref=e214] [cursor=pointer]: Start a post
+                      - paragraph
+                - generic [ref=e215]:
+                  - link "Video" [ref=e216] [cursor=pointer]:
+                    - /url: /preload/sharebox/?detourType=VIDEO
+                    - generic [ref=e217] [cursor=pointer]:
+                      - img [ref=e218] [cursor=pointer]
+                      - paragraph [ref=e220] [cursor=pointer]: Video
+                  - link "Photo" [ref=e221] [cursor=pointer]:
+                    - /url: /preload/sharebox/?detourType=IMAGE
+                    - generic [ref=e222] [cursor=pointer]:
+                      - img [ref=e223] [cursor=pointer]
+                      - paragraph [ref=e225] [cursor=pointer]: Photo
+                  - link "Write article" [ref=e226] [cursor=pointer]:
+                    - /url: /article/new/
+                    - generic [ref=e227] [cursor=pointer]:
+                      - img [ref=e228] [cursor=pointer]
+                      - paragraph [ref=e230] [cursor=pointer]: Write article
+              - listitem [ref=e234]:
+                - generic [ref=e236]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e237]: Feed post
+                  - generic [ref=e238]:
+                    - link [ref=e239] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/vijay-krishna-gudavalli-a5b365235/
+                      - figure [ref=e240] [cursor=pointer]
+                    - link "Vijay Krishna Gudavalli • Following GenAI Based Manual Tester | Automation Test Engineer | ISTQB Certified QA Engineer | Web & Mobile App Testing (Appium) | Selenium, Playwright | API, Performance & AI Testing | Jenkins, GitHub Actions | Postman, JMeter | 9m •" [ref=e241] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/vijay-krishna-gudavalli-a5b365235/
+                      - generic [ref=e242] [cursor=pointer]:
+                        - paragraph [ref=e243] [cursor=pointer]:
+                          - text: Vijay Krishna Gudavalli
+                          - img [ref=e246] [cursor=pointer]
+                          - generic [ref=e249] [cursor=pointer]: • Following
+                        - paragraph [ref=e250] [cursor=pointer]: GenAI Based Manual Tester | Automation Test Engineer | ISTQB Certified QA Engineer | Web & Mobile App Testing (Appium) | Selenium, Playwright | API, Performance & AI Testing | Jenkins, GitHub Actions | Postman, JMeter |
+                        - paragraph [ref=e251] [cursor=pointer]:
+                          - text: 9m •
+                          - img [ref=e253] [cursor=pointer]
+                    - button "View more options" [ref=e255] [cursor=pointer]:
+                      - img [ref=e257] [cursor=pointer]
+                    - button "Hide Post" [ref=e259] [cursor=pointer]:
+                      - img [ref=e261] [cursor=pointer]
+                  - paragraph [ref=e263]:
+                    - generic [ref=e264]:
+                      - text: Selenium WebDriver excels at automating stable, repeatable functional tests within web browsers. However, it’s not suited for tasks that require human judgment, highly visual or subjective validations, complex hardware or environment dependencies, or specialized testing like security and performance. Understanding these limitations helps testers choose the right tool or approach, ensuring efficient test automation strategies without wasted effort or flaky tests.
+                      - button [ref=e265] [cursor=pointer]:
+                        - generic [ref=e266] [cursor=pointer]: … more
+                  - link "A Comprehensive list of scenarios you should avoid automating with Selenium WebDriver Vijay Krishna Gudavalli" [ref=e268] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/pulse/comprehensive-list-scenarios-you-should-avoid-vijay-krishna-gudavalli-bjifc/
+                    - generic [ref=e269] [cursor=pointer]:
+                      - paragraph [ref=e270] [cursor=pointer]: A Comprehensive list of scenarios you should avoid automating with Selenium WebDriver
+                      - paragraph [ref=e271] [cursor=pointer]: Vijay Krishna Gudavalli
+                  - generic [ref=e272]:
+                    - generic [ref=e274]:
+                      - 'button "Reaction button state: no reaction" [ref=e277] [cursor=pointer]':
+                        - generic [ref=e278] [cursor=pointer]:
+                          - img [ref=e279] [cursor=pointer]
+                          - generic [ref=e281] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e283] [cursor=pointer]
+                    - button "Comment" [ref=e285] [cursor=pointer]:
+                      - generic [ref=e286] [cursor=pointer]:
+                        - img [ref=e287] [cursor=pointer]
+                        - generic [ref=e289] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e290] [cursor=pointer]:
+                      - generic [ref=e291] [cursor=pointer]:
+                        - img [ref=e292] [cursor=pointer]
+                        - generic [ref=e294] [cursor=pointer]: Repost
+                    - button "Send" [ref=e295] [cursor=pointer]:
+                      - generic [ref=e296] [cursor=pointer]:
+                        - img [ref=e297] [cursor=pointer]
+                        - generic [ref=e299] [cursor=pointer]: Send
+              - listitem [ref=e303]:
+                - generic [ref=e305]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e306]: Feed post
+                  - generic [ref=e307]:
+                    - link [ref=e308] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/elevenlabsio/posts/
+                      - figure [ref=e309] [cursor=pointer]
+                    - link "ElevenLabs 158,515 followers Promoted" [ref=e310] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/elevenlabsio/posts/
+                      - generic [ref=e311] [cursor=pointer]:
+                        - paragraph [ref=e312] [cursor=pointer]: ElevenLabs
+                        - paragraph [ref=e313] [cursor=pointer]: 158,515 followers
+                        - paragraph [ref=e314] [cursor=pointer]: Promoted
+                    - button "View more options" [ref=e315] [cursor=pointer]:
+                      - img [ref=e317] [cursor=pointer]
+                  - paragraph [ref=e319]:
+                    - generic [ref=e320]:
+                      - text: Congratulations to
+                      - link "TIME" [ref=e322] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/time/
+                        - strong [ref=e324] [cursor=pointer]: TIME
+                      - text: on the launch of TIME AI. Readers can now speak with an AI voice agent that has context on the story, getting immediate answers to the questions they're most curious about in a 1:1 conversation.
+                      - text: Find more information on
+                      - link "TIME" [ref=e327] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/time/
+                        - strong [ref=e329] [cursor=pointer]: TIME
+                      - text: "'s new generative AI suite, and how they built AI voice agents with ElevenLabs and"
+                      - link "Scale AI" [ref=e331] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/scaleai/
+                        - strong [ref=e333] [cursor=pointer]: Scale AI
+                      - text: ", here:"
+                      - link "https://lnkd.in/gcErCFhp" [ref=e335] [cursor=pointer]:
+                        - /url: https://lnkd.in/gcErCFhp?account_id=513151729&utm_campaign=au%2Fnz_icp-all_in-platform_mix_video_english&utm_medium=cpc&campaign_group_id=773436314&campaign_id=411648744&creative_id=748120384&utm_source=linkedIn
+                        - strong [ref=e337] [cursor=pointer]: https://lnkd.in/gcErCFhp
+                      - text: Try it now at
+                      - link "TIME" [ref=e339] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/time/
+                        - strong [ref=e341] [cursor=pointer]: TIME
+                      - text: "Person of the Year:"
+                      - link "https://lnkd.in/d_H64AiN" [ref=e344] [cursor=pointer]:
+                        - /url: https://lnkd.in/d_H64AiN?account_id=513151729&utm_campaign=au%2Fnz_icp-all_in-platform_mix_video_english&utm_medium=cpc&campaign_group_id=773436314&campaign_id=411648744&creative_id=748120384&utm_source=linkedIn
+                        - strong [ref=e346] [cursor=pointer]: https://lnkd.in/d_H64AiN
+                      - button [ref=e347] [cursor=pointer]:
+                        - generic [ref=e348] [cursor=pointer]: … more
+                  - generic [ref=e349]:
+                    - region "Video Player" [ref=e351]:
+                      - application [ref=e352]
+                      - text:            
+                      - dialog "Modal Window" [ref=e355]:
+                        - paragraph [ref=e356]: This is a modal window.
+                        - document [ref=e357]: The media could not be loaded, either because the server or network failed or because the format is not supported.
+                      - text: 
+                    - button "Play video" [ref=e358] [cursor=pointer]:
+                      - img [ref=e360] [cursor=pointer]
+                  - generic [ref=e362]:
+                    - button "464 reactions" [ref=e363] [cursor=pointer]:
+                      - generic [ref=e364] [cursor=pointer]:
+                        - img [ref=e365] [cursor=pointer]
+                        - img [ref=e371] [cursor=pointer]
+                        - img [ref=e385] [cursor=pointer]
+                        - paragraph [ref=e391] [cursor=pointer]:
+                          - generic [ref=e392] [cursor=pointer]: 464 reactions
+                          - generic [ref=e393] [cursor=pointer]: "464"
+                    - generic [ref=e394]:
+                      - button "20 comments" [ref=e395] [cursor=pointer]:
+                        - paragraph [ref=e396] [cursor=pointer]: 20 comments
+                      - paragraph [ref=e397]: •
+                      - button "38 reposts" [ref=e398] [cursor=pointer]:
+                        - paragraph [ref=e399] [cursor=pointer]: 38 reposts
+                  - generic [ref=e400]:
+                    - generic [ref=e402]:
+                      - 'button "Reaction button state: no reaction" [ref=e405] [cursor=pointer]':
+                        - generic [ref=e406] [cursor=pointer]:
+                          - img [ref=e407] [cursor=pointer]
+                          - generic [ref=e409] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e411] [cursor=pointer]
+                    - button "Comment" [ref=e413] [cursor=pointer]:
+                      - generic [ref=e414] [cursor=pointer]:
+                        - img [ref=e415] [cursor=pointer]
+                        - generic [ref=e417] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e418] [cursor=pointer]:
+                      - generic [ref=e419] [cursor=pointer]:
+                        - img [ref=e420] [cursor=pointer]
+                        - generic [ref=e422] [cursor=pointer]: Repost
+                    - button "Send" [ref=e423] [cursor=pointer]:
+                      - generic [ref=e424] [cursor=pointer]:
+                        - img [ref=e425] [cursor=pointer]
+                        - generic [ref=e427] [cursor=pointer]: Send
+              - listitem [ref=e431]:
+                - generic [ref=e433]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e434]: Feed post
+                  - generic [ref=e435]:
+                    - generic [ref=e436]:
+                      - link [ref=e437] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/vasanthkumarpv/
+                        - figure [ref=e438] [cursor=pointer]
+                      - paragraph [ref=e439]:
+                        - link "Vince Vadivel" [ref=e440] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/vasanthkumarpv/
+                          - strong [ref=e441] [cursor=pointer]: Vince Vadivel
+                        - text: likes this
+                    - button "View more options" [ref=e443] [cursor=pointer]:
+                      - img [ref=e445] [cursor=pointer]
+                    - button "Hide Post" [ref=e447] [cursor=pointer]:
+                      - img [ref=e449] [cursor=pointer]
+                  - generic [ref=e451]:
+                    - link [ref=e452] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/justine-m-109b12101/
+                      - figure [ref=e453] [cursor=pointer]
+                    - link "Justine M. • 2nd Strategic Augmentation/IT Resourcing Strategist 25+ year's exp 3h •" [ref=e454] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/justine-m-109b12101/
+                      - generic [ref=e455] [cursor=pointer]:
+                        - paragraph [ref=e456] [cursor=pointer]:
+                          - text: Justine M.
+                          - img [ref=e459] [cursor=pointer]
+                          - generic [ref=e462] [cursor=pointer]: • 2nd
+                        - paragraph [ref=e463] [cursor=pointer]: Strategic Augmentation/IT Resourcing Strategist 25+ year's exp
+                        - paragraph [ref=e464] [cursor=pointer]:
+                          - text: 3h •
+                          - img [ref=e466] [cursor=pointer]
+                    - button "Invite Justine M. to connect" [ref=e471] [cursor=pointer]:
+                      - generic [ref=e472] [cursor=pointer]:
+                        - img [ref=e473] [cursor=pointer]
+                        - generic [ref=e475] [cursor=pointer]: Connect
+                  - paragraph [ref=e476]:
+                    - generic [ref=e477]: We're growing please view the role below and apply through the link
+                  - link "Consulting Systems Engineer (Sydney) (Verified job) World Wide Technology, Inc. - JW North Shore, NSW (On-site) View job Actively recruiting" [ref=e479] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/view/4286868456/?trackingId=uALCBtlBTPewOWpzqyr0QQ%3D%3D
+                    - generic [ref=e481] [cursor=pointer]:
+                      - figure [ref=e482] [cursor=pointer]
+                      - generic [ref=e483] [cursor=pointer]:
+                        - generic [ref=e484] [cursor=pointer]:
+                          - generic [ref=e486] [cursor=pointer]:
+                            - paragraph [ref=e487] [cursor=pointer]:
+                              - generic [ref=e488] [cursor=pointer]: Consulting Systems Engineer (Sydney) (Verified job)
+                              - generic [ref=e489] [cursor=pointer]:
+                                - text: Consulting Systems Engineer (Sydney)
+                                - img [ref=e492] [cursor=pointer]
+                            - paragraph [ref=e495] [cursor=pointer]: World Wide Technology, Inc. - JW
+                            - paragraph [ref=e496] [cursor=pointer]: North Shore, NSW (On-site)
+                          - link "View job" [ref=e498] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/view/4286868456/?trackingId=uALCBtlBTPewOWpzqyr0QQ%3D%3D
+                            - generic [ref=e500] [cursor=pointer]: View job
+                        - generic [ref=e502] [cursor=pointer]:
+                          - img [ref=e503] [cursor=pointer]
+                          - paragraph [ref=e505] [cursor=pointer]: Actively recruiting
+                  - generic [ref=e506]:
+                    - button "2 reactions" [ref=e507] [cursor=pointer]:
+                      - generic [ref=e508] [cursor=pointer]:
+                        - img [ref=e509] [cursor=pointer]
+                        - paragraph [ref=e515] [cursor=pointer]:
+                          - generic [ref=e516] [cursor=pointer]: 2 reactions
+                          - generic [ref=e517] [cursor=pointer]: "2"
+                    - generic [ref=e518]:
+                      - button "1 comment" [ref=e519] [cursor=pointer]:
+                        - paragraph [ref=e520] [cursor=pointer]: 1 comment
+                      - button:
+                        - paragraph
+                  - generic [ref=e521]:
+                    - generic [ref=e523]:
+                      - 'button "Reaction button state: no reaction" [ref=e526] [cursor=pointer]':
+                        - generic [ref=e527] [cursor=pointer]:
+                          - img [ref=e528] [cursor=pointer]
+                          - generic [ref=e530] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e532] [cursor=pointer]
+                    - button "Comment" [ref=e534] [cursor=pointer]:
+                      - generic [ref=e535] [cursor=pointer]:
+                        - img [ref=e536] [cursor=pointer]
+                        - generic [ref=e538] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e539] [cursor=pointer]:
+                      - generic [ref=e540] [cursor=pointer]:
+                        - img [ref=e541] [cursor=pointer]
+                        - generic [ref=e543] [cursor=pointer]: Repost
+                    - button "Send" [ref=e544] [cursor=pointer]:
+                      - generic [ref=e545] [cursor=pointer]:
+                        - img [ref=e546] [cursor=pointer]
+                        - generic [ref=e548] [cursor=pointer]: Send
+              - listitem [ref=e552]:
+                - generic [ref=e554]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e555]: Feed post
+                  - generic [ref=e556]:
+                    - link [ref=e557] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/microsoft/posts/
+                      - figure [ref=e558] [cursor=pointer]
+                    - link "Microsoft 26,491,178 followers Promoted" [ref=e559] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/microsoft/posts/
+                      - generic [ref=e560] [cursor=pointer]:
+                        - paragraph [ref=e561] [cursor=pointer]: Microsoft
+                        - paragraph [ref=e562] [cursor=pointer]: 26,491,178 followers
+                        - paragraph [ref=e563] [cursor=pointer]: Promoted
+                    - button "View more options" [ref=e564] [cursor=pointer]:
+                      - img [ref=e566] [cursor=pointer]
+                  - paragraph [ref=e568]:
+                    - generic [ref=e569]: "43% of all cyberattacks in 2023 targeted SMBs. Safeguard your valuable data with comprehensive security solutions from Microsoft. (Source: BD Emerson)"
+                  - generic [ref=e570]:
+                    - link [ref=e571] [cursor=pointer]:
+                      - /url: https://info.microsoft.com/ww-landing-security-VDS-contact-me.html
+                      - figure [ref=e572] [cursor=pointer]
+                    - link "Contact a Microsoft expert info.microsoft.com Learn more" [ref=e573] [cursor=pointer]:
+                      - /url: https://info.microsoft.com/ww-landing-security-VDS-contact-me.html
+                      - generic [ref=e574] [cursor=pointer]:
+                        - generic [ref=e575] [cursor=pointer]:
+                          - paragraph [ref=e576] [cursor=pointer]: Contact a Microsoft expert
+                          - paragraph [ref=e577] [cursor=pointer]: info.microsoft.com
+                        - link "Learn more" [ref=e578] [cursor=pointer]:
+                          - /url: https://info.microsoft.com/ww-landing-security-VDS-contact-me.html
+                          - generic [ref=e580] [cursor=pointer]: Learn more
+                  - generic [ref=e581]:
+                    - button "75 reactions" [ref=e582] [cursor=pointer]:
+                      - generic [ref=e583] [cursor=pointer]:
+                        - img [ref=e584] [cursor=pointer]
+                        - img [ref=e590] [cursor=pointer]
+                        - img [ref=e604] [cursor=pointer]
+                        - paragraph [ref=e610] [cursor=pointer]:
+                          - generic [ref=e611] [cursor=pointer]: 75 reactions
+                          - generic [ref=e612] [cursor=pointer]: "75"
+                    - generic [ref=e613]:
+                      - button:
+                        - paragraph
+                      - button "2 reposts" [ref=e614] [cursor=pointer]:
+                        - paragraph [ref=e615] [cursor=pointer]: 2 reposts
+                  - generic [ref=e616]:
+                    - generic [ref=e618]:
+                      - 'button "Reaction button state: no reaction" [ref=e621] [cursor=pointer]':
+                        - generic [ref=e622] [cursor=pointer]:
+                          - img [ref=e623] [cursor=pointer]
+                          - generic [ref=e625] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e627] [cursor=pointer]
+                    - button "Comment" [ref=e629] [cursor=pointer]:
+                      - generic [ref=e630] [cursor=pointer]:
+                        - img [ref=e631] [cursor=pointer]
+                        - generic [ref=e633] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e634] [cursor=pointer]:
+                      - generic [ref=e635] [cursor=pointer]:
+                        - img [ref=e636] [cursor=pointer]
+                        - generic [ref=e638] [cursor=pointer]: Repost
+                    - button "Send" [ref=e639] [cursor=pointer]:
+                      - generic [ref=e640] [cursor=pointer]:
+                        - img [ref=e641] [cursor=pointer]
+                        - generic [ref=e643] [cursor=pointer]: Send
+              - listitem [ref=e647]:
+                - generic [ref=e649]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e650]: Feed post
+                  - generic [ref=e651]:
+                    - generic [ref=e652]:
+                      - img [ref=e653]
+                      - paragraph [ref=e655]: Introduction to LinkedIn Ads
+                      - paragraph [ref=e656]: Sameer, watch this webinar to strengthen your LinkedIn Ads fundamentals
+                      - link "Watch webinar" [ref=e657] [cursor=pointer]:
+                        - /url: https://business.linkedin.com/marketing-solutions/webinars/25/01/introduction-to-linkedin-ads?src=li-ghom&veh=7016Q0000025aqjQAAxSSxOS2xACQxGALxGHBPxGLOBALxENxOnDemandxWCx202503xEducationWebinarHubDemandGenBrandMarketersxDemandGenGrowthMarketerxTOFUxVisitsxv3a&cid=7016Q0000025aqjQAA&mcid=7306265613159591936
+                        - generic [ref=e659] [cursor=pointer]: Watch webinar
+                    - generic [ref=e660]:
+                      - button "View more options" [ref=e661] [cursor=pointer]:
+                        - img [ref=e663] [cursor=pointer]
+                      - link [ref=e665] [cursor=pointer]:
+                        - /url: https://business.linkedin.com/marketing-solutions/webinars/25/01/introduction-to-linkedin-ads?src=li-ghom&veh=7016Q0000025aqjQAAxSSxOS2xACQxGALxGHBPxGLOBALxENxOnDemandxWCx202503xEducationWebinarHubDemandGenBrandMarketersxDemandGenGrowthMarketerxTOFUxVisitsxv3a&cid=7016Q0000025aqjQAA&mcid=7306265613159591936
+                        - figure [ref=e666] [cursor=pointer]:
+                          - img "Watch webinar" [ref=e667] [cursor=pointer]
+              - listitem [ref=e671]:
+                - generic [ref=e673]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e674]: Feed post
+                  - generic [ref=e675]:
+                    - generic [ref=e676]:
+                      - link [ref=e677] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/change-recruitment/posts/
+                        - figure [ref=e678] [cursor=pointer]
+                      - paragraph [ref=e679]:
+                        - link "Change Recruitment" [ref=e680] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/change-recruitment/posts/
+                          - strong [ref=e681] [cursor=pointer]: Change Recruitment
+                        - text: likes this
+                    - button "View more options" [ref=e683] [cursor=pointer]:
+                      - img [ref=e685] [cursor=pointer]
+                    - button "Hide Post" [ref=e687] [cursor=pointer]:
+                      - img [ref=e689] [cursor=pointer]
+                  - generic [ref=e691]:
+                    - link [ref=e692] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/bec-maitland-a69559115/
+                      - figure [ref=e693] [cursor=pointer]
+                    - link "Bec Maitland • 2nd Senior Recruitment Consultant - Java | AEM | Integration 3h •" [ref=e694] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/bec-maitland-a69559115/
+                      - generic [ref=e695] [cursor=pointer]:
+                        - paragraph [ref=e696] [cursor=pointer]:
+                          - text: Bec Maitland
+                          - img [ref=e699] [cursor=pointer]
+                          - generic [ref=e702] [cursor=pointer]: • 2nd
+                        - paragraph [ref=e703] [cursor=pointer]: Senior Recruitment Consultant - Java | AEM | Integration
+                        - paragraph [ref=e704] [cursor=pointer]:
+                          - text: 3h •
+                          - img [ref=e706] [cursor=pointer]
+                    - button "Invite Bec Maitland to connect" [ref=e711] [cursor=pointer]:
+                      - generic [ref=e712] [cursor=pointer]:
+                        - img [ref=e713] [cursor=pointer]
+                        - generic [ref=e715] [cursor=pointer]: Connect
+                  - paragraph [ref=e716]:
+                    - generic [ref=e717]:
+                      - text: Happy Monday! 🌞 I have a full stack Java/React Dev role on a 3 month contract, based in Melbourne. Paying $750 + GST a day. Let me know if you are in the market and looking for a short term gig. 🤩
+                      - button [ref=e718] [cursor=pointer]:
+                        - generic [ref=e719] [cursor=pointer]: … more
+                  - generic [ref=e720]:
+                    - button "11 reactions" [ref=e721] [cursor=pointer]:
+                      - generic [ref=e722] [cursor=pointer]:
+                        - img [ref=e723] [cursor=pointer]
+                        - img [ref=e729] [cursor=pointer]
+                        - paragraph [ref=e735] [cursor=pointer]:
+                          - generic [ref=e736] [cursor=pointer]: 11 reactions
+                          - generic [ref=e737] [cursor=pointer]: "11"
+                    - generic [ref=e738]:
+                      - button "3 comments" [ref=e739] [cursor=pointer]:
+                        - paragraph [ref=e740] [cursor=pointer]: 3 comments
+                      - paragraph [ref=e741]: •
+                      - button "1 repost" [ref=e742] [cursor=pointer]:
+                        - paragraph [ref=e743] [cursor=pointer]: 1 repost
+                  - generic [ref=e744]:
+                    - generic [ref=e746]:
+                      - 'button "Reaction button state: no reaction" [ref=e749] [cursor=pointer]':
+                        - generic [ref=e750] [cursor=pointer]:
+                          - img [ref=e751] [cursor=pointer]
+                          - generic [ref=e753] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e755] [cursor=pointer]
+                    - button "Comment" [ref=e757] [cursor=pointer]:
+                      - generic [ref=e758] [cursor=pointer]:
+                        - img [ref=e759] [cursor=pointer]
+                        - generic [ref=e761] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e762] [cursor=pointer]:
+                      - generic [ref=e763] [cursor=pointer]:
+                        - img [ref=e764] [cursor=pointer]
+                        - generic [ref=e766] [cursor=pointer]: Repost
+                    - button "Send" [ref=e767] [cursor=pointer]:
+                      - generic [ref=e768] [cursor=pointer]:
+                        - img [ref=e769] [cursor=pointer]
+                        - generic [ref=e771] [cursor=pointer]: Send
+              - listitem [ref=e775]:
+                - generic [ref=e777]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e778]: Feed post
+                  - generic [ref=e779]:
+                    - link [ref=e780] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/shivani-raval-832034ba/
+                      - figure [ref=e781] [cursor=pointer]
+                    - link "Shivani Raval • Following Recruitment Consultant | Zone IT Solutions | Empowering IT Career Growth in Australia 2h •" [ref=e782] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/shivani-raval-832034ba/
+                      - generic [ref=e783] [cursor=pointer]:
+                        - paragraph [ref=e784] [cursor=pointer]:
+                          - text: Shivani Raval
+                          - img [ref=e787] [cursor=pointer]
+                          - generic [ref=e790] [cursor=pointer]: • Following
+                        - paragraph [ref=e791] [cursor=pointer]: Recruitment Consultant | Zone IT Solutions | Empowering IT Career Growth in Australia
+                        - paragraph [ref=e792] [cursor=pointer]:
+                          - text: 2h •
+                          - img [ref=e794] [cursor=pointer]
+                    - button "View more options" [ref=e796] [cursor=pointer]:
+                      - img [ref=e798] [cursor=pointer]
+                    - button "Hide Post" [ref=e800] [cursor=pointer]:
+                      - img [ref=e802] [cursor=pointer]
+                  - paragraph [ref=e804]:
+                    - generic [ref=e805]:
+                      - text: 💡 Python Automation Test Engineer | Perth | Permanent 🤝🔐
+                      - text: 📢
+                      - link "Zone IT Solutions" [ref=e807] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/zoneitsolutions/
+                        - strong [ref=e809] [cursor=pointer]: Zone IT Solutions
+                      - text: is urgently looking for a highly skilled Python Automation Test Engineer to join a dynamic team! We have multiple roles available! 🙌🚀
+                      - text: Role Requirement
+                      - text: ✅ An Automation Test Analyst with over 8 years of experience, specializing in test automation for web applications 🌐 and APIs using Robot Framework 🤖 and Python 🐍.
+                      - text: ✅ Proven ability to implement automation frameworks from scratch 🛠️ and integrate them into CI/CD pipelines 🔄.
+                      - text: Role Details
+                      - text: "🗺️ Location: Onsite based in Perth"
+                      - text: "🗓️ Type: Full-time | Permanent 🤝"
+                      - text: "📧 Apply Directly:"
+                      - link "shivani.raval@zoneitsolutions.com" [ref=e812] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/redir/redirect/?url=mailto%3Ashivani%2Eraval%40zoneitsolutions%2Ecom&urlhash=2_KI&isSdui=true
+                        - strong [ref=e814] [cursor=pointer]: shivani.raval@zoneitsolutions.com
+                      - text: ✉️
+                      - text: "☎️ Contact: 0478 261 707 📞 (available on WhatsApp)"
+                      - text: "🔗 Learn More:"
+                      - link "https://lnkd.in/dhkaZrPe" [ref=e817] [cursor=pointer]:
+                        - /url: https://lnkd.in/dhkaZrPe
+                        - strong [ref=e819] [cursor=pointer]: https://lnkd.in/dhkaZrPe
+                      - text: 💻
+                      - text: Ready to accelerate your career? Let's connect! 🚀💼
+                      - link "#Python" [ref=e821] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23python
+                        - strong [ref=e823] [cursor=pointer]: "#Python"
+                      - link "#AutomationEngineer" [ref=e825] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23automationengineer
+                        - strong [ref=e827] [cursor=pointer]: "#AutomationEngineer"
+                      - link "#TestAutomation" [ref=e829] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testautomation
+                        - strong [ref=e831] [cursor=pointer]: "#TestAutomation"
+                      - link "#RobotFramework" [ref=e833] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23robotframework
+                        - strong [ref=e835] [cursor=pointer]: "#RobotFramework"
+                      - link "#PerthJobs" [ref=e837] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23perthjobs
+                        - strong [ref=e839] [cursor=pointer]: "#PerthJobs"
+                      - link "#ITJobsAustralia" [ref=e841] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23itjobsaustralia
+                        - strong [ref=e843] [cursor=pointer]: "#ITJobsAustralia"
+                      - link "#PermanentRole" [ref=e845] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23permanentrole
+                        - strong [ref=e847] [cursor=pointer]: "#PermanentRole"
+                      - link "#ZoneITSolutions" [ref=e849] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23zoneitsolutions
+                        - strong [ref=e851] [cursor=pointer]: "#ZoneITSolutions"
+                      - button [ref=e852] [cursor=pointer]:
+                        - generic [ref=e853] [cursor=pointer]: … more
+                  - button [ref=e855] [cursor=pointer]:
+                    - figure [ref=e856] [cursor=pointer]
+                  - generic [ref=e857]:
+                    - button "4 reactions" [ref=e858] [cursor=pointer]:
+                      - generic [ref=e859] [cursor=pointer]:
+                        - img [ref=e860] [cursor=pointer]
+                        - img [ref=e866] [cursor=pointer]
+                        - paragraph [ref=e877] [cursor=pointer]:
+                          - generic [ref=e878] [cursor=pointer]: 4 reactions
+                          - generic [ref=e879] [cursor=pointer]: "4"
+                    - generic [ref=e880]:
+                      - button "1 comment" [ref=e881] [cursor=pointer]:
+                        - paragraph [ref=e882] [cursor=pointer]: 1 comment
+                      - paragraph [ref=e883]: •
+                      - button "1 repost" [ref=e884] [cursor=pointer]:
+                        - paragraph [ref=e885] [cursor=pointer]: 1 repost
+                  - generic [ref=e886]:
+                    - generic [ref=e888]:
+                      - 'button "Reaction button state: no reaction" [ref=e891] [cursor=pointer]':
+                        - generic [ref=e892] [cursor=pointer]:
+                          - img [ref=e893] [cursor=pointer]
+                          - generic [ref=e895] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e897] [cursor=pointer]
+                    - button "Comment" [ref=e899] [cursor=pointer]:
+                      - generic [ref=e900] [cursor=pointer]:
+                        - img [ref=e901] [cursor=pointer]
+                        - generic [ref=e903] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e904] [cursor=pointer]:
+                      - generic [ref=e905] [cursor=pointer]:
+                        - img [ref=e906] [cursor=pointer]
+                        - generic [ref=e908] [cursor=pointer]: Repost
+                    - button "Send" [ref=e909] [cursor=pointer]:
+                      - generic [ref=e910] [cursor=pointer]:
+                        - img [ref=e911] [cursor=pointer]
+                        - generic [ref=e913] [cursor=pointer]: Send
+              - listitem [ref=e917]:
+                - generic [ref=e919]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e920]: Feed post
+                  - generic [ref=e921]:
+                    - link [ref=e922] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/hubspot/posts/
+                      - figure [ref=e923] [cursor=pointer]
+                    - link "HubSpot 1,549,524 followers Promoted" [ref=e924] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/hubspot/posts/
+                      - generic [ref=e925] [cursor=pointer]:
+                        - paragraph [ref=e926] [cursor=pointer]: HubSpot
+                        - paragraph [ref=e927] [cursor=pointer]: 1,549,524 followers
+                        - paragraph [ref=e928] [cursor=pointer]: Promoted
+                    - button "View more options" [ref=e929] [cursor=pointer]:
+                      - img [ref=e931] [cursor=pointer]
+                  - generic [ref=e935]:
+                    - paragraph [ref=e936]:
+                      - generic [ref=e937]: 75% of marketers say AI is more important than ever. But only 30% of consumers trust AI search results. Here's the gap you need to close.
+                    - generic [ref=e938]:
+                      - button [ref=e939] [cursor=pointer]:
+                        - figure [ref=e940] [cursor=pointer]
+                      - button "The AI Trust Gap Is Real offers.hubspot.com" [ref=e941] [cursor=pointer]:
+                        - generic [ref=e943] [cursor=pointer]:
+                          - paragraph [ref=e944] [cursor=pointer]: The AI Trust Gap Is Real
+                          - paragraph [ref=e945] [cursor=pointer]: offers.hubspot.com
+                    - button "Download" [ref=e947] [cursor=pointer]:
+                      - generic [ref=e949] [cursor=pointer]: Download
+                  - generic [ref=e950]:
+                    - button "95 reactions" [ref=e951] [cursor=pointer]:
+                      - generic [ref=e952] [cursor=pointer]:
+                        - img [ref=e953] [cursor=pointer]
+                        - img [ref=e959] [cursor=pointer]
+                        - img [ref=e973] [cursor=pointer]
+                        - paragraph [ref=e979] [cursor=pointer]:
+                          - generic [ref=e980] [cursor=pointer]: 95 reactions
+                          - generic [ref=e981] [cursor=pointer]: "95"
+                    - generic [ref=e982]:
+                      - button "2 comments" [ref=e983] [cursor=pointer]:
+                        - paragraph [ref=e984] [cursor=pointer]: 2 comments
+                      - button:
+                        - paragraph
+                  - generic [ref=e985]:
+                    - generic [ref=e987]:
+                      - 'button "Reaction button state: no reaction" [ref=e990] [cursor=pointer]':
+                        - generic [ref=e991] [cursor=pointer]:
+                          - img [ref=e992] [cursor=pointer]
+                          - generic [ref=e994] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e996] [cursor=pointer]
+                    - button "Comment" [ref=e998] [cursor=pointer]:
+                      - generic [ref=e999] [cursor=pointer]:
+                        - img [ref=e1000] [cursor=pointer]
+                        - generic [ref=e1002] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1003] [cursor=pointer]:
+                      - generic [ref=e1004] [cursor=pointer]:
+                        - img [ref=e1005] [cursor=pointer]
+                        - generic [ref=e1007] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1008] [cursor=pointer]:
+                      - generic [ref=e1009] [cursor=pointer]:
+                        - img [ref=e1010] [cursor=pointer]
+                        - generic [ref=e1012] [cursor=pointer]: Send
+              - listitem [ref=e1016]:
+                - generic [ref=e1018]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1019]: Feed post
+                  - generic [ref=e1020]:
+                    - paragraph [ref=e1023]: Jobs recommended for you
+                    - generic [ref=e1027]:
+                      - list [ref=e1028]:
+                        - link "Graduate Manufacturing Engineer (Verified job) Siemens Melbourne, VIC Actively recruiting Posted on September 23, 2025, 9:52 PM" [ref=e1030] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=3V9xoOfNu4t3JaKdaiD7Xg%3D%3D&currentJobId=4293802927&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                          - generic [ref=e1031] [cursor=pointer]:
+                            - generic [ref=e1032] [cursor=pointer]:
+                              - figure [ref=e1033] [cursor=pointer]
+                              - generic [ref=e1034] [cursor=pointer]:
+                                - generic [ref=e1037] [cursor=pointer]:
+                                  - paragraph [ref=e1038] [cursor=pointer]:
+                                    - generic [ref=e1039] [cursor=pointer]: Graduate Manufacturing Engineer (Verified job)
+                                    - generic [ref=e1040] [cursor=pointer]:
+                                      - text: Graduate Manufacturing Engineer
+                                      - img [ref=e1043] [cursor=pointer]
+                                  - paragraph [ref=e1046] [cursor=pointer]: Siemens
+                                  - paragraph [ref=e1047] [cursor=pointer]: Melbourne, VIC
+                                - generic [ref=e1049] [cursor=pointer]:
+                                  - img [ref=e1050] [cursor=pointer]
+                                  - paragraph [ref=e1052] [cursor=pointer]: Actively recruiting
+                            - paragraph [ref=e1054] [cursor=pointer]:
+                              - generic [ref=e1055] [cursor=pointer]: Posted on September 23, 2025, 9:52 PM
+                              - generic [ref=e1056] [cursor=pointer]: 5 days ago
+                        - link "Junior Software QA Engineer (Verified job) Biamp Stafford, QLD (On-site) Actively recruiting Posted on September 27, 2025, 1:41 PM" [ref=e1058] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=fiG19LV90o0FydanKjoJ1w%3D%3D&currentJobId=4294286069&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                          - generic [ref=e1059] [cursor=pointer]:
+                            - generic [ref=e1060] [cursor=pointer]:
+                              - figure [ref=e1061] [cursor=pointer]
+                              - generic [ref=e1062] [cursor=pointer]:
+                                - generic [ref=e1065] [cursor=pointer]:
+                                  - paragraph [ref=e1066] [cursor=pointer]:
+                                    - generic [ref=e1067] [cursor=pointer]: Junior Software QA Engineer (Verified job)
+                                    - generic [ref=e1068] [cursor=pointer]:
+                                      - text: Junior Software QA Engineer
+                                      - img [ref=e1071] [cursor=pointer]
+                                  - paragraph [ref=e1074] [cursor=pointer]: Biamp
+                                  - paragraph [ref=e1075] [cursor=pointer]: Stafford, QLD (On-site)
+                                - generic [ref=e1077] [cursor=pointer]:
+                                  - img [ref=e1078] [cursor=pointer]
+                                  - paragraph [ref=e1080] [cursor=pointer]: Actively recruiting
+                            - paragraph [ref=e1082] [cursor=pointer]:
+                              - generic [ref=e1083] [cursor=pointer]: Posted on September 27, 2025, 1:41 PM
+                              - generic [ref=e1084] [cursor=pointer]: 1 day ago
+                        - link "Project Engineer MOITS Greater Sydney Area (On-site) Actively reviewing applicants Posted on September 22, 2025, 9:24 PM · Easy Apply" [ref=e1086] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=JLeRroN1jYr%2BgTbp%2FSBmDw%3D%3D&currentJobId=4294654792&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                          - generic [ref=e1087] [cursor=pointer]:
+                            - generic [ref=e1088] [cursor=pointer]:
+                              - figure [ref=e1089] [cursor=pointer]
+                              - generic [ref=e1090] [cursor=pointer]:
+                                - generic [ref=e1093] [cursor=pointer]:
+                                  - paragraph [ref=e1094] [cursor=pointer]: Project Engineer
+                                  - paragraph [ref=e1096] [cursor=pointer]: MOITS
+                                  - paragraph [ref=e1097] [cursor=pointer]: Greater Sydney Area (On-site)
+                                - generic [ref=e1099] [cursor=pointer]:
+                                  - img [ref=e1100] [cursor=pointer]
+                                  - paragraph [ref=e1103] [cursor=pointer]: Actively reviewing applicants
+                            - generic [ref=e1104] [cursor=pointer]:
+                              - paragraph [ref=e1105] [cursor=pointer]:
+                                - generic [ref=e1106] [cursor=pointer]: Posted on September 22, 2025, 9:24 PM
+                                - generic [ref=e1107] [cursor=pointer]: 6 days ago
+                              - paragraph [ref=e1108] [cursor=pointer]: ·
+                              - paragraph [ref=e1109] [cursor=pointer]:
+                                - img [ref=e1111] [cursor=pointer]
+                                - text: Easy Apply
+                        - link "Graduate Engineer (Verified job) Contract Resources Pty Ltd Lytton, QLD (On-site) 1 school alumni works here Posted on September 26, 2025, 3:11 PM" [ref=e1115] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=wopf4%2BsumRgLUbPWgUQraA%3D%3D&currentJobId=4306446394&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                          - generic [ref=e1116] [cursor=pointer]:
+                            - generic [ref=e1117] [cursor=pointer]:
+                              - figure [ref=e1118] [cursor=pointer]
+                              - generic [ref=e1119] [cursor=pointer]:
+                                - generic [ref=e1122] [cursor=pointer]:
+                                  - paragraph [ref=e1123] [cursor=pointer]:
+                                    - generic [ref=e1124] [cursor=pointer]: Graduate Engineer (Verified job)
+                                    - generic [ref=e1125] [cursor=pointer]:
+                                      - text: Graduate Engineer
+                                      - img [ref=e1128] [cursor=pointer]
+                                  - paragraph [ref=e1131] [cursor=pointer]: Contract Resources Pty Ltd
+                                  - paragraph [ref=e1132] [cursor=pointer]: Lytton, QLD (On-site)
+                                - generic [ref=e1134] [cursor=pointer]:
+                                  - figure [ref=e1135] [cursor=pointer]
+                                  - paragraph [ref=e1136] [cursor=pointer]: 1 school alumni works here
+                            - paragraph [ref=e1138] [cursor=pointer]:
+                              - generic [ref=e1139] [cursor=pointer]: Posted on September 26, 2025, 3:11 PM
+                              - generic [ref=e1140] [cursor=pointer]: 2 days ago
+                        - link "Quality Assurance Technician (Verified job) Diageo Sydney, NSW (On-site) Actively recruiting Posted on September 22, 2025, 3:10 PM" [ref=e1142] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=xBg7Rip8TcOss0OqrRhVNw%3D%3D&currentJobId=4303939617&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                          - generic [ref=e1143] [cursor=pointer]:
+                            - generic [ref=e1144] [cursor=pointer]:
+                              - figure [ref=e1145] [cursor=pointer]
+                              - generic [ref=e1146] [cursor=pointer]:
+                                - generic [ref=e1149] [cursor=pointer]:
+                                  - paragraph [ref=e1150] [cursor=pointer]:
+                                    - generic [ref=e1151] [cursor=pointer]: Quality Assurance Technician (Verified job)
+                                    - generic [ref=e1152] [cursor=pointer]:
+                                      - text: Quality Assurance Technician
+                                      - img [ref=e1155] [cursor=pointer]
+                                  - paragraph [ref=e1158] [cursor=pointer]: Diageo
+                                  - paragraph [ref=e1159] [cursor=pointer]: Sydney, NSW (On-site)
+                                - generic [ref=e1161] [cursor=pointer]:
+                                  - img [ref=e1162] [cursor=pointer]
+                                  - paragraph [ref=e1164] [cursor=pointer]: Actively recruiting
+                            - paragraph [ref=e1166] [cursor=pointer]:
+                              - generic [ref=e1167] [cursor=pointer]: Posted on September 22, 2025, 3:10 PM
+                              - generic [ref=e1168] [cursor=pointer]: 6 days ago
+                      - button "Next" [ref=e1169] [cursor=pointer]:
+                        - img [ref=e1171] [cursor=pointer]
+                    - link "Show more" [ref=e1173] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/jobs/collections/recommended/?discover=recommended&trackingId=3V9xoOfNu4t3JaKdaiD7Xg%3D%3D&currentJobId=4293802927&discoveryOrigin=MAIN_FEED_JYMBII&originToLandingJobPostings=4293802927%2C4294286069%2C4294654792%2C4306446394%2C4303939617
+                      - generic [ref=e1174] [cursor=pointer]:
+                        - img [ref=e1175] [cursor=pointer]
+                        - generic [ref=e1177] [cursor=pointer]: Show more
+              - listitem [ref=e1181]:
+                - generic [ref=e1183]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1184]: Feed post
+                  - generic [ref=e1185]:
+                    - generic [ref=e1186]:
+                      - link [ref=e1187] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/sahil-kapoor25/
+                        - figure [ref=e1188] [cursor=pointer]
+                      - paragraph [ref=e1189]:
+                        - link "Sahil kapoor" [ref=e1190] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/sahil-kapoor25/
+                          - strong [ref=e1191] [cursor=pointer]: Sahil kapoor
+                        - text: commented on this
+                    - button "View more options" [ref=e1193] [cursor=pointer]:
+                      - img [ref=e1195] [cursor=pointer]
+                    - button "Hide Post" [ref=e1197] [cursor=pointer]:
+                      - img [ref=e1199] [cursor=pointer]
+                  - generic [ref=e1201]:
+                    - link [ref=e1202] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/anmol-agarwal-674a21166/
+                      - figure [ref=e1203] [cursor=pointer]
+                    - link "Anmol A. • 3rd+ Software Engineer 2 @Uber | ex- Deshaw | Opinions and views are of my own | Content Creator | 100K+ followers | React | Golang | Fullstack | DM for referrals | NSIT(now NSUT) | Mentor | Singer and Guitarist | Youtuber 18h •" [ref=e1204] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/anmol-agarwal-674a21166/
+                      - generic [ref=e1205] [cursor=pointer]:
+                        - paragraph [ref=e1206] [cursor=pointer]:
+                          - text: Anmol A.
+                          - img [ref=e1209] [cursor=pointer]
+                          - generic [ref=e1212] [cursor=pointer]: • 3rd+
+                        - paragraph [ref=e1213] [cursor=pointer]: Software Engineer 2 @Uber | ex- Deshaw | Opinions and views are of my own | Content Creator | 100K+ followers | React | Golang | Fullstack | DM for referrals | NSIT(now NSUT) | Mentor | Singer and Guitarist | Youtuber
+                        - paragraph [ref=e1214] [cursor=pointer]:
+                          - text: 18h •
+                          - img [ref=e1216] [cursor=pointer]
+                    - button "Follow Anmol A." [ref=e1221] [cursor=pointer]:
+                      - generic [ref=e1222] [cursor=pointer]:
+                        - img [ref=e1223] [cursor=pointer]
+                        - generic [ref=e1225] [cursor=pointer]: Follow
+                  - paragraph [ref=e1226]:
+                    - generic [ref=e1227]:
+                      - text: Nakal ka liye bhi akal chahiye😞😞😞
+                      - text: When I take interviews
+                      - text: I change the leetcode problem completely like changing the constraints and all
+                      - text: Now the folks who cheat they just find same problem from leetcode and start explaining me the solution
+                      - text: Now they are sure solution is perfect but its not. In complete interview they keep me convincing its correct solution…
+                      - text: And get rejected😛😛😛
+                      - text: Don’t mess with interviewers
+                      - link "#leetcode" [ref=e1229] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23leetcode
+                        - strong [ref=e1231] [cursor=pointer]: "#leetcode"
+                      - link "#dsa" [ref=e1233] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23dsa
+                        - strong [ref=e1235] [cursor=pointer]: "#dsa"
+                      - button [ref=e1236] [cursor=pointer]:
+                        - generic [ref=e1237] [cursor=pointer]: … more
+                  - generic [ref=e1238]:
+                    - button "258 reactions" [ref=e1239] [cursor=pointer]:
+                      - generic [ref=e1240] [cursor=pointer]:
+                        - img [ref=e1241] [cursor=pointer]
+                        - img [ref=e1247] [cursor=pointer]
+                        - img [ref=e1253] [cursor=pointer]
+                        - paragraph [ref=e1261] [cursor=pointer]:
+                          - generic [ref=e1262] [cursor=pointer]: 258 reactions
+                          - generic [ref=e1263] [cursor=pointer]: "258"
+                    - generic [ref=e1264]:
+                      - button "12 comments" [ref=e1265] [cursor=pointer]:
+                        - paragraph [ref=e1266] [cursor=pointer]: 12 comments
+                      - button:
+                        - paragraph
+                  - generic [ref=e1267]:
+                    - generic [ref=e1269]:
+                      - 'button "Reaction button state: no reaction" [ref=e1272] [cursor=pointer]':
+                        - generic [ref=e1273] [cursor=pointer]:
+                          - img [ref=e1274] [cursor=pointer]
+                          - generic [ref=e1276] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1278] [cursor=pointer]
+                    - button "Comment" [ref=e1280] [cursor=pointer]:
+                      - generic [ref=e1281] [cursor=pointer]:
+                        - img [ref=e1282] [cursor=pointer]
+                        - generic [ref=e1284] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1285] [cursor=pointer]:
+                      - generic [ref=e1286] [cursor=pointer]:
+                        - img [ref=e1287] [cursor=pointer]
+                        - generic [ref=e1289] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1290] [cursor=pointer]:
+                      - generic [ref=e1291] [cursor=pointer]:
+                        - img [ref=e1292] [cursor=pointer]
+                        - generic [ref=e1294] [cursor=pointer]: Send
+                - generic [ref=e1295]:
+                  - generic [ref=e1300]:
+                    - link [ref=e1302] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/sahil-kapoor25/
+                      - figure [ref=e1303] [cursor=pointer]
+                    - generic [ref=e1304]:
+                      - generic [ref=e1306]:
+                        - link "Sahil kapoor • Following 24k | SDET II @Amazon | Creating solutions for complex problems | Automation & Testing | Hustler | Fast Learner | Tech Enthusiast | Interview Mentor" [ref=e1307] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/sahil-kapoor25/
+                          - generic [ref=e1308] [cursor=pointer]:
+                            - paragraph [ref=e1310] [cursor=pointer]:
+                              - text: Sahil kapoor
+                              - img [ref=e1313] [cursor=pointer]
+                              - generic [ref=e1316] [cursor=pointer]: • Following
+                            - paragraph [ref=e1317] [cursor=pointer]: 24k | SDET II @Amazon | Creating solutions for complex problems | Automation & Testing | Hustler | Fast Learner | Tech Enthusiast | Interview Mentor
+                        - paragraph [ref=e1318]: 17h
+                        - button "View more options" [ref=e1319] [cursor=pointer]:
+                          - img [ref=e1321] [cursor=pointer]
+                      - paragraph [ref=e1326]:
+                        - generic [ref=e1327]: I don't think this trick will work for the clever candidates, AI will modify the solutions too, according to the given problem.
+                      - generic [ref=e1329]:
+                        - generic [ref=e1330]:
+                          - generic [ref=e1332]:
+                            - 'button "Reaction button state: no reaction" [ref=e1333] [cursor=pointer]':
+                              - 'button "Reaction button state: no reaction" [ref=e1336] [cursor=pointer]':
+                                - 'button "Reaction button state: no reaction" [ref=e1338] [cursor=pointer]':
+                                  - generic [ref=e1339] [cursor=pointer]: "Reaction button state: no reaction"
+                                  - generic [ref=e1340] [cursor=pointer]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e1342] [cursor=pointer]
+                          - button "3 reactions" [ref=e1344] [cursor=pointer]:
+                            - generic [ref=e1345] [cursor=pointer]:
+                              - img [ref=e1346] [cursor=pointer]
+                              - paragraph [ref=e1352] [cursor=pointer]:
+                                - generic [ref=e1353] [cursor=pointer]: 3 reactions
+                                - generic [ref=e1354] [cursor=pointer]: "3"
+                        - button "Reply" [ref=e1356] [cursor=pointer]:
+                          - paragraph [ref=e1357] [cursor=pointer]: Reply
+                  - button "Load more comments" [ref=e1359] [cursor=pointer]:
+                    - generic [ref=e1361] [cursor=pointer]: Load more comments
+              - listitem [ref=e1365]:
+                - generic [ref=e1367]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1368]: Feed post
+                  - generic [ref=e1369]:
+                    - link [ref=e1370] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/openai-for-business/posts/
+                      - figure [ref=e1371] [cursor=pointer]
+                    - link "OpenAI for Business 192,794 followers Promoted" [ref=e1372] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/openai-for-business/posts/
+                      - generic [ref=e1373] [cursor=pointer]:
+                        - paragraph [ref=e1374] [cursor=pointer]: OpenAI for Business
+                        - paragraph [ref=e1375] [cursor=pointer]: 192,794 followers
+                        - paragraph [ref=e1376] [cursor=pointer]: Promoted
+                    - button "View more options" [ref=e1377] [cursor=pointer]:
+                      - img [ref=e1379] [cursor=pointer]
+                  - paragraph [ref=e1381]:
+                    - generic [ref=e1382]: AI that supports your team’s workflow - from daily tasks to big-picture goals. See how ChatGPT can help your business get more done today.
+                  - generic [ref=e1383]:
+                    - link [ref=e1384] [cursor=pointer]:
+                      - /url: https://chatgpt.com/business/?utm_source=linkedin&utm_medium=paidsocial_Prospecting&utm_campaign=DEPT_SOC_LinkedIn_Lead_Prospecting_APAC_Australia_B2B-GPT_Search_BAU_EN&utm_content=LKD_B_PSO_LKD_F-PD-SI-GPT_BUS_BAU_ACQ_PER_INT_ALL_APAC_AU_EN_092225&utm_term=Static_B2B_V1-Image_For-Business_Square
+                      - figure [ref=e1385] [cursor=pointer]
+                    - link "Try ChatGPT for Business today chatgpt.com Sign Up" [ref=e1386] [cursor=pointer]:
+                      - /url: https://chatgpt.com/business/?utm_source=linkedin&utm_medium=paidsocial_Prospecting&utm_campaign=DEPT_SOC_LinkedIn_Lead_Prospecting_APAC_Australia_B2B-GPT_Search_BAU_EN&utm_content=LKD_B_PSO_LKD_F-PD-SI-GPT_BUS_BAU_ACQ_PER_INT_ALL_APAC_AU_EN_092225&utm_term=Static_B2B_V1-Image_For-Business_Square
+                      - generic [ref=e1387] [cursor=pointer]:
+                        - generic [ref=e1388] [cursor=pointer]:
+                          - paragraph [ref=e1389] [cursor=pointer]: Try ChatGPT for Business today
+                          - paragraph [ref=e1390] [cursor=pointer]: chatgpt.com
+                        - link "Sign Up" [ref=e1391] [cursor=pointer]:
+                          - /url: https://chatgpt.com/business/?utm_source=linkedin&utm_medium=paidsocial_Prospecting&utm_campaign=DEPT_SOC_LinkedIn_Lead_Prospecting_APAC_Australia_B2B-GPT_Search_BAU_EN&utm_content=LKD_B_PSO_LKD_F-PD-SI-GPT_BUS_BAU_ACQ_PER_INT_ALL_APAC_AU_EN_092225&utm_term=Static_B2B_V1-Image_For-Business_Square
+                          - generic [ref=e1393] [cursor=pointer]: Sign Up
+                  - generic [ref=e1394]:
+                    - generic [ref=e1396]:
+                      - 'button "Reaction button state: no reaction" [ref=e1399] [cursor=pointer]':
+                        - generic [ref=e1400] [cursor=pointer]:
+                          - img [ref=e1401] [cursor=pointer]
+                          - generic [ref=e1403] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1405] [cursor=pointer]
+                    - button "Comment" [ref=e1407] [cursor=pointer]:
+                      - generic [ref=e1408] [cursor=pointer]:
+                        - img [ref=e1409] [cursor=pointer]
+                        - generic [ref=e1411] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1412] [cursor=pointer]:
+                      - generic [ref=e1413] [cursor=pointer]:
+                        - img [ref=e1414] [cursor=pointer]
+                        - generic [ref=e1416] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1417] [cursor=pointer]:
+                      - generic [ref=e1418] [cursor=pointer]:
+                        - img [ref=e1419] [cursor=pointer]
+                        - generic [ref=e1421] [cursor=pointer]: Send
+              - listitem [ref=e1425]:
+                - generic [ref=e1427]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1428]: Feed post
+                  - generic [ref=e1429]:
+                    - generic [ref=e1430]:
+                      - link [ref=e1431] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/paulwaltersuk/
+                        - figure [ref=e1432] [cursor=pointer]
+                      - paragraph [ref=e1433]:
+                        - link "Paul Maxwell-Walters" [ref=e1434] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/paulwaltersuk/
+                          - strong [ref=e1435] [cursor=pointer]: Paul Maxwell-Walters
+                        - text: celebrates this
+                    - button "View more options" [ref=e1437] [cursor=pointer]:
+                      - img [ref=e1439] [cursor=pointer]
+                    - button "Hide Post" [ref=e1441] [cursor=pointer]:
+                      - img [ref=e1443] [cursor=pointer]
+                  - generic [ref=e1445]:
+                    - link [ref=e1446] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/small-caps/posts/
+                      - figure [ref=e1447] [cursor=pointer]
+                    - link "Small Caps 11,393 followers 1w • Edited •" [ref=e1448] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/small-caps/posts/
+                      - generic [ref=e1449] [cursor=pointer]:
+                        - paragraph [ref=e1450] [cursor=pointer]: Small Caps
+                        - paragraph [ref=e1451] [cursor=pointer]: 11,393 followers
+                        - paragraph [ref=e1452] [cursor=pointer]:
+                          - text: 1w • Edited •
+                          - img [ref=e1454] [cursor=pointer]
+                    - button "Follow Small Caps" [ref=e1459] [cursor=pointer]:
+                      - generic [ref=e1460] [cursor=pointer]:
+                        - img [ref=e1461] [cursor=pointer]
+                        - generic [ref=e1463] [cursor=pointer]: Follow
+                  - paragraph [ref=e1464]:
+                    - generic [ref=e1465]:
+                      - text: Milestone for
+                      - link "DroneShield" [ref=e1467] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/droneshield/
+                        - strong [ref=e1469] [cursor=pointer]: DroneShield
+                      - text: ": 4,000+ systems now deployed globally, with two new US Department of Defense orders ($7.9m). Rapid fulfilment from stock underscores growing mainstream adoption in the world’s largest defense market. Small Caps."
+                      - link "Oleg Vornik" [ref=e1471] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/oleg-vornik/
+                        - strong [ref=e1473] [cursor=pointer]: Oleg Vornik
+                      - link "Small Caps" [ref=e1475] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/small-caps/
+                        - strong [ref=e1477] [cursor=pointer]: Small Caps
+                      - link "#ASX" [ref=e1478] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23asx
+                        - strong [ref=e1480] [cursor=pointer]: "#ASX"
+                      - link "#DRO" [ref=e1482] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23dro
+                        - strong [ref=e1484] [cursor=pointer]: "#DRO"
+                      - link "#defenceTech" [ref=e1486] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23defencetech
+                        - strong [ref=e1488] [cursor=pointer]: "#defenceTech"
+                      - link "#nationalSecurity" [ref=e1490] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23nationalsecurity
+                        - strong [ref=e1492] [cursor=pointer]: "#nationalSecurity"
+                      - button [ref=e1493] [cursor=pointer]:
+                        - generic [ref=e1494] [cursor=pointer]: … more
+                  - link "DroneShield Surpasses 4,000 Systems Sold With $7.9m US Department of Defense Orders smallcaps.com.au" [ref=e1495] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fsmallcaps%2Ecom%2Eau%2Fdroneshield-surpasses-4000-systems-sold-us-department-defense-orders%2F&urlhash=aGfw&isSdui=true
+                    - generic [ref=e1496] [cursor=pointer]:
+                      - figure [ref=e1497] [cursor=pointer]
+                      - generic [ref=e1498] [cursor=pointer]:
+                        - paragraph [ref=e1499] [cursor=pointer]: DroneShield Surpasses 4,000 Systems Sold With $7.9m US Department of Defense Orders
+                        - paragraph [ref=e1500] [cursor=pointer]: smallcaps.com.au
+                  - generic [ref=e1501]:
+                    - button "21 reactions" [ref=e1502] [cursor=pointer]:
+                      - generic [ref=e1503] [cursor=pointer]:
+                        - img [ref=e1504] [cursor=pointer]
+                        - img [ref=e1510] [cursor=pointer]
+                        - paragraph [ref=e1524] [cursor=pointer]:
+                          - generic [ref=e1525] [cursor=pointer]: 21 reactions
+                          - generic [ref=e1526] [cursor=pointer]: "21"
+                    - generic [ref=e1527]:
+                      - button:
+                        - paragraph
+                      - button "1 repost" [ref=e1528] [cursor=pointer]:
+                        - paragraph [ref=e1529] [cursor=pointer]: 1 repost
+                  - generic [ref=e1530]:
+                    - generic [ref=e1532]:
+                      - 'button "Reaction button state: no reaction" [ref=e1535] [cursor=pointer]':
+                        - generic [ref=e1536] [cursor=pointer]:
+                          - img [ref=e1537] [cursor=pointer]
+                          - generic [ref=e1539] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1541] [cursor=pointer]
+                    - button "Comment" [ref=e1543] [cursor=pointer]:
+                      - generic [ref=e1544] [cursor=pointer]:
+                        - img [ref=e1545] [cursor=pointer]
+                        - generic [ref=e1547] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1548] [cursor=pointer]:
+                      - generic [ref=e1549] [cursor=pointer]:
+                        - img [ref=e1550] [cursor=pointer]
+                        - generic [ref=e1552] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1553] [cursor=pointer]:
+                      - generic [ref=e1554] [cursor=pointer]:
+                        - img [ref=e1555] [cursor=pointer]
+                        - generic [ref=e1557] [cursor=pointer]: Send
+              - listitem [ref=e1561]:
+                - generic [ref=e1563]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1564]: Feed post
+                  - generic [ref=e1565]:
+                    - link [ref=e1566] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/tryhackme/posts/
+                      - figure [ref=e1567] [cursor=pointer]
+                    - link "TryHackMe 680,401 followers 2w •" [ref=e1568] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/tryhackme/posts/
+                      - generic [ref=e1569] [cursor=pointer]:
+                        - paragraph [ref=e1570] [cursor=pointer]: TryHackMe
+                        - paragraph [ref=e1571] [cursor=pointer]: 680,401 followers
+                        - paragraph [ref=e1572] [cursor=pointer]:
+                          - text: 2w •
+                          - img [ref=e1574] [cursor=pointer]
+                    - button "View more options" [ref=e1576] [cursor=pointer]:
+                      - img [ref=e1578] [cursor=pointer]
+                    - button "Hide Post" [ref=e1580] [cursor=pointer]:
+                      - img [ref=e1582] [cursor=pointer]
+                  - paragraph [ref=e1584]:
+                    - generic [ref=e1585]:
+                      - text: 🎓💻 Cyber students, this one’s for you!
+                      - text: Getting your degree is a huge milestone, but what you do before graduation can set you apart in the real world. That’s why we’ve pulled together 5 things every cyber student should focus on to build confidence, stand out to employers, and stay motivated.
+                      - text: 🌍 The best part? You don’t have to do it alone. The cyber community is full of people ready to share advice, cheer you on, and help you grow.
+                      - text: "💡 Students: Which of these are you already doing?"
+                      - text: "💡 Cyber Pros: What’s the one thing you wish you knew before starting your career?"
+                      - text: Drop them in the comments!
+                      - text: 👉 Keep building skills that matter with the TryHackMe roadmap, guiding you every step of the way!
+                      - link "https://lnkd.in/d3ksxPSP" [ref=e1587] [cursor=pointer]:
+                        - /url: https://lnkd.in/d3ksxPSP
+                        - strong [ref=e1589] [cursor=pointer]: https://lnkd.in/d3ksxPSP
+                      - button [ref=e1590] [cursor=pointer]:
+                        - generic [ref=e1591] [cursor=pointer]: … more
+                  - generic [ref=e1593]:
+                    - generic [ref=e1594]:
+                      - paragraph [ref=e1595]: 5 Things every cyber student should know before graduating
+                      - paragraph [ref=e1596]: 6 pages
+                    - generic [ref=e1598]:
+                      - button [ref=e1599] [cursor=pointer]:
+                        - img [ref=e1601] [cursor=pointer]
+                      - list [ref=e1603]:
+                        - listitem [ref=e1604]:
+                          - figure [ref=e1605]
+                        - listitem [ref=e1606]
+                        - listitem [ref=e1620]
+                        - listitem [ref=e1634]
+                        - listitem [ref=e1648]
+                        - listitem [ref=e1662]
+                    - generic [ref=e1676]:
+                      - paragraph [ref=e1677]: 1 / 6
+                      - generic [ref=e1680]:
+                        - slider [ref=e1681]: "0"
+                        - status: "0"
+                      - button "Full screen" [ref=e1682] [cursor=pointer]:
+                        - img [ref=e1684] [cursor=pointer]
+                  - generic [ref=e1686]:
+                    - button "894 reactions" [ref=e1687] [cursor=pointer]:
+                      - generic [ref=e1688] [cursor=pointer]:
+                        - img [ref=e1689] [cursor=pointer]
+                        - img [ref=e1695] [cursor=pointer]
+                        - img [ref=e1701] [cursor=pointer]
+                        - paragraph [ref=e1709] [cursor=pointer]:
+                          - generic [ref=e1710] [cursor=pointer]: 894 reactions
+                          - generic [ref=e1711] [cursor=pointer]: "894"
+                    - generic [ref=e1712]:
+                      - button "28 comments" [ref=e1713] [cursor=pointer]:
+                        - paragraph [ref=e1714] [cursor=pointer]: 28 comments
+                      - paragraph [ref=e1715]: •
+                      - button "83 reposts" [ref=e1716] [cursor=pointer]:
+                        - paragraph [ref=e1717] [cursor=pointer]: 83 reposts
+                  - generic [ref=e1718]:
+                    - generic [ref=e1720]:
+                      - 'button "Reaction button state: no reaction" [ref=e1723] [cursor=pointer]':
+                        - generic [ref=e1724] [cursor=pointer]:
+                          - img [ref=e1725] [cursor=pointer]
+                          - generic [ref=e1727] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1729] [cursor=pointer]
+                    - button "Comment" [ref=e1731] [cursor=pointer]:
+                      - generic [ref=e1732] [cursor=pointer]:
+                        - img [ref=e1733] [cursor=pointer]
+                        - generic [ref=e1735] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1736] [cursor=pointer]:
+                      - generic [ref=e1737] [cursor=pointer]:
+                        - img [ref=e1738] [cursor=pointer]
+                        - generic [ref=e1740] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1741] [cursor=pointer]:
+                      - generic [ref=e1742] [cursor=pointer]:
+                        - img [ref=e1743] [cursor=pointer]
+                        - generic [ref=e1745] [cursor=pointer]: Send
+                - generic [ref=e1746]:
+                  - generic [ref=e1751]:
+                    - link [ref=e1753] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/adamgoss1/
+                      - figure [ref=e1754] [cursor=pointer]
+                    - generic [ref=e1755]:
+                      - generic [ref=e1757]:
+                        - link "Adam Goss • 3rd+ I help businesses and individuals enhance their cyber threat intelligence processes, develop their skills, and make CTI actionable." [ref=e1758] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/adamgoss1/
+                          - generic [ref=e1759] [cursor=pointer]:
+                            - paragraph [ref=e1761] [cursor=pointer]:
+                              - text: Adam Goss
+                              - img [ref=e1764] [cursor=pointer]
+                              - generic [ref=e1767] [cursor=pointer]: • 3rd+
+                            - paragraph [ref=e1768] [cursor=pointer]: I help businesses and individuals enhance their cyber threat intelligence processes, develop their skills, and make CTI actionable.
+                        - paragraph [ref=e1769]: 2w
+                        - button "View more options" [ref=e1770] [cursor=pointer]:
+                          - img [ref=e1772] [cursor=pointer]
+                      - paragraph [ref=e1777]:
+                        - generic [ref=e1778]:
+                          - text: Great question for the pros! The one thing I wish I knew before starting my career is that technical skills get you the interview, but business context gets you the promotion. Early in your career, everyone is focused on learning tools. You can stand out immediately by learning to answer the "so what?" for every task you're given. Don't just find a vulnerability; understand the business process it impacts and the potential financial or reputational risk.
+                          - button [ref=e1779] [cursor=pointer]:
+                            - generic [ref=e1780] [cursor=pointer]: … more
+                      - generic [ref=e1782]:
+                        - generic [ref=e1783]:
+                          - generic [ref=e1785]:
+                            - 'button "Reaction button state: no reaction" [ref=e1786] [cursor=pointer]':
+                              - 'button "Reaction button state: no reaction" [ref=e1789] [cursor=pointer]':
+                                - 'button "Reaction button state: no reaction" [ref=e1791] [cursor=pointer]':
+                                  - generic [ref=e1792] [cursor=pointer]: "Reaction button state: no reaction"
+                                  - generic [ref=e1793] [cursor=pointer]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e1795] [cursor=pointer]
+                          - button "22 reactions" [ref=e1797] [cursor=pointer]:
+                            - generic [ref=e1798] [cursor=pointer]:
+                              - img [ref=e1799] [cursor=pointer]
+                              - paragraph [ref=e1805] [cursor=pointer]:
+                                - generic [ref=e1806] [cursor=pointer]: 22 reactions
+                                - generic [ref=e1807] [cursor=pointer]: "22"
+                        - generic [ref=e1808]:
+                          - button "Reply" [ref=e1809] [cursor=pointer]:
+                            - paragraph [ref=e1810] [cursor=pointer]: Reply
+                          - generic [ref=e1811]:
+                            - paragraph [ref=e1812]: •
+                            - button "1 reply" [ref=e1813] [cursor=pointer]:
+                              - paragraph [ref=e1814] [cursor=pointer]: 1 reply
+                  - button "Load more comments" [ref=e1816] [cursor=pointer]:
+                    - generic [ref=e1818] [cursor=pointer]: Load more comments
+              - listitem [ref=e1822]:
+                - generic [ref=e1824]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1825]: Feed post
+                  - generic [ref=e1826]:
+                    - paragraph [ref=e1828]: Suggested
+                    - button "View more options" [ref=e1829] [cursor=pointer]:
+                      - img [ref=e1831] [cursor=pointer]
+                    - button "Hide Post" [ref=e1833] [cursor=pointer]:
+                      - img [ref=e1835] [cursor=pointer]
+                  - generic [ref=e1837]:
+                    - link [ref=e1838] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/ben-f-44778426/
+                      - figure [ref=e1839] [cursor=pointer]
+                    - link "Ben F. • 2nd Join us for a workshop on AI in QA! LINKS IN ABOUT Visit my website 2d •" [ref=e1840] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/ben-f-44778426/
+                      - generic [ref=e1841] [cursor=pointer]:
+                        - paragraph [ref=e1842] [cursor=pointer]:
+                          - text: Ben F.
+                          - img [ref=e1845] [cursor=pointer]
+                          - generic [ref=e1848] [cursor=pointer]: • 2nd
+                        - paragraph [ref=e1849] [cursor=pointer]: Join us for a workshop on AI in QA! LINKS IN ABOUT
+                        - link "Visit my website" [ref=e1851] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fwww%2Eworkwithloop%2Ecom%2F&urlhash=1MAw&isSdui=true
+                          - paragraph [ref=e1852] [cursor=pointer]: Visit my website
+                        - paragraph [ref=e1853] [cursor=pointer]:
+                          - text: 2d •
+                          - img [ref=e1855] [cursor=pointer]
+                    - button "Follow Ben F." [ref=e1860] [cursor=pointer]:
+                      - generic [ref=e1861] [cursor=pointer]:
+                        - img [ref=e1862] [cursor=pointer]
+                        - generic [ref=e1864] [cursor=pointer]: Follow
+                  - paragraph [ref=e1865]:
+                    - generic [ref=e1866]:
+                      - text: In the past eight weeks, nearly 250 people (241 to be exact) have RSVP’d for my free AI in QA workshops.
+                      - text: A year ago, when I posted about augmented coding, the top comments were often dismissive, either calling it “not real engineering” or ridiculing me as a sellout engineer.
+                      - text: It feels like the industry has truly turned a corner in recognizing that augmented coding not only makes us more productive, but can also be applied in serious engineering.
+                      - text: My goal is to have 1,000 people RSVP for workshops by the end of 2025. Please tag someone you think would benefit, or let me know a topic you’d like to see covered in a future session.
+                      - text: 1. An intro to Cursor, Playwright & LLMs
+                      - text: This hour-long session will focus on getting you comfortable with Cursor and the tips and tricks that are key for QA engineers using it.
+                      - text: I’ll walk you through model selection, how to set context, how to use rules, and more. This is great for anyone who is fairly new to Cursor and wants to start using it.
+                      - text: 2. Using Cursor to build your POM
+                      - text: This session will leverage Cursor to build out a basic page object model. I’ll show you how to do this using both the DOM and code.
+                      - text: Additionally, we’ll cover adding test IDs to the codebase and look at strategies for handling test data.
+                      - text: "3. Directors only: How can Cursor help your team?"
+                      - text: These are ad-hoc sessions any manager, director, CTO, etc., can book. I’ve already done several and really enjoy them.
+                      - text: They tend to be conversations about your current approach, with me demoing whether or not Cursor can be helpful.
+                      - text: They are often fascinating discussions about QA and usually offer a nugget or two that people take away.
+                      - link "#ai" [ref=e1868] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai
+                        - strong [ref=e1870] [cursor=pointer]: "#ai"
+                      - link "#qa" [ref=e1872] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23qa
+                        - strong [ref=e1874] [cursor=pointer]: "#qa"
+                      - link "#testing" [ref=e1876] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23testing
+                        - strong [ref=e1878] [cursor=pointer]: "#testing"
+                      - link "#engineering" [ref=e1880] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23engineering
+                        - strong [ref=e1882] [cursor=pointer]: "#engineering"
+                      - button [ref=e1883] [cursor=pointer]:
+                        - generic [ref=e1884] [cursor=pointer]: … more
+                  - generic [ref=e1885]:
+                    - button "42 reactions" [ref=e1886] [cursor=pointer]:
+                      - generic [ref=e1887] [cursor=pointer]:
+                        - img [ref=e1888] [cursor=pointer]
+                        - img [ref=e1894] [cursor=pointer]
+                        - img [ref=e1908] [cursor=pointer]
+                        - paragraph [ref=e1914] [cursor=pointer]:
+                          - generic [ref=e1915] [cursor=pointer]: 42 reactions
+                          - generic [ref=e1916] [cursor=pointer]: "42"
+                    - generic [ref=e1917]:
+                      - button "7 comments" [ref=e1918] [cursor=pointer]:
+                        - paragraph [ref=e1919] [cursor=pointer]: 7 comments
+                      - paragraph [ref=e1920]: •
+                      - button "4 reposts" [ref=e1921] [cursor=pointer]:
+                        - paragraph [ref=e1922] [cursor=pointer]: 4 reposts
+                  - generic [ref=e1923]:
+                    - generic [ref=e1925]:
+                      - 'button "Reaction button state: no reaction" [ref=e1928] [cursor=pointer]':
+                        - generic [ref=e1929] [cursor=pointer]:
+                          - img [ref=e1930] [cursor=pointer]
+                          - generic [ref=e1932] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1934] [cursor=pointer]
+                    - button "Comment" [ref=e1936] [cursor=pointer]:
+                      - generic [ref=e1937] [cursor=pointer]:
+                        - img [ref=e1938] [cursor=pointer]
+                        - generic [ref=e1940] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e1941] [cursor=pointer]:
+                      - generic [ref=e1942] [cursor=pointer]:
+                        - img [ref=e1943] [cursor=pointer]
+                        - generic [ref=e1945] [cursor=pointer]: Repost
+                    - button "Send" [ref=e1946] [cursor=pointer]:
+                      - generic [ref=e1947] [cursor=pointer]:
+                        - img [ref=e1948] [cursor=pointer]
+                        - generic [ref=e1950] [cursor=pointer]: Send
+              - listitem [ref=e1954]:
+                - generic [ref=e1956]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1957]: Feed post
+                  - generic [ref=e1958]:
+                    - link [ref=e1959] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/kpmg-australia/posts/
+                      - figure [ref=e1960] [cursor=pointer]
+                    - link "KPMG Australia 363,328 followers Promoted" [ref=e1961] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/kpmg-australia/posts/
+                      - generic [ref=e1962] [cursor=pointer]:
+                        - paragraph [ref=e1963] [cursor=pointer]: KPMG Australia
+                        - paragraph [ref=e1964] [cursor=pointer]: 363,328 followers
+                        - paragraph [ref=e1965] [cursor=pointer]: Promoted
+                    - button "View more options" [ref=e1966] [cursor=pointer]:
+                      - img [ref=e1968] [cursor=pointer]
+                  - paragraph [ref=e1970]:
+                    - generic [ref=e1971]: KPMG leads as first choice for quality of work in AI advice and implementation services in Australia based on @Source Perceptions of Consulting in Australia 2025.
+                  - generic [ref=e1972]:
+                    - link [ref=e1973] [cursor=pointer]:
+                      - /url: https://kpmg.com/au/en/services/consulting.html?utm_campaign=Website%2Bvisits%2B-%2BSep%2B12%2C%2B2025&utm_medium=soc&utm_source=linkedin
+                      - figure [ref=e1974] [cursor=pointer]
+                    - 'link "KPMG ranks #1 for quality of work in AI advice and implementation kpmg.com Learn more" [ref=e1975] [cursor=pointer]':
+                      - /url: https://kpmg.com/au/en/services/consulting.html?utm_campaign=Website%2Bvisits%2B-%2BSep%2B12%2C%2B2025&utm_medium=soc&utm_source=linkedin
+                      - generic [ref=e1976] [cursor=pointer]:
+                        - generic [ref=e1977] [cursor=pointer]:
+                          - paragraph [ref=e1978] [cursor=pointer]: "KPMG ranks #1 for quality of work in AI advice and implementation"
+                          - paragraph [ref=e1979] [cursor=pointer]: kpmg.com
+                        - link "Learn more" [ref=e1980] [cursor=pointer]:
+                          - /url: https://kpmg.com/au/en/services/consulting.html?utm_campaign=Website%2Bvisits%2B-%2BSep%2B12%2C%2B2025&utm_medium=soc&utm_source=linkedin
+                          - generic [ref=e1982] [cursor=pointer]: Learn more
+                  - generic [ref=e1983]:
+                    - button "4 reactions" [ref=e1984] [cursor=pointer]:
+                      - generic [ref=e1985] [cursor=pointer]:
+                        - img [ref=e1986] [cursor=pointer]
+                        - img [ref=e1992] [cursor=pointer]
+                        - img [ref=e2006] [cursor=pointer]
+                        - paragraph [ref=e2012] [cursor=pointer]:
+                          - generic [ref=e2013] [cursor=pointer]: 4 reactions
+                          - generic [ref=e2014] [cursor=pointer]: "4"
+                    - generic [ref=e2015]:
+                      - button:
+                        - paragraph
+                      - button:
+                        - paragraph
+                  - generic [ref=e2016]:
+                    - generic [ref=e2018]:
+                      - 'button "Reaction button state: no reaction" [ref=e2021] [cursor=pointer]':
+                        - generic [ref=e2022] [cursor=pointer]:
+                          - img [ref=e2023] [cursor=pointer]
+                          - generic [ref=e2025] [cursor=pointer]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e2027] [cursor=pointer]
+                    - button "Comment" [ref=e2029] [cursor=pointer]:
+                      - generic [ref=e2030] [cursor=pointer]:
+                        - img [ref=e2031] [cursor=pointer]
+                        - generic [ref=e2033] [cursor=pointer]: Comment
+                    - button "Repost" [ref=e2034] [cursor=pointer]:
+                      - generic [ref=e2035] [cursor=pointer]:
+                        - img [ref=e2036] [cursor=pointer]
+                        - generic [ref=e2038] [cursor=pointer]: Repost
+                    - button "Send" [ref=e2039] [cursor=pointer]:
+                      - generic [ref=e2040] [cursor=pointer]:
+                        - img [ref=e2041] [cursor=pointer]
+                        - generic [ref=e2043] [cursor=pointer]: Send
+              - button "Load more" [ref=e2045] [cursor=pointer]:
+                - generic [ref=e2047] [cursor=pointer]: Load more
+            - generic [ref=e2049]:
+              - generic [ref=e2053]:
+                - generic [ref=e2055]:
+                  - generic [ref=e2056]:
+                    - paragraph [ref=e2057]: LinkedIn News
+                    - button "Info tooltip" [ref=e2058] [cursor=pointer]:
+                      - img [ref=e2060] [cursor=pointer]
+                  - generic [ref=e2062]:
+                    - link "Second Optus outage hits NSW 2h ago • 6,398 readers" [ref=e2064] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/news/story/second-optus-outage-hits-nsw-7075121/
+                      - generic [ref=e2065] [cursor=pointer]:
+                        - paragraph [ref=e2066] [cursor=pointer]: Second Optus outage hits NSW
+                        - generic [ref=e2067] [cursor=pointer]:
+                          - paragraph [ref=e2068] [cursor=pointer]: 2h ago
+                          - paragraph [ref=e2069] [cursor=pointer]: •
+                          - paragraph [ref=e2070] [cursor=pointer]: 6,398 readers
+                    - link "Apple tests 'ChatGPT-like' app 1h ago • 7,098 readers" [ref=e2072] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/news/story/apple-tests-chatgpt-like-app-6633380/
+                      - generic [ref=e2073] [cursor=pointer]:
+                        - paragraph [ref=e2074] [cursor=pointer]: Apple tests 'ChatGPT-like' app
+                        - generic [ref=e2075] [cursor=pointer]:
+                          - paragraph [ref=e2076] [cursor=pointer]: 1h ago
+                          - paragraph [ref=e2077] [cursor=pointer]: •
+                          - paragraph [ref=e2078] [cursor=pointer]: 7,098 readers
+                    - link "US imposes 100% drug tariffs 5h ago • 3,197 readers" [ref=e2080] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/news/story/us-imposes-100-drug-tariffs-6634460/
+                      - generic [ref=e2081] [cursor=pointer]:
+                        - paragraph [ref=e2082] [cursor=pointer]: US imposes 100% drug tariffs
+                        - generic [ref=e2083] [cursor=pointer]:
+                          - paragraph [ref=e2084] [cursor=pointer]: 5h ago
+                          - paragraph [ref=e2085] [cursor=pointer]: •
+                          - paragraph [ref=e2086] [cursor=pointer]: 3,197 readers
+                    - link "Nike bets on new brand with SKIMS 1h ago • 2,852 readers" [ref=e2088] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/news/story/nike-bets-on-new-brand-with-skims-6633372/
+                      - generic [ref=e2089] [cursor=pointer]:
+                        - paragraph [ref=e2090] [cursor=pointer]: Nike bets on new brand with SKIMS
+                        - generic [ref=e2091] [cursor=pointer]:
+                          - paragraph [ref=e2092] [cursor=pointer]: 1h ago
+                          - paragraph [ref=e2093] [cursor=pointer]: •
+                          - paragraph [ref=e2094] [cursor=pointer]: 2,852 readers
+                    - link "YouTube Music debuts new AI hub 1h ago • 1,852 readers" [ref=e2096] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/news/story/youtube-music-debuts-new-ai-hub-6625484/
+                      - generic [ref=e2097] [cursor=pointer]:
+                        - paragraph [ref=e2098] [cursor=pointer]: YouTube Music debuts new AI hub
+                        - generic [ref=e2099] [cursor=pointer]:
+                          - paragraph [ref=e2100] [cursor=pointer]: 1h ago
+                          - paragraph [ref=e2101] [cursor=pointer]: •
+                          - paragraph [ref=e2102] [cursor=pointer]: 1,852 readers
+                    - button "Show More" [ref=e2103] [cursor=pointer]:
+                      - generic [ref=e2104] [cursor=pointer]:
+                        - img [ref=e2105] [cursor=pointer]
+                        - generic [ref=e2107] [cursor=pointer]: Show More
+                - paragraph [ref=e2108]: Today’s puzzles
+                - link "Play MiniSudoku" [ref=e2110] [cursor=pointer]:
+                  - /url: /games/mini-sudoku/
+                  - generic "Play MiniSudoku" [ref=e2111] [cursor=pointer]:
+                    - generic [ref=e2112] [cursor=pointer]:
+                      - figure [ref=e2113] [cursor=pointer]
+                      - generic [ref=e2114] [cursor=pointer]:
+                        - paragraph [ref=e2115] [cursor=pointer]:
+                          - strong [ref=e2116] [cursor=pointer]: Mini Sudoku
+                          - text: "#48"
+                        - paragraph [ref=e2118] [cursor=pointer]: 5 connections played
+                    - img [ref=e2119] [cursor=pointer]
+                - link "Play Zip" [ref=e2122] [cursor=pointer]:
+                  - /url: /games/zip/
+                  - generic "Play Zip" [ref=e2123] [cursor=pointer]:
+                    - generic [ref=e2124] [cursor=pointer]:
+                      - figure [ref=e2125] [cursor=pointer]
+                      - generic [ref=e2126] [cursor=pointer]:
+                        - paragraph [ref=e2127] [cursor=pointer]:
+                          - strong [ref=e2128] [cursor=pointer]: Zip
+                          - text: "#195"
+                        - paragraph [ref=e2130] [cursor=pointer]: 9 connections played
+                    - img [ref=e2131] [cursor=pointer]
+                - link "Play Tango" [ref=e2134] [cursor=pointer]:
+                  - /url: /games/tango/
+                  - generic "Play Tango" [ref=e2135] [cursor=pointer]:
+                    - generic [ref=e2136] [cursor=pointer]:
+                      - figure [ref=e2137] [cursor=pointer]
+                      - generic [ref=e2138] [cursor=pointer]:
+                        - paragraph [ref=e2139] [cursor=pointer]:
+                          - strong [ref=e2140] [cursor=pointer]: Tango
+                          - text: "#356"
+                        - paragraph [ref=e2142] [cursor=pointer]: 4 connections played
+                    - img [ref=e2143] [cursor=pointer]
+                - link "Play Queens" [ref=e2146] [cursor=pointer]:
+                  - /url: /games/queens/
+                  - generic "Play Queens" [ref=e2147] [cursor=pointer]:
+                    - generic [ref=e2148] [cursor=pointer]:
+                      - figure [ref=e2149] [cursor=pointer]
+                      - generic [ref=e2150] [cursor=pointer]:
+                        - paragraph [ref=e2151] [cursor=pointer]:
+                          - strong [ref=e2152] [cursor=pointer]: Queens
+                          - text: "#516"
+                        - paragraph [ref=e2154] [cursor=pointer]: 4 connections played
+                    - img [ref=e2155] [cursor=pointer]
+                - link "Play Crossclimb" [ref=e2158] [cursor=pointer]:
+                  - /url: /games/crossclimb/
+                  - generic "Play Crossclimb" [ref=e2159] [cursor=pointer]:
+                    - generic [ref=e2160] [cursor=pointer]:
+                      - figure [ref=e2161] [cursor=pointer]
+                      - generic [ref=e2162] [cursor=pointer]:
+                        - paragraph [ref=e2163] [cursor=pointer]:
+                          - strong [ref=e2164] [cursor=pointer]: Crossclimb
+                          - text: "#516"
+                        - paragraph [ref=e2166] [cursor=pointer]: 3 connections played
+                    - img [ref=e2167] [cursor=pointer]
+                - link "Play Pinpoint" [ref=e2170] [cursor=pointer]:
+                  - /url: /games/pinpoint/
+                  - generic "Play Pinpoint" [ref=e2171] [cursor=pointer]:
+                    - generic [ref=e2172] [cursor=pointer]:
+                      - figure [ref=e2173] [cursor=pointer]
+                      - generic [ref=e2174] [cursor=pointer]:
+                        - paragraph [ref=e2175] [cursor=pointer]:
+                          - strong [ref=e2176] [cursor=pointer]: Pinpoint
+                          - text: "#516"
+                        - paragraph [ref=e2178] [cursor=pointer]: 4 connections played
+                    - img [ref=e2179] [cursor=pointer]
+              - generic [ref=e2182]:
+                - iframe [ref=e2185]:
+                  - generic [ref=f1e3]:
+                    - banner [ref=f1e4]:
+                      - img [ref=f1e6]:
+                        - img [ref=f1e7]
+                        - img [ref=f1e11]
+                      - link "The Climate Pledge" [ref=f1e15] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F68052518&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGZk1d1Sat8hNCUO7Ys_rJ-_RcAzg-Ql_Qvkk0jlsvgrLFcFdgohv5X76-1OZcGebgF2Om-Sz7Y8JGRv-X6CFbm2cB8e_zjMB-2Y0yMAjz7xdB8iZUzrgIu4OiAvW_nkhuet_46BqAl9hZPOonvDuYBKCofOeqgO_Av0MenUSdrHy6TPL81dlOnYY9yFuirWqv7q-kXy-sbAw5nB_E-wn52wroVOyq5mNodcV30vjeIyWfHNWZeemIasq2YLjrJQpX3Y3O-8mujJBYEi9XJhKOz1QJ2gNBZbKWy8iVFVyQQpQUS8c-7t6pG1CHWYWZjkvqlT8uX0LcPcluEdrNPwyeqsDmWkhiaoFRxYIibvHyh_tx9jCSKLCZB9imKyJt3LbJ9ChE-tnfGEKZgK8iQU_FBNe1nROjQEZOWOFuOkZ0z3F8dEAh9jcW7U85euHH2DZ2RGuaeqHso7K_3jZvHbo2VIwH5Isx6RK9rxsTfZgVOVFYigqL92xdg8iYwo1-R1iPiYfBhLyW_5FOsWjA0w33INx7QdyZ3hz5WvyEXjS788YHd-SHjwpCklGZkDz1Pa-arlCvCatdina58QBqyYMhG63xx6PE5fB9aZmKmL_xLbgmhC8cJTMIXtz1HOVT5rLgTbx0Pw5GUNzkKVryfZPxvbR_db7bZhU590YHqYLU6IZROxr4BD4vGQBU_F7Ityskh3LDYuVumyVjOBKk36iyPNaJJ-HyeBKDIAUhNmcnOq6AnutGaK8P4MBqtPss1s8fK2csf39KTh_ptvysnJdgw7a18G6WKye_yeMgEprjzNuZqBLQwYe2ZlMz9GQeTDHq4KIJOVGKhu5k1ySHcHPuFaPB2B79WYmPHgpFPIsrHTKT8Qp3a_Bjw9LhWyJQpAJ0EKCYxgN0SKmuQwVpE3hVqP1Vk_FHfIf5P2tzGfQC3T_6uz6gqxYmZpZtuNeP10cm_KyS3wT7z10aWy5yyxTEDQcw7YxARKT3rkkmOuNKi_bwwY03QtZM5Spnyu4aLR4DMdTneWTe0oC2REEEafy7ZB6jRpR-x43WZVxY6b6_tKsMiNqyS2-avSJXFjHuZ1i6DO9qb3Ohu4IOokYHvk8zikcAQO4Gvd2eATB6IAq9FRw6v7qYbPwx1lxnrmMxlolX9_dshvCpnXQpp_uiic4OIVW9bVXPT5p_Zw6JRsAzsSHGcyppKBZCXivYbbHlLxCKxWSD9k5w-cvUfVqsy-i2horxlkhlxeRAsduJFGo6GoaFS1HY_vskzDgkgUQ2jq7ZPTs2A1SIOO1Y89EIyEmXC5fnfgwR455EsKethtp7uknOQtAwmS8dIF31njBhQeYzad43f1f_WIDflFBe2FcVNFoMiFntrthQLGLd2Y0aEPg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%22f5996000-8744-4676-96d7-1e22015d34a7%22%7D%2C%22time%22%3A1759113606455%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A7600293560828528193
+                        - img "The Climate Pledge" [ref=f1e16] [cursor=pointer]
+                      - generic [ref=f1e17]:
+                        - paragraph [ref=f1e18]: Promoted
+                        - button "Ad Options" [ref=f1e19] [cursor=pointer]:
+                          - img [ref=f1e20] [cursor=pointer]
+                          - generic [ref=f1e24] [cursor=pointer]: Ad Options
+                    - generic [ref=f1e25]:
+                      - link "The Climate Pledge" [ref=f1e26] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F68052518&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGZk1d1Sat8hNCUO7Ys_rJ-_RcAzg-Ql_Qvkk0jlsvgrLFcFdgohv5X76-1OZcGebgF2Om-Sz7Y8JGRv-X6CFbm2cB8e_zjMB-2Y0yMAjz7xdB8iZUzrgIu4OiAvW_nkhuet_46BqAl9hZPOonvDuYBKCofOeqgO_Av0MenUSdrHy6TPL81dlOnYY9yFuirWqv7q-kXy-sbAw5nB_E-wn52wroVOyq5mNodcV30vjeIyWfHNWZeemIasq2YLjrJQpX3Y3O-8mujJBYEi9XJhKOz1QJ2gNBZbKWy8iVFVyQQpQUS8c-7t6pG1CHWYWZjkvqlT8uX0LcPcluEdrNPwyeqsDmWkhiaoFRxYIibvHyh_tx9jCSKLCZB9imKyJt3LbJ9ChE-tnfGEKZgK8iQU_FBNe1nROjQEZOWOFuOkZ0z3F8dEAh9jcW7U85euHH2DZ2RGuaeqHso7K_3jZvHbo2VIwH5Isx6RK9rxsTfZgVOVFYigqL92xdg8iYwo1-R1iPiYfBhLyW_5FOsWjA0w33INx7QdyZ3hz5WvyEXjS788YHd-SHjwpCklGZkDz1Pa-arlCvCatdina58QBqyYMhG63xx6PE5fB9aZmKmL_xLbgmhC8cJTMIXtz1HOVT5rLgTbx0Pw5GUNzkKVryfZPxvbR_db7bZhU590YHqYLU6IZROxr4BD4vGQBU_F7Ityskh3LDYuVumyVjOBKk36iyPNaJJ-HyeBKDIAUhNmcnOq6AnutGaK8P4MBqtPss1s8fK2csf39KTh_ptvysnJdgw7a18G6WKye_yeMgEprjzNuZqBLQwYe2ZlMz9GQeTDHq4KIJOVGKhu5k1ySHcHPuFaPB2B79WYmPHgpFPIsrHTKT8Qp3a_Bjw9LhWyJQpAJ0EKCYxgN0SKmuQwVpE3hVqP1Vk_FHfIf5P2tzGfQC3T_6uz6gqxYmZpZtuNeP10cm_KyS3wT7z10aWy5yyxTEDQcw7YxARKT3rkkmOuNKi_bwwY03QtZM5Spnyu4aLR4DMdTneWTe0oC2REEEafy7ZB6jRpR-x43WZVxY6b6_tKsMiNqyS2-avSJXFjHuZ1i6DO9qb3Ohu4IOokYHvk8zikcAQO4Gvd2eATB6IAq9FRw6v7qYbPwx1lxnrmMxlolX9_dshvCpnXQpp_uiic4OIVW9bVXPT5p_Zw6JRsAzsSHGcyppKBZCXivYbbHlLxCKxWSD9k5w-cvUfVqsy-i2horxlkhlxeRAsduJFGo6GoaFS1HY_vskzDgkgUQ2jq7ZPTs2A1SIOO1Y89EIyEmXC5fnfgwR455EsKethtp7uknOQtAwmS8dIF31njBhQeYzad43f1f_WIDflFBe2FcVNFoMiFntrthQLGLd2Y0aEPg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%22f5996000-8744-4676-96d7-1e22015d34a7%22%7D%2C%22time%22%3A1759113606455%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A7600293560828528193
+                        - heading "The Climate Pledge" [level=2] [ref=f1e27] [cursor=pointer]
+                      - paragraph [ref=f1e29]:
+                        - generic [ref=f1e30]: LinkedIn Member
+                        - text: ", you might like to follow"
+                        - generic [ref=f1e31]: The Climate Pledge
+                      - paragraph [ref=f1e33]: Take action now to reach net-zero carbon by 2040.
+                      - link "Follow" [ref=f1e34] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F68052518%3FisFollowingPage%3Dtrue&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGZk1d1SQ0COqTPCKHo5wKgAmLty85KiGidR4Rd7PjM5gPy1_ZUCH-cYfkmGKBCqvE-2EAMC4shvEIBpnmB8OSrVIyuTYRr6e3g6lzkJa6mIxeNa08fpI4zKc7pcAK0vjbHct1VL_bI-VGxrpNYaL2fcSAwtm_RXRWONJToJqCIaI-p5gkuBuAqnD3WbG5TYIkQEByuNAfsHWE6CFX17wiWMsH2Q2BznW3tk5UtDrzskz4zjfMSlmA6ZpE4h-EWWYFLoxb6N5WHcNROlFHkYFfTSM8odAXavegDV8FHIKNmy9BLhv5wF0ZtCUOBRWq19jbuhQRBcUWv-UmQFZyIlGyQ6PmR-8lrGAWVC9YLMAHmBAmxZ-RU2qafH5KuXKQfuJzG8bDhQWjm-NFSd8OdUwRSsmbkPGiZyF6RUc9tfubOLeL-5Vu4n4bbjA_sM0H7t1P2p6gaZaQFpG-X65d2QQXfcg3Hd96SceHdt2jgsI24HsT7SWZIKVGQ4qbiRjrrGSe27yyQQ0ULQuqyDh4rpKlXzX5B8K7eqPasXbWkaFS9muTbFHHs6xLITq9wSIpjhzNivZzBbzB-39Mj2httMQ1eceZ-wViJ0hc0Sh5micVgz-WwpQX_OTPaQpWY5CKgfop-LjeE1-A4MNqwOEuXfYe_sOdtTSI-aF4Pa_Ops-YwU9kvWgPe251QA91Z_6eiu8crYFqVN-T5lgRfuJRDCYqgojUXb_SZqcQisk337zcimzl5tfVNGY6BXWtZR_QnVft_gK5y8wJ1sw9vETwzE1gjxGW64dE0ft4jovRFYuxYF3ACuS8h1LGgQt1Z2chqVLYA9jLtOVdGQAEGis5JNFUbrXUt9waI9EsgHdoKOUkqpKaWH92W1MHmiQOAChQ6Znw2mA1ZOGS87Zq53Ygkx46JYNk4sVyjTkcxFokkTeTb706PDAAYZKamrBGArRIvKYKnJJz8MDgVhrmZYzKl2J5T6F33i_Y3ssJofQiYrlEaREVga0LirmtMnm5zbH-G3jJ8ooNlXppYP0pCQF7BadShKPuoTiKXalwH2jG2Hb69KRxfZdbF4UvsYntSJkncp3vl1JcI04vcSaR99kX19MCvMNEq3jLKUFgtjS6Bkh4xHi0u9Epj54fmmc2P0Ecn_-E0EGThF8Nw_squnJ2yhh6PU_B7WYyZlzDWWaFWYHJDr0LJBtev3Flwcg0z39_e4ap014YMaOdCzY7uBl26yHhvRZt5qEqhn9rKjcD4Ng5ExkarQViUV8lYMuUzTlfp7hGK46oGb1RO_zjp1G_o2U0NY93KeahN3t6c4-AJgi4VqTBQA74M2Dmr2opPm18L9HdcVBgn2VJQmwqKlar6UiIwV9SzegtLkTTue3-lsSFXX0iAvq_Z-UzCsPAu2ud8%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%22fc8be771-7933-44f8-a2fc-1e0f9f11f48f%22%7D%2C%22time%22%3A1759113606455%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A7600293560828528193
+                - generic [ref=e2186]:
+                  - generic [ref=e2187]:
+                    - link "About" [ref=e2188] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - paragraph [ref=e2189] [cursor=pointer]: About
+                    - link "Accessibility" [ref=e2190] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility/
+                      - paragraph [ref=e2191] [cursor=pointer]: Accessibility
+                    - link "Help Center" [ref=e2192] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/
+                      - paragraph [ref=e2193] [cursor=pointer]: Help Center
+                    - button "Privacy & Terms" [ref=e2194] [cursor=pointer]:
+                      - generic [ref=e2195] [cursor=pointer]:
+                        - paragraph [ref=e2196] [cursor=pointer]: Privacy & Terms
+                        - img [ref=e2197] [cursor=pointer]
+                    - link "Ad Choices" [ref=e2199] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                      - paragraph [ref=e2200] [cursor=pointer]: Ad Choices
+                    - link "Advertising" [ref=e2201] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                      - paragraph [ref=e2202] [cursor=pointer]: Advertising
+                    - button "Business Services" [ref=e2203] [cursor=pointer]:
+                      - generic [ref=e2204] [cursor=pointer]:
+                        - paragraph [ref=e2205] [cursor=pointer]: Business Services
+                        - img [ref=e2206] [cursor=pointer]
+                    - link "Get the LinkedIn app" [ref=e2208] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mobile/
+                      - paragraph [ref=e2209] [cursor=pointer]: Get the LinkedIn app
+                    - button "More" [ref=e2210] [cursor=pointer]:
+                      - paragraph [ref=e2211] [cursor=pointer]: More
+                  - generic [ref=e2212]:
+                    - img [ref=e2213]
+                    - paragraph [ref=e2215]: LinkedIn Corporation © 2025
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - complementary:
+            - generic [ref=e2217]:
+              - generic [ref=e2219] [cursor=pointer]:
+                - generic [ref=e2220] [cursor=pointer]:
+                  - img "Sameer Manzur" [ref=e2221] [cursor=pointer]
+                  - generic [ref=e2223] [cursor=pointer]: Status is online
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e2224] [cursor=pointer]:
+                  - generic [ref=e2225] [cursor=pointer]:
+                    - generic [ref=e2226] [cursor=pointer]: Messaging
+                    - generic [ref=e2227] [cursor=pointer]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - generic [ref=e2228]:
+                - button "Open messenger dropdown menu" [ref=e2230] [cursor=pointer]:
+                  - img "Open messenger dropdown menu" [ref=e2231] [cursor=pointer]
+                - button "Compose message" [ref=e2234] [cursor=pointer]:
+                  - img [ref=e2235] [cursor=pointer]
+                  - generic [ref=e2237] [cursor=pointer]: Compose message
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e2238] [cursor=pointer]:
+                  - img [ref=e2239] [cursor=pointer]
+                  - generic [ref=e2241] [cursor=pointer]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - iframe [ref=e2242]:
+    - generic [active] [ref=f2e1]:
+      - generic:
+        - region "Toast message":
+          - heading "0 notifications total" [level=2] [ref=f2e3]
+          - alert
+      - region [ref=f2e4]
+      - generic [ref=f2e5]:
+        - generic [ref=f2e7]:
+          - button "Skip to search" [ref=f2e8] [cursor=pointer]:
+            - generic [ref=f2e9] [cursor=pointer]: Skip to search
+          - button "Skip to main content" [ref=f2e10] [cursor=pointer]:
+            - generic [ref=f2e11] [cursor=pointer]: Skip to main content
+          - button "Keyboard shortcuts" [ref=f2e12] [cursor=pointer]:
+            - generic [ref=f2e13] [cursor=pointer]: Keyboard shortcuts
+          - button "Close jump menu" [ref=f2e14] [cursor=pointer]:
+            - img [ref=f2e15] [cursor=pointer]
+            - generic [ref=f2e17] [cursor=pointer]: Close jump menu
+        - banner "Global Navigation" [ref=f2e18]:
+          - generic [ref=f2e19]:
+            - link "LinkedIn" [ref=f2e20] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/?nis=true
+              - img "LinkedIn" [ref=f2e23] [cursor=pointer]:
+                - img [ref=f2e24] [cursor=pointer]
+            - generic [ref=f2e28]:
+              - combobox "Search" [ref=f2e29]
+              - generic:
+                - img
+            - navigation "Primary Navigation" [ref=f2e30]:
+              - list [ref=f2e31]:
+                - listitem [ref=f2e32]:
+                  - link "new feed updates notifications Home" [ref=f2e33] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/feed/
+                    - generic [ref=f2e34] [cursor=pointer]:
+                      - generic [ref=f2e37] [cursor=pointer]: new feed updates notifications
+                      - img [ref=f2e41] [cursor=pointer]
+                - listitem [ref=f2e44]:
+                  - link "1 new network update notification My Network" [ref=f2e45] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork/?
+                    - generic [ref=f2e46] [cursor=pointer]:
+                      - generic [ref=f2e47] [cursor=pointer]:
+                        - generic [ref=f2e48] [cursor=pointer]: "1"
+                        - generic [ref=f2e49] [cursor=pointer]: 1 new network update notification
+                      - img [ref=f2e53] [cursor=pointer]
+                - listitem [ref=f2e56]:
+                  - link "Jobs" [ref=f2e57] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/?
+                    - img [ref=f2e61] [cursor=pointer]
+                - listitem [ref=f2e64]:
+                  - link "Messaging" [ref=f2e65] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/?
+                    - img [ref=f2e69] [cursor=pointer]
+                - listitem [ref=f2e72]:
+                  - link "14 new notifications Notifications" [ref=f2e73] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/?
+                    - generic [ref=f2e74] [cursor=pointer]:
+                      - generic [ref=f2e75] [cursor=pointer]:
+                        - generic [ref=f2e76] [cursor=pointer]: "14"
+                        - generic [ref=f2e77] [cursor=pointer]: 14 new notifications
+                      - img [ref=f2e81] [cursor=pointer]
+                - listitem [ref=f2e84]:
+                  - button "Sameer Manzur Me" [ref=f2e86] [cursor=pointer]:
+                    - img "Sameer Manzur" [ref=f2e87] [cursor=pointer]
+                    - generic [ref=f2e88] [cursor=pointer]:
+                      - text: Me
+                      - img [ref=f2e89] [cursor=pointer]
+                - listitem [ref=f2e91]:
+                  - button "For Business" [ref=f2e93] [cursor=pointer]:
+                    - img [ref=f2e97] [cursor=pointer]
+                    - generic "For Business" [ref=f2e99] [cursor=pointer]:
+                      - text: For Business
+                      - img [ref=f2e100] [cursor=pointer]
+                - listitem [ref=f2e102]:
+                  - link "Learning" [ref=f2e103] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/learning/?trk=nav_neptune_learning&
+                    - img [ref=f2e107] [cursor=pointer]
+```
