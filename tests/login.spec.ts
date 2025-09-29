@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from './loginPage'
-import { sendReportEmail } from './logAndReport'; 
+import { LoginPage } from './pages/loginPage'
+import { sendReportEmail } from './pages/logAndReport'; 
 
 test.describe('Login Tests', () => {
   test.beforeEach(async ({ page }) => {
