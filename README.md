@@ -64,9 +64,15 @@ npm install
 Create a .env file:
 
 BASE_URL=https://www.linkedin.com
-USERNAME=your_email@example.com
-PASSWORD=your_password
-ZEPHYR_TOKEN=your_zephyr_api_key
+USERNAME=
+PASSWORD=
+ZEPHYR_TOKEN=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_REFRESH_TOKEN=
+GOOGLE_USER_EMAIL=
+REPORT_RECIPIENT=
+
 
 4. Prepare Test Data
 
@@ -77,7 +83,7 @@ Local Execution
 npx playwright test
 
 Run Specific Test
-npx playwright test tests/verifyE2EuserFlow.spec.ts --headed
+npx playwright test tests/userSendsMessage.spec.ts --headed
 
 Clear Cache & Cookies (best practice hooks)
 
@@ -94,5 +100,7 @@ Hooks automatically clear session storage, cookies, and cache before each test r
 ✅ Clear cache/cookies hooks for clean sessions
 
 ✅ Integration with Jira Zephyr for reporting
+
+✅ Allure and email reporting 
 
 ✅ CI/CD ready (Docker + Jenkins + GitHub Actions)
