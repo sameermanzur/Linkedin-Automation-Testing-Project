@@ -1,4 +1,4 @@
-import { expect, test } from '../hooks/hooks';
+import { expect, test } from './pages/hooks'; 
 import { LoginPage } from './pages/loginPage';
 import { LinkedInSearchPage } from './pages/linkedInSearchPage';
 import { getRecruiterNames } from './pages/readRecruiterNames';
@@ -7,7 +7,7 @@ import { LogoutPage } from './pages/logoutPage';
 import { sendReportEmail } from './pages/logAndReport';
 
 
-test('[T47] Verify user sends message (end-to-end) flow', async ({ page, browser }) => {
+test.only('[T47] Verify user sends message (end-to-end) flow', async ({ page, browser }) => {
 
   // Verify env Variables are getting loaded 
   if (!process.env.BASE_URL || !process.env.LINKEDIN_USERNAME || !process.env.LINKEDIN_PASSWORD) {
@@ -22,7 +22,7 @@ test('[T47] Verify user sends message (end-to-end) flow', async ({ page, browser
   await login.b_navigateTo(process.env.BASE_URL!);
   await login.login(process.env.LINKEDIN_USERNAME!, process.env.LINKEDIN_PASSWORD!);
 
-  // Read recruiter names from Excel and search each
+  // // Read recruiter names from Excel and search each
   const names = await getRecruiterNames('data/recruiterList.xlsx');
   for (const name of names) {
     await searchRecruiter.searchForRecruiterNames(name);
@@ -31,7 +31,7 @@ test('[T47] Verify user sends message (end-to-end) flow', async ({ page, browser
     await composeMessage.sendMessage();
     await composeMessage.closeMessage();
 
-    // Return to feed for next iteration
+  //   // Return to feed for next iteration
     await searchRecruiter.gotoFeed();
   }
   // Logout when the task is completed 

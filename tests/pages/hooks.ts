@@ -1,4 +1,3 @@
-// tests/hooks.ts
 import { test as base } from '@playwright/test';
 
 // Extend the base test without replacing Playwright's built-in context management

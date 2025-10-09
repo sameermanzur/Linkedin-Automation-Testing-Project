@@ -7,8 +7,8 @@ export class LogoutPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.navigationButton = page.locator('.global-nav__icon.global-nav__icon--small');
-        this.signOutButton = page.locator("//a[@class='global-nav__secondary-link mv1']");
+        this.navigationButton = page.locator("//span[normalize-space(text())='Me']");
+        this.signOutButton = page.locator("//p[normalize-space(text())='Sign out']");
     }
 
     async navigateButton() {

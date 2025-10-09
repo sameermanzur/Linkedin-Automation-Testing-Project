@@ -11,3 +11,5 @@ node_modules/
 /.utils/.env
 /.data/~$*.xlsx
 /.env/
+.env
+**/.env
