@@ -7,7 +7,7 @@ import { LogoutPage } from './pages/logoutPage';
 import { sendReportEmail } from './pages/logAndReport';
 
 
-test.only('[T47] Verify user sends message (end-to-end) flow', async ({ page, browser }) => {
+test.only('[T2] Verify user sends message (end-to-end) flow', async ({ page, browser }) => {
 
   // Verify env Variables are getting loaded 
   if (!process.env.BASE_URL || !process.env.LINKEDIN_USERNAME || !process.env.LINKEDIN_PASSWORD) {
