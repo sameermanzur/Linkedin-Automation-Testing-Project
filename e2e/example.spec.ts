@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 
+/**
+ * Test Case: has title
+ * Verifies that the Playwright homepage has the correct title.
+ */
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
@@ -7,6 +11,11 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
+/**
+ * Test Case: get started link
+ * Verifies that the 'Get started' link on the Playwright homepage works correctly
+ * and navigates to the Installation page.
+ */
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 

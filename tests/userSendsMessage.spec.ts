@@ -7,6 +7,24 @@ import { LogoutPage } from './pages/logoutPage';
 import { sendReportEmail } from './pages/logAndReport';
 
 
+/**
+ * Test Case [T2]: Verify user sends message (end-to-end) flow.
+ * This test uses the `.only` annotation, meaning it will be the only test run in this file.
+ *
+ * Flow:
+ * 1. Check for required environment variables.
+ * 2. Login to LinkedIn.
+ * 3. Read a list of recruiter names from an Excel file.
+ * 4. Iterate through each name:
+ *    a. Search for the recruiter.
+ *    b. Open the message dialog.
+ *    c. Compose a personalized message.
+ *    d. Send the message.
+ *    e. Close the message dialog.
+ *    f. Return to the feed to reset for the next search.
+ * 5. Logout after all messages are sent.
+ * 6. Send an email report with execution logs.
+ */
 test.only('[T2] Verify user sends message (end-to-end) flow', async ({ page, browser }) => {
 
   // Verify env Variables are getting loaded 
@@ -42,4 +60,3 @@ test.only('[T2] Verify user sends message (end-to-end) flow', async ({ page, bro
   // email logs and report 
   await sendReportEmail();
 });
-

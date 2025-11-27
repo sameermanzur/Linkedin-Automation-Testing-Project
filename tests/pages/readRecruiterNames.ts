@@ -2,8 +2,19 @@ import XLSX from 'xlsx';
 import * as path from 'path';
 import * as fs from 'fs';
 
+/**
+ * Type definition for a generic row object from an Excel sheet.
+ */
 export type Row = Record<string, any>;
 
+/**
+ * Reads an Excel file and converts a specific sheet to a JSON array of Row objects.
+ * @param file - The path to the Excel file.
+ * @param sheet - The name or index of the sheet to read. Defaults to the first sheet.
+ * @returns A promise that resolves to an array of Row objects.
+ * @throws Will throw an error if the file does not exist or is not readable.
+ * @throws Will throw an error if the specified sheet is not found.
+ */
 export async function readExcel(
   file: string,
   sheet?: string | number
@@ -28,7 +39,12 @@ export async function readExcel(
   return XLSX.utils.sheet_to_json<Row>(ws, { defval: '' });
 }
 
-// Build a display name from whatever headers the sheet has
+/**
+ * Derives a full display name from a row object based on common header patterns.
+ * Looks for keys resembling "First", "Last", or "Name".
+ * @param row - The row object containing potential name data.
+ * @returns The derived name string, or an empty string if no name could be found.
+ */
 export function deriveName(row: Row): string {
   const keys = Object.keys(row);
   const firstKey = keys.find(k => /(^|[^a-z])first([^a-z]|$)/i.test(k));
@@ -44,6 +60,12 @@ export function deriveName(row: Row): string {
   return '';
 }
 
+/**
+ * Extracts a list of formatted recruiter names from an Excel file.
+ * @param filePath - The path to the Excel file.
+ * @param sheet - The name or index of the sheet to read.
+ * @returns A promise that resolves to an array of recruiter name strings.
+ */
 export async function getRecruiterNames(
   filePath: string,
   sheet?: string | number
