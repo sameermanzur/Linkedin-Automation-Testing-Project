@@ -20,6 +20,19 @@ const {
   REPORT_RECIPIENT
 } = process.env;
 
+/**
+ * Sends an email report with attached test results and execution logs using Gmail OAuth2 authentication.
+ *
+ * It performs the following steps:
+ * 1. Authenticates using Google OAuth2.
+ * 2. Locates the report zip and execution log files.
+ * 3. Creates a nodemailer transporter with OAuth2 configuration.
+ * 4. Constructs the email with attachments.
+ * 5. Sends the email.
+ *
+ * @returns A promise that resolves when the email is successfully sent.
+ * @throws Will throw an error if the OAuth2 token cannot be retrieved or if sending the email fails.
+ */
 export async function sendReportEmail() {
   // 1. OAuth2 client
   const oAuth2Client = new google.auth.OAuth2(
@@ -80,4 +93,4 @@ export async function sendReportEmail() {
 } catch (err) {
   console.error('email sending failed', err);
   throw err; 
-}}; 
+}};
